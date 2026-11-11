@@ -1,0 +1,13 @@
+
+    Building orthanc_api v0.0.2 (current)
+       Built [   5.996s] (current)
+     Parsing orthanc_api v0.0.2 (current)
+      Parsed [   0.004s] (current)
+    Building orthanc_api v0.0.1 (baseline)
+       Built [   5.949s] (baseline)
+     Parsing orthanc_api v0.0.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking orthanc_api v0.0.1 -> v0.0.2 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  12.252s] orthanc_api

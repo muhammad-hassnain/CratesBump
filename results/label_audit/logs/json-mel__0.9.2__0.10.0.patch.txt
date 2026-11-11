@@ -1,0 +1,125 @@
+
+    Building json-mel v0.10.0 (current)
+error: running cargo-doc on crate 'json-mel' failed with output:
+-----
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+    Checking pin-project-lite v0.2.17
+    Checking futures-core v0.3.34
+   Compiling autocfg v1.5.1
+   Compiling libc v0.2.191
+    Checking cfg-if v1.0.5
+    Checking parking v2.2.1
+    Checking futures-io v0.3.34
+   Compiling crossbeam-utils v0.8.23
+   Compiling syn v3.0.9
+    Checking concurrent-queue v2.5.0
+   Compiling serde_core v1.0.229
+    Checking slab v0.4.12
+    Checking fastrand v2.5.0
+   Compiling rustix v1.1.6
+    Checking futures-lite v2.6.1
+    Checking event-listener v5.4.2
+   Compiling object v0.39.1
+    Checking linux-raw-sys v0.12.1
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+    Checking bitflags v2.13.2
+   Compiling cc v1.11.1
+    Checking event-listener-strategy v0.5.4
+   Compiling async-io v2.6.0
+   Compiling memchr v2.8.3
+   Compiling getrandom v0.4.3
+    Checking rand_core v0.10.1
+   Compiling serde v1.0.229
+    Checking polling v3.11.0
+   Compiling num-traits v0.2.19
+    Checking cpufeatures v0.3.1
+    Checking async-task v4.7.1
+   Compiling typeid v1.0.3
+    Checking chacha20 v0.10.2
+    Checking async-channel v2.5.0
+   Compiling serde_derive v1.0.229
+    Checking errno v0.3.14
+   Compiling erased-serde v0.4.11
+    Checking atomic-waker v1.1.2
+    Checking futures-sink v0.3.34
+    Checking futures-channel v0.3.34
+    Checking piper v0.2.5
+    Checking signal-hook-registry v1.4.8
+    Checking rand v0.10.3
+   Compiling ar_archive_writer v0.5.3
+    Checking async-lock v3.5.0
+   Compiling psm v0.1.32
+   Compiling futures-macro v0.3.34
+    Checking value-bag v1.14.1
+    Checking futures-task v0.3.34
+   Compiling equivalent v1.0.3
+    Checking once_cell v1.21.4
+   Compiling hashbrown v0.17.1
+    Checking futures-util v0.3.34
+   Compiling indexmap v2.14.2
+    Checking chrono v0.4.45
+    Checking log v0.4.35
+    Checking uuid v1.29.0
+    Checking async-signal v0.2.14
+    Checking blocking v1.7.0
+   Compiling serde_spanned v0.6.9
+   Compiling toml_datetime v0.6.11
+    Checking async-executor v1.14.1
+   Compiling stacker v0.1.25
+   Compiling async-trait v0.1.92
+    Checking hex v0.4.3
+    Checking semver v1.0.28
+    Checking event-listener v2.5.3
+   Compiling toml_write v0.1.2
+   Compiling winnow v0.7.15
+    Checking downcast-rs v1.2.1
+   Compiling syn v1.0.109
+    Checking futures-executor v0.3.34
+    Checking melodium-common v0.10.4
+    Checking async-channel v1.9.0
+    Checking async-global-executor v2.4.1
+    Checking async-process v2.5.0
+    Checking kv-log-macro v1.0.7
+    Checking pin-utils v0.1.1
+   Compiling unicode-segmentation v1.13.3
+   Compiling zmij v1.0.23
+   Compiling convert_case v0.6.0
+    Checking async-std v1.13.2
+   Compiling toml_edit v0.22.27
+    Checking futures v0.3.34
+   Compiling litrs v0.4.2
+   Compiling toml v0.8.23
+   Compiling glob v0.3.4
+   Compiling serde_json v1.0.154
+    Checking lazy_static v1.5.1
+    Checking melodium-engine v0.10.4
+    Checking melodium-core v0.10.4
+    Checking itoa v1.0.18
+    Checking strfmt v0.2.6
+   Compiling melodium-macro v0.10.4
+    Checking std-mel v0.10.4
+error: One of the two features 'real' or 'mock' must be enabled
+ --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/std-mel-0.10.4/src/lib.rs:8:1
+  |
+8 | compile_error!("One of the two features 'real' or 'mock' must be enabled");
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: could not compile `std-mel` (lib) due to 1 previous error
+
+-----
+
+error: failed to build rustdoc for crate json-mel v0.10.0
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/json-mel-0.10.0 --features mock,plugin,real &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate json-mel v0.10.0

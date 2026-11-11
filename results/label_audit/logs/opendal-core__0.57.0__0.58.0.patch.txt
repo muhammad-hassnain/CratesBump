@@ -1,0 +1,238 @@
+
+--- failure auto_trait_impl_removed: auto trait no longer implemented ---
+
+Description:
+A public type has stopped implementing one or more auto traits. This can break downstream code that depends on the traits being implemented.
+        ref: https://doc.rust-lang.org/reference/special-types-and-traits.html#auto-traits
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/auto_trait_impl_removed.ron
+
+Failed in:
+  type FlatLister is no longer UnwindSafe, in /work/opendal-core-0.58.0/src/raw/oio/list/flat_list.rs:59
+  type FlatLister is no longer RefUnwindSafe, in /work/opendal-core-0.58.0/src/raw/oio/list/flat_list.rs:59
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field Capability.read_with_suffix in /work/opendal-core-0.58.0/src/types/capability.rs:102
+  field Capability.copy_with_source_version in /work/opendal-core-0.58.0/src/types/capability.rs:157
+  field Capability.rename_with_if_not_exists in /work/opendal-core-0.58.0/src/types/capability.rs:168
+  field CopyOptions.source_version in /work/opendal-core-0.58.0/src/types/options.rs:576
+
+--- failure constructible_struct_adds_private_field: struct no longer constructible due to new private field ---
+
+Description:
+A struct has a new non-public field that causes downstream code to be unable to construct it with a struct expression, including functional-update syntax.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_private_field.ron
+
+Failed in:
+  field OpRename.if_not_exists in /work/opendal-core-0.58.0/src/raw/ops.rs:991
+
+--- failure enum_tuple_variant_field_added: pub enum tuple variant field added ---
+
+Description:
+An enum's exhaustive tuple variant has a new field, which has to be included when constructing or matching on this variant.
+        ref: https://doc.rust-lang.org/reference/attributes/type_system.html#the-non_exhaustive-attribute
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_tuple_variant_field_added.ron
+
+Failed in:
+  field 1 of variant PresignOperation::Read in /work/opendal-core-0.58.0/src/raw/ops.rs:275
+
+--- failure feature_missing: package feature removed or renamed ---
+
+Description:
+A feature has been removed from this package's Cargo.toml. This will break downstream crates which enable that feature.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#cargo-feature-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/feature_missing.ron
+
+Failed in:
+  feature reqwest-rustls-no-provider-tls in the package's Cargo.toml
+  feature reqwest-rustls-tls in the package's Cargo.toml
+  feature internal-path-cache in the package's Cargo.toml
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  OperatorInfo::full_capability, previously in file /work/opendal-core-0.57.0/src/types/operator/info.rs:53
+  OperatorInfo::native_capability, previously in file /work/opendal-core-0.57.0/src/types/operator/info.rs:58
+  OpRead::with_range, previously in file /work/opendal-core-0.57.0/src/raw/ops.rs:326
+  OpRead::range, previously in file /work/opendal-core-0.57.0/src/raw/ops.rs:332
+  OpRead::range_mut, previously in file /work/opendal-core-0.57.0/src/raw/ops.rs:337
+  Operator::inner, previously in file /work/opendal-core-0.57.0/src/types/operator/operator.rs:154
+  Operator::into_inner, previously in file /work/opendal-core-0.57.0/src/types/operator/operator.rs:164
+  Operator::executor, previously in file /work/opendal-core-0.57.0/src/types/operator/operator.rs:187
+  Operator::update_executor, previously in file /work/opendal-core-0.57.0/src/types/operator/operator.rs:200
+  OpReader::with_content_length_hint, previously in file /work/opendal-core-0.57.0/src/raw/ops.rs:509
+  OpReader::content_length_hint, previously in file /work/opendal-core-0.57.0/src/raw/ops.rs:515
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  opendal_core::raw::oio::FlatLister::new takes 2 parameters in /work/opendal-core-0.57.0/src/raw/oio/list/flat_list.rs:78, but now takes 3 parameters in /work/opendal-core-0.58.0/src/raw/oio/list/flat_list.rs:78
+
+--- failure pub_static_missing: pub static is missing ---
+
+Description:
+A public static is missing, renamed, or made private.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/pub_static_missing.ron
+
+Failed in:
+  GLOBAL_REQWEST_CLIENT in file /work/opendal-core-0.57.0/src/raw/http_util/client.rs:50
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct opendal_core::raw::AccessorInfoHttpSend, previously in file /work/opendal-core-0.57.0/src/raw/http_util/client.rs:68
+  struct opendal_core::raw::HttpBody, previously in file /work/opendal-core-0.57.0/src/raw/http_util/body.rs:31
+  struct opendal_core::OperatorBuilder, previously in file /work/opendal-core-0.57.0/src/types/operator/builder.rs:264
+  struct opendal_core::raw::PathCacher, previously in file /work/opendal-core-0.57.0/src/raw/path_cache.rs:57
+  struct opendal_core::raw::AtomicContentLength, previously in file /work/opendal-core-0.57.0/src/raw/atomic_util.rs:29
+  struct opendal_core::raw::BytesRange, previously in file /work/opendal-core-0.57.0/src/raw/http_util/bytes_range.rs:42
+  struct opendal_core::raw::AccessorInfo, previously in file /work/opendal-core-0.57.0/src/raw/accessor.rs:631
+  struct opendal_core::raw::HttpClient, previously in file /work/opendal-core-0.57.0/src/raw/http_util/client.rs:61
+  struct opendal_core::layers::HttpClientLayer, previously in file /work/opendal-core-0.57.0/src/layers/http_client.rs:68
+
+--- failure trait_added_supertrait: non-sealed trait added new supertraits ---
+
+Description:
+A non-sealed trait added one or more supertraits, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#generic-bounds-tighten
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_added_supertrait.ron
+
+Failed in:
+  trait opendal_core::raw::Layer gained Send in file /work/opendal-core-0.58.0/src/raw/layer.rs:38
+  trait opendal_core::raw::Layer gained Sync in file /work/opendal-core-0.58.0/src/raw/layer.rs:38
+  trait opendal_core::raw::Layer gained Debug in file /work/opendal-core-0.58.0/src/raw/layer.rs:38
+  trait opendal_core::raw::Layer gained Unpin in file /work/opendal-core-0.58.0/src/raw/layer.rs:38
+
+--- failure trait_allows_fewer_generic_type_params: trait now allows fewer generic type parameters ---
+
+Description:
+A trait now allows fewer generic type parameters than it used to. Uses of this trait that supplied all previously-supported generic types will be broken.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-parameter-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_allows_fewer_generic_type_params.ron
+
+Failed in:
+  trait Layer allows 1 -> 0 generic types in /work/opendal-core-0.58.0/src/raw/layer.rs:38
+
+--- failure trait_method_added: pub trait method added ---
+
+Description:
+A non-sealed public trait added a new method without a default implementation, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-item-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_added.ron
+
+Failed in:
+  trait method opendal_core::raw::oio::Read::open in file /work/opendal-core-0.58.0/src/raw/oio/read/api.rs:39
+
+--- failure trait_method_missing: pub trait method removed or renamed ---
+
+Description:
+A trait method is no longer callable, and may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-item-signature
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_missing.ron
+
+Failed in:
+  method read_all_dyn of trait ReadDyn, previously in file /work/opendal-core-0.57.0/src/raw/oio/read/api.rs:94
+  method layer of trait Layer, previously in file /work/opendal-core-0.57.0/src/raw/layer.rs:105
+  method read_all of trait Read, previously in file /work/opendal-core-0.57.0/src/raw/oio/read/api.rs:49
+
+--- failure trait_method_parameter_count_changed: pub trait method parameter count changed ---
+
+Description:
+A trait method now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-item-signature
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_parameter_count_changed.ron
+
+Failed in:
+  ReadDyn::read_dyn now takes 1 instead of 0 parameters, in file /work/opendal-core-0.58.0/src/raw/oio/read/api.rs:77
+  Read::read now takes 1 instead of 0 parameters, in file /work/opendal-core-0.58.0/src/raw/oio/read/api.rs:45
+
+--- failure trait_method_receiver_mut_ref_became_ref: trait method receiver changed from mutable to immutable reference ---
+
+Description:
+A method in an unsealed trait now takes &self instead of &mut self, breaking downstream implementations.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-item-signature
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_receiver_mut_ref_became_ref.ron
+
+Failed in:
+  opendal_core::raw::oio::Read::read now takes &Self, not &mut Self, in /work/opendal-core-0.58.0/src/raw/oio/read/api.rs:45
+
+--- failure trait_missing: pub trait removed or renamed ---
+
+Description:
+A publicly-visible trait cannot be imported by its prior path. A `pub use` may have been removed, or the trait itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_missing.ron
+
+Failed in:
+  trait opendal_core::raw::PathQuery, previously in file /work/opendal-core-0.57.0/src/raw/path_cache.rs:29
+  trait opendal_core::raw::AccessDyn, previously in file /work/opendal-core-0.57.0/src/raw/accessor.rs:267
+  trait opendal_core::raw::LayeredAccess, previously in file /work/opendal-core-0.57.0/src/raw/layer.rs:111
+  trait opendal_core::raw::Access, previously in file /work/opendal-core-0.57.0/src/raw/accessor.rs:60
+  trait opendal_core::raw::HttpFetch, previously in file /work/opendal-core-0.57.0/src/raw/http_util/client.rs:156
+
+--- failure trait_removed_associated_type: trait's associated type was removed ---
+
+Description:
+A public trait's associated type was removed or renamed.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_removed_associated_type.ron
+
+Failed in:
+  associated type Layer::LayeredAccess, previously at /work/opendal-core-0.57.0/src/raw/layer.rs:102
+
+--- failure type_allows_fewer_generic_type_params: type now allows fewer generic type parameters ---
+
+Description:
+A type now allows fewer generic type parameters than it used to. Uses of this type that supplied all previously-supported generic types will be broken.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-parameter-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/type_allows_fewer_generic_type_params.ron
+
+Failed in:
+  Struct FlatLister allows 2 -> 1 generic types in /work/opendal-core-0.58.0/src/raw/oio/list/flat_list.rs:59
+
+--- failure type_method_marked_deprecated: type method #[deprecated] added ---
+
+Description:
+A type method is now #[deprecated]. Downstream crates will get a compiler warning when using this method.
+        ref: https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-deprecated-attribute
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/type_method_marked_deprecated.ron
+
+Failed in:
+  method opendal_core::Operator::from_inner in /work/opendal-core-0.58.0/src/types/operator/operator.rs:195
+
+    Building opendal-core v0.58.0 (current)
+       Built [   7.738s] (current)
+     Parsing opendal-core v0.58.0 (current)
+      Parsed [   0.027s] (current)
+    Building opendal-core v0.57.0 (baseline)
+       Built [  20.106s] (baseline)
+     Parsing opendal-core v0.57.0 (baseline)
+      Parsed [   0.025s] (baseline)
+    Checking opendal-core v0.57.0 -> v0.58.0 (assume patch change)
+     Checked [   0.054s] 229 checks: 210 pass, 19 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 18 major and 1 minor checks failed
+    Finished [  28.442s] opendal-core

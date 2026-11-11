@@ -1,0 +1,13 @@
+
+    Building kitten-anno-lib v0.3.2 (current)
+       Built [   0.944s] (current)
+     Parsing kitten-anno-lib v0.3.2 (current)
+      Parsed [   0.001s] (current)
+    Building kitten-anno-lib v0.3.1 (baseline)
+       Built [   0.870s] (baseline)
+     Parsing kitten-anno-lib v0.3.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking kitten-anno-lib v0.3.1 -> v0.3.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   2.110s] kitten-anno-lib

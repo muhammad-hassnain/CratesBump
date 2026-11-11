@@ -1,0 +1,13 @@
+
+    Building purecv v0.2.3 (current)
+       Built [   3.136s] (current)
+     Parsing purecv v0.2.3 (current)
+      Parsed [   0.003s] (current)
+    Building purecv v0.2.2 (baseline)
+       Built [   3.213s] (baseline)
+     Parsing purecv v0.2.2 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking purecv v0.2.2 -> v0.2.3 (assume patch change)
+     Checked [   0.033s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.536s] purecv

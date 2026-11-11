@@ -1,0 +1,25 @@
+package,prev,curr,shipped,verdict,compile_break,reason_kind,reason
+qbsdiff,1.1.2,1.2.0,minor,genuine,,,public items removed
+redis-event,1.1.0,1.2.0,minor,genuine,,,public struct field removed / struct gained a field
+rmuxinator,3.0.0,3.1.0,minor,genuine,,,derive removed and exhaustive enum gained a variant
+rustitude-core,3.3.0,3.4.0,minor,genuine,,,exhaustive struct gained a field and enum gained a variant
+shah,1.25.0,1.26.0,minor,genuine,,,enum variants removed and generic parameters added
+tiger-lib,0.8.11,0.8.12,minor,genuine,,,enum variant removed and method signatures changed
+zoi-install,1.23.4,1.24.0,minor,genuine,,,public functions and modules removed
+typeables,1.1.0,1.2.0,minor,genuine,,,public modules removed
+ddk-dlc,1.0.11,1.1.0,minor,genuine,,,function parameter count changed
+grimoire_css,1.7.1,1.8.0,minor,genuine,,,exhaustive struct gained a public field
+fast-able,1.18.8,1.18.9,patch,genuine,,,inherent method removed
+parse-sap-odata,1.1.12,1.1.13,patch,genuine,,,public function and struct removed
+noxu-txn,6.4.1,6.4.2,patch,genuine,,,exhaustive enum gained a variant
+lady-deirdre,2.0.1,2.1.0,minor,harmless,no,discriminant_only,only implicit enum discriminants changed
+ss58-registry,1.36.0,1.37.0,minor,harmless,no,discriminant_only,only implicit enum discriminants changed
+resext,1.1.0,1.2.0,minor,harmless,no,private_module,trait in a __private macro-support module
+pitchfork-cli,2.12.1,2.13.0,minor,harmless,,cli_incidental_lib,CLI crate whose library is incidental; no dependents
+git-ar,0.1.62,0.1.63,minor,harmless,,cli_incidental_lib,CLI crate whose library is incidental; no dependents
+soroban-cli,23.1.2,23.1.3,patch,harmless,,cli_incidental_lib,CLI crate whose library is incidental; no dependents
+ids-apis,1.0.345,1.0.346,patch,harmless,,generated,generated API bindings
+google-proximitybeacon1_beta1,1.0.5+20170517,1.0.6+20170517,patch,harmless,,generated,generated API bindings
+astrors,0.1.7,0.1.8,minor,harmless,no,never_linkable,extern declarations that were never linkable
+snarkvm-console-network-environment,0.16.16,0.16.17,minor,harmless,,pinned_workspace_sibling,prelude re-export reshuffle in a crate only used via = pins by its workspace siblings
+emit_batcher,0.11.0-alpha.1,0.11.1,minor,not_a_break,no,wrong_pairing,pre-release pairing bug: the correct predecessor 0.11.0 has identical source

@@ -1,0 +1,25 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field Amp2Register.descriptor_blinding_key in /work/lwk_rpc_model-0.17.0/src/request.rs:527
+  field Amp2Descriptor.descriptor_blinding_key in /work/lwk_rpc_model-0.17.0/src/request.rs:518
+
+    Building lwk_rpc_model v0.17.0 (current)
+       Built [   3.200s] (current)
+     Parsing lwk_rpc_model v0.17.0 (current)
+      Parsed [   0.006s] (current)
+    Building lwk_rpc_model v0.13.0 (baseline)
+       Built [   3.124s] (baseline)
+     Parsing lwk_rpc_model v0.13.0 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking lwk_rpc_model v0.13.0 -> v0.17.0 (assume patch change)
+     Checked [   0.017s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   6.533s] lwk_rpc_model

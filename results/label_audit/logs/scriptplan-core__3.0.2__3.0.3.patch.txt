@@ -1,0 +1,13 @@
+
+    Building scriptplan-core v3.0.3 (current)
+       Built [   6.039s] (current)
+     Parsing scriptplan-core v3.0.3 (current)
+      Parsed [   0.001s] (current)
+    Building scriptplan-core v3.0.2 (baseline)
+       Built [   5.661s] (baseline)
+     Parsing scriptplan-core v3.0.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking scriptplan-core v3.0.2 -> v3.0.3 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  12.069s] scriptplan-core

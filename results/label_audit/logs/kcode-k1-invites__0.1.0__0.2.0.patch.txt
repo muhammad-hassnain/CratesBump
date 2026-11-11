@@ -1,0 +1,34 @@
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  K1Invites::consume, previously in file /work/kcode-k1-invites-0.1.0/src/lib.rs:394
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  kcode_k1_invites::K1Invites::open takes 3 parameters in /work/kcode-k1-invites-0.1.0/src/lib.rs:370, but now takes 4 parameters in /work/kcode-k1-invites-0.2.0/src/lib.rs:137
+
+    Building kcode-k1-invites v0.2.0 (current)
+       Built [   2.747s] (current)
+     Parsing kcode-k1-invites v0.2.0 (current)
+      Parsed [   0.003s] (current)
+    Building kcode-k1-invites v0.1.0 (baseline)
+       Built [   2.643s] (baseline)
+     Parsing kcode-k1-invites v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking kcode-k1-invites v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   5.621s] kcode-k1-invites

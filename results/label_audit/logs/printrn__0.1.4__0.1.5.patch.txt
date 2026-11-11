@@ -1,0 +1,13 @@
+
+    Building printrn v0.1.5 (current)
+       Built [   0.096s] (current)
+     Parsing printrn v0.1.5 (current)
+      Parsed [   0.001s] (current)
+    Building printrn v0.1.4 (baseline)
+       Built [   0.103s] (baseline)
+     Parsing printrn v0.1.4 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking printrn v0.1.4 -> v0.1.5 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.337s] printrn

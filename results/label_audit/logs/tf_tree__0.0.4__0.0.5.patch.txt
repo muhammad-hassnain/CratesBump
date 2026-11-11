@@ -1,0 +1,24 @@
+
+--- failure enum_variant_missing: pub enum variant removed or renamed ---
+
+Description:
+A publicly-visible enum has at least one variant that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_missing.ron
+
+Failed in:
+  variant OpenError::TakeoverUnsupported, previously in file /work/tf_tree-0.0.4/src/open.rs:587
+
+    Building tf_tree v0.0.5 (current)
+       Built [   3.809s] (current)
+     Parsing tf_tree v0.0.5 (current)
+      Parsed [   0.003s] (current)
+    Building tf_tree v0.0.4 (baseline)
+       Built [   4.266s] (baseline)
+     Parsing tf_tree v0.0.4 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking tf_tree v0.0.4 -> v0.0.5 (assume patch change)
+     Checked [   0.020s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   8.343s] tf_tree

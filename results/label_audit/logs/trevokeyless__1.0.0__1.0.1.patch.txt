@@ -1,0 +1,13 @@
+
+    Building trevokeyless v1.0.1 (current)
+       Built [   8.877s] (current)
+     Parsing trevokeyless v1.0.1 (current)
+      Parsed [   0.003s] (current)
+    Building trevokeyless v1.0.0 (baseline)
+       Built [   6.989s] (baseline)
+     Parsing trevokeyless v1.0.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking trevokeyless v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.017s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  16.205s] trevokeyless

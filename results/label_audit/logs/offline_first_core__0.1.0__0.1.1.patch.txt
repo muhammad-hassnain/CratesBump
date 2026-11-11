@@ -1,0 +1,13 @@
+
+    Building offline_first_core v0.1.1 (current)
+       Built [   3.290s] (current)
+     Parsing offline_first_core v0.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building offline_first_core v0.1.0 (baseline)
+       Built [   3.373s] (baseline)
+     Parsing offline_first_core v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking offline_first_core v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.827s] offline_first_core

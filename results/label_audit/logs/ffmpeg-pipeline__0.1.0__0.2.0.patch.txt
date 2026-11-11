@@ -1,0 +1,77 @@
+
+    Building ffmpeg-pipeline v0.2.0 (current)
+error: running cargo-doc on crate 'ffmpeg-pipeline' failed with output:
+-----
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling libc v0.2.191
+   Compiling glob v0.3.4
+   Compiling clang-sys v1.9.1
+   Compiling regex-syntax v0.8.11
+   Compiling syn v2.0.119
+   Compiling minimal-lexical v0.2.1
+   Compiling cfg-if v1.0.5
+   Compiling memchr v2.8.3
+   Compiling nom v7.1.3
+   Compiling regex-automata v0.4.18
+   Compiling libloading v0.8.9
+   Compiling either v1.19.0
+   Compiling bindgen v0.70.1
+   Compiling regex v1.13.1
+   Compiling itertools v0.13.0
+   Compiling cexpr v0.6.0
+   Compiling shlex v1.3.0
+   Compiling shlex v2.0.1
+   Compiling rustc-hash v1.1.0
+   Compiling bitflags v2.13.2
+   Compiling find-msvc-tools v0.1.15
+   Compiling num_cpus v1.17.0
+   Compiling cc v1.11.1
+   Compiling pkg-config v0.3.34
+   Compiling serde_core v1.0.229
+   Compiling syn v3.0.9
+   Compiling thiserror v1.0.69
+   Compiling serde v1.0.229
+   Compiling ffmpeg-next v7.1.0
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v1.0.69
+   Compiling ffmpeg-sys-next v7.1.3
+    Checking log v0.4.35
+error: failed to run custom build command for `ffmpeg-sys-next v7.1.3`
+
+Caused by:
+  process didn't exit successfully: `/work/ffmpeg-pipeline-0.2.0/target/semver-checks/local-ffmpeg_pipeline-0_2_0-x86_64_unknown_linux_gnu-97fb41bae2d2936d/target/debug/build/ffmpeg-sys-next-addfba8d3bd3abab/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rustc-link-search=native=/work/ffmpeg-pipeline-0.2.0/target/semver-checks/local-ffmpeg_pipeline-0_2_0-x86_64_unknown_linux_gnu-97fb41bae2d2936d/target/debug/build/ffmpeg-sys-next-e59d6e559c8d2afd/out/dist/lib
+  cargo:rustc-link-lib=static=avcodec
+  cargo:rustc-link-lib=static=avfilter
+  cargo:rustc-link-lib=static=avformat
+  cargo:rustc-link-lib=static=avutil
+  cargo:rustc-link-lib=static=swresample
+  cargo:rustc-link-lib=static=swscale
+  cargo:rustc-link-arg=-Wl,--no-as-needed
+
+  --- stderr
+  Cloning into 'ffmpeg-7.1'...
+  fatal: unable to access 'https://github.com/FFmpeg/FFmpeg/': Could not resolve host: github.com
+
+  thread 'main' (759) panicked at /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ffmpeg-sys-next-7.1.3/build.rs:922:21:
+  called `Result::unwrap()` on an `Err` value: Custom { kind: Other, error: "fetch failed" }
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
+
+-----
+
+error: failed to build rustdoc for crate ffmpeg-pipeline v0.2.0
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/ffmpeg-pipeline-0.2.0 --features build-from-source,default &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate ffmpeg-pipeline v0.2.0

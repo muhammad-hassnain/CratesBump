@@ -1,0 +1,13 @@
+
+    Building html_stack v1.0.1 (current)
+       Built [   0.114s] (current)
+     Parsing html_stack v1.0.1 (current)
+      Parsed [   0.001s] (current)
+    Building html_stack v1.0.0 (baseline)
+       Built [   0.113s] (baseline)
+     Parsing html_stack v1.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking html_stack v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.382s] html_stack

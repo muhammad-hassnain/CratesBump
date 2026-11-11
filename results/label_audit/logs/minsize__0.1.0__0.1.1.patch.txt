@@ -1,0 +1,24 @@
+
+--- failure inherent_method_must_use_added: inherent method #[must_use] added ---
+
+Description:
+An inherent method is now #[must_use]. Downstream crates that did not use its return value will get a compiler lint.
+        ref: https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-must_use-attribute
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_must_use_added.ron
+
+Failed in:
+  method minsize::MinSizedVec::into_inner in /work/minsize-0.1.1/src/lib.rs:127
+
+    Building minsize v0.1.1 (current)
+       Built [   1.104s] (current)
+     Parsing minsize v0.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building minsize v0.1.0 (baseline)
+       Built [   1.102s] (baseline)
+     Parsing minsize v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking minsize v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.012s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new minor version: 0 major and 1 minor checks failed
+    Finished [   2.373s] minsize

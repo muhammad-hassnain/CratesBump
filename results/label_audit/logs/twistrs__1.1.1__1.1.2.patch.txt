@@ -1,0 +1,13 @@
+
+    Building twistrs v1.1.2 (current)
+       Built [   4.473s] (current)
+     Parsing twistrs v1.1.2 (current)
+      Parsed [   0.004s] (current)
+    Building twistrs v1.1.1 (baseline)
+       Built [   4.134s] (baseline)
+     Parsing twistrs v1.1.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking twistrs v1.1.1 -> v1.1.2 (assume patch change)
+     Checked [   0.024s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   8.832s] twistrs

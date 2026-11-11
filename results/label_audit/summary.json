@@ -1,0 +1,214 @@
+{
+  "dataset": "x",
+  "n_sampled": 450,
+  "sampling": "450 pairs from 450 distinct crates; at most one pair per crate per Cargo label",
+  "outcomes": {
+    "tool_error": 144,
+    "shipped_higher": 136,
+    "agree": 138,
+    "shipped_lower": 31,
+    "download_failed": 1
+  },
+  "n_evaluated": 305,
+  "evaluated_rate": 0.6778,
+  "declared_vs_required": {
+    "agree": 138,
+    "shipped_higher": 136,
+    "shipped_lower_flags": 31
+  },
+  "by_shipped_class": {
+    "major": {
+      "evaluated": 101,
+      "shipped_higher": 57,
+      "agree": 44
+    },
+    "minor": {
+      "evaluated": 101,
+      "shipped_higher": 79,
+      "shipped_lower": 21,
+      "agree": 1
+    },
+    "patch": {
+      "evaluated": 103,
+      "agree": 93,
+      "shipped_lower": 10
+    }
+  },
+  "flags": {
+    "minor": {
+      "k": 21,
+      "n": 101,
+      "rate": 0.2079,
+      "wilson95": [
+        0.1402,
+        0.297
+      ]
+    },
+    "patch": {
+      "k": 10,
+      "n": 103,
+      "rate": 0.0971,
+      "wilson95": [
+        0.0536,
+        0.1696
+      ]
+    },
+    "minor_plus_patch": {
+      "k": 31,
+      "n": 204,
+      "rate": 0.152,
+      "wilson95": [
+        0.1092,
+        0.2076
+      ]
+    },
+    "flagged_minor_that_are_0y_patch_number_bumps": 19,
+    "still_flagged_with_default_features": 31,
+    "no_verdict_with_default_features": 0,
+    "lints_0_22_only": {
+      "minor": {
+        "k": 16,
+        "n": 101,
+        "rate": 0.1584,
+        "wilson95": [
+          0.0999,
+          0.2419
+        ]
+      },
+      "patch": {
+        "k": 8,
+        "n": 103,
+        "rate": 0.0777,
+        "wilson95": [
+          0.0399,
+          0.1458
+        ]
+      }
+    }
+  },
+  "tool_error_kinds": {
+    "no_lib_target": 71,
+    "fetch_failed": 15,
+    "build_failed": 57,
+    "offline_resolution": 1
+  },
+  "by_version_range": {
+    "pre_1.0": {
+      "shipped_higher": 126,
+      "agree": 39,
+      "shipped_lower": 19
+    },
+    "stable": {
+      "shipped_higher": 10,
+      "agree": 99,
+      "shipped_lower": 12
+    }
+  },
+  "sandbox": {
+    "image": "cratesbump-audit:0.51.0",
+    "cpus": 3,
+    "memory": "6g",
+    "network_during_build": "none"
+  },
+  "confirmed": {
+    "hand_reviewed": 31,
+    "flagged_without_review": 0,
+    "genuine": {
+      "minor": {
+        "k": 15,
+        "n": 101,
+        "rate": 0.1485,
+        "wilson95": [
+          0.0921,
+          0.2307
+        ]
+      },
+      "patch": {
+        "k": 9,
+        "n": 103,
+        "rate": 0.0874,
+        "wilson95": [
+          0.0467,
+          0.1578
+        ]
+      },
+      "minor_plus_patch": {
+        "k": 24,
+        "n": 204,
+        "rate": 0.1176,
+        "wilson95": [
+          0.0803,
+          0.1691
+        ]
+      }
+    },
+    "stops_code_compiling": {
+      "minor": {
+        "k": 11,
+        "n": 101,
+        "rate": 0.1089,
+        "wilson95": [
+          0.0619,
+          0.1846
+        ]
+      },
+      "patch": {
+        "k": 9,
+        "n": 103,
+        "rate": 0.0874,
+        "wilson95": [
+          0.0467,
+          0.1578
+        ]
+      },
+      "minor_plus_patch": {
+        "k": 20,
+        "n": 204,
+        "rate": 0.098,
+        "wilson95": [
+          0.0644,
+          0.1466
+        ]
+      }
+    },
+    "per_crate_minor_plus_patch": {
+      "k": 24,
+      "n": 204,
+      "rate": 0.1176,
+      "wilson95": [
+        0.0803,
+        0.1691
+      ]
+    },
+    "genuine_with_0_22_lints": {
+      "minor": {
+        "k": 13,
+        "n": 101,
+        "rate": 0.1287,
+        "wilson95": [
+          0.0768,
+          0.2078
+        ]
+      },
+      "patch": {
+        "k": 7,
+        "n": 103,
+        "rate": 0.068,
+        "wilson95": [
+          0.0333,
+          0.1337
+        ]
+      }
+    },
+    "genuine_minor_that_are_0y_patch_number_bumps": 13,
+    "not_genuine_reasons": {
+      "harmless: extension_trait": 1,
+      "harmless: generated": 1,
+      "harmless: theoretical_only": 1,
+      "harmless: generic_params_inferred": 1,
+      "harmless: cli_incidental_lib": 2,
+      "not_a_break: cross_crate_reexport": 1
+    }
+  },
+  "note": "Tool reads only the public API. shipped_higher is expected (features, behaviour changes, unlinted changes). shipped_lower is a flag; 'confirmed' counts flags that a hand review of both versions' source found to be genuine breaks."
+}

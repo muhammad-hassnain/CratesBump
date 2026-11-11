@@ -1,0 +1,13 @@
+
+    Building nest-rs-opentelemetry v1.1.1 (current)
+       Built [  52.316s] (current)
+     Parsing nest-rs-opentelemetry v1.1.1 (current)
+      Parsed [   0.005s] (current)
+    Building nest-rs-opentelemetry v1.1.0 (baseline)
+       Built [  41.692s] (baseline)
+     Parsing nest-rs-opentelemetry v1.1.0 (baseline)
+      Parsed [   0.007s] (baseline)
+    Checking nest-rs-opentelemetry v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  95.092s] nest-rs-opentelemetry

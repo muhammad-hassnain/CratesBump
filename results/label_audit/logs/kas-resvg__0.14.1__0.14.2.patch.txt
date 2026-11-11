@@ -1,0 +1,370 @@
+
+    Building kas-resvg v0.14.2 (current)
+error: running cargo-doc on crate 'kas-resvg' failed with output:
+-----
+   Compiling version_check v0.9.5
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+    Checking cfg-if v1.0.5
+   Compiling libc v0.2.191
+    Checking log v0.4.35
+    Checking parking v2.2.1
+    Checking pin-project-lite v0.2.17
+    Checking simd-adler32 v0.3.10
+    Checking bytemuck v1.25.2
+   Compiling crossbeam-utils v0.8.23
+   Compiling syn v2.0.119
+    Checking adler2 v2.0.1
+    Checking bitflags v1.3.2
+   Compiling crc32fast v1.5.4
+    Checking float-cmp v0.9.0
+    Checking arrayvec v0.7.8
+    Checking strict-num v0.1.1
+    Checking arrayref v0.3.9
+    Checking futures-core v0.3.34
+    Checking futures-io v0.3.34
+    Checking fastrand v2.5.0
+    Checking concurrent-queue v2.5.0
+    Checking tiny-skia-path v0.11.4
+    Checking kurbo v0.9.5
+    Checking miniz_oxide v0.9.1
+    Checking event-listener v5.4.2
+   Compiling slotmap v1.1.1
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling rustix v1.1.6
+    Checking unicode-bidi-mirroring v0.1.0
+   Compiling winnow v1.0.5
+    Checking siphasher v0.3.11
+   Compiling equivalent v1.0.3
+   Compiling syn v1.0.109
+    Checking smallvec v1.16.4
+   Compiling hashbrown v0.17.1
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling indexmap v2.14.2
+    Checking svgtypes v0.12.0
+    Checking flate2 v1.1.11
+    Checking event-listener-strategy v0.5.4
+    Checking futures-lite v2.6.1
+   Compiling proc-macro-error v1.0.4
+   Compiling toml_datetime v1.1.3+spec-1.1.0
+    Checking linux-raw-sys v0.12.1
+    Checking unicode-bidi v0.3.18
+    Checking roxmltree v0.20.0
+   Compiling autocfg v1.5.1
+    Checking ttf-parser v0.19.2
+    Checking rctree v0.5.0
+    Checking bitflags v2.13.2
+    Checking usvg-tree v0.36.0
+   Compiling async-io v2.6.0
+    Checking fontconfig-parser v0.5.8
+   Compiling toml_edit v0.25.19+spec-1.1.0
+    Checking memmap2 v0.8.0
+    Checking unicode-script v0.5.9
+    Checking slab v0.4.12
+    Checking tinyvec v1.13.3
+    Checking async-task v4.7.1
+    Checking atomic-waker v1.1.2
+    Checking unicode-properties v0.1.5
+   Compiling thiserror v1.0.69
+   Compiling rustversion v1.0.23
+    Checking unicode-ccc v0.1.2
+    Checking xmlparser v0.13.6
+    Checking rustybuzz v0.10.0
+    Checking roxmltree v0.18.1
+    Checking fontdb v0.15.0
+    Checking piper v0.2.5
+    Checking polling v3.11.0
+   Compiling proc-macro-crate v3.5.0
+   Compiling thiserror-impl v1.0.69
+    Checking async-channel v2.5.0
+    Checking memmap2 v0.5.10
+    Checking miniz_oxide v0.8.9
+    Checking fdeflate v0.3.7
+    Checking simplecss v0.2.2
+    Checking unicode-vo v0.1.0
+    Checking imagesize v0.12.0
+    Checking ttf-parser v0.17.1
+    Checking data-url v0.3.2
+   Compiling cfg_aliases v0.1.1
+   Compiling kas-core v0.14.1
+    Checking usvg-parser v0.36.0
+    Checking usvg-text-layout v0.36.0
+    Checking png v0.17.16
+    Checking blocking v1.7.0
+   Compiling num_enum_derive v0.7.6
+    Checking fontdb v0.10.0
+   Compiling impl-tools-lib v0.10.0
+    Checking async-executor v1.14.1
+    Checking async-lock v3.5.0
+    Checking xmlwriter v0.1.0
+    Checking weezl v0.1.12
+    Checking xi-unicode v0.3.0
+    Checking base64 v0.21.7
+    Checking lazy_static v1.5.1
+    Checking once_cell v1.21.4
+    Checking easy-cast v0.5.5
+    Checking pico-args v0.5.0
+    Checking color_quant v1.1.0
+    Checking gif v0.12.0
+   Compiling kas-macros v0.14.1
+    Checking usvg v0.36.0
+    Checking async-global-executor v2.4.1
+    Checking kas-text v0.6.0
+    Checking num_enum v0.7.6
+    Checking tiny-skia v0.11.4
+    Checking rgb v0.8.53
+    Checking linear-map v1.2.0
+    Checking smol_str v0.2.2
+    Checking jpeg-decoder v0.3.2
+    Checking unicode-segmentation v1.13.3
+    Checking raw-window-handle v0.5.2
+    Checking resvg v0.36.0
+error: Kas without winit is not currently supported
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/enums.rs:12:1
+   |
+12 | compile_error!("Kas without winit is not currently supported");
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0432]: unresolved imports `crate::app::AppShared`, `crate::app::WindowDataErased`
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:22:18
+   |
+22 | use crate::app::{AppShared, Platform, WindowDataErased};
+   |                  ^^^^^^^^^            ^^^^^^^^^^^^^^^^ no `WindowDataErased` in `app`
+   |                  |
+   |                  no `AppShared` in `app`
+   |
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/app/mod.rs:18:39
+   |
+18 | #[cfg(winit)] pub(crate) use shared::{AppShared, AppState};
+   |       ----- the item is gated here    ^^^^^^^^^
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/app/mod.rs:20:33
+   |
+19 | #[cfg(winit)]
+   |       ----- the item is gated here
+20 | pub(crate) use window::{Window, WindowDataErased};
+   |                                 ^^^^^^^^^^^^^^^^
+
+error[E0433]: cannot find module or crate `winit` in this scope
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/config/shortcuts.rs:11:5
+   |
+11 | use winit::keyboard::NamedKey;
+   |     ^^^^^ use of unresolved module or unlinked crate `winit`
+   |
+   = help: if you wanted to use a crate named `winit`, use `cargo add winit` to add it to your `Cargo.toml`
+
+error[E0432]: unresolved import `crate::event::Key`
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/config/shortcuts.rs:8:29
+   |
+ 8 | use crate::event::{Command, Key, ModifiersState};
+   |                             ^^^ no `Key` in `event`
+   |
+   = help: consider importing one of these variants instead:
+           crate::event::FocusSource::Key
+           crate::prelude::Event::Key
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/mod.rs:71:27
+   |
+70 | #[cfg(winit)]
+   |       ----- the item is gated here
+71 | pub use winit::keyboard::{Key, ModifiersState, NamedKey, PhysicalKey};
+   |                           ^^^
+
+error[E0432]: unresolved imports `super::Key`, `super::KeyEvent`, `super::NamedKey`, `super::PhysicalKey`
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/events.rs:13:13
+   |
+13 | use super::{Key, KeyEvent, NamedKey, PhysicalKey, Press};
+   |             ^^^  ^^^^^^^^  ^^^^^^^^  ^^^^^^^^^^^ no `PhysicalKey` in `event`
+   |             |    |         |
+   |             |    |         no `NamedKey` in `event`
+   |             |    no `KeyEvent` in `event`
+   |             no `Key` in `event`
+   |
+   = help: consider importing one of these variants instead:
+           crate::event::FocusSource::Key
+           crate::prelude::Event::Key
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/mod.rs:71:27
+   |
+70 | #[cfg(winit)]
+   |       ----- the item is gated here
+71 | pub use winit::keyboard::{Key, ModifiersState, NamedKey, PhysicalKey};
+   |                           ^^^
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/mod.rs:69:38
+   |
+68 | #[cfg(winit)]
+   |       ----- the item is gated here
+69 | pub use winit::event::{ElementState, KeyEvent, MouseButton};
+   |                                      ^^^^^^^^
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/mod.rs:71:48
+   |
+70 | #[cfg(winit)]
+   |       ----- the item is gated here
+71 | pub use winit::keyboard::{Key, ModifiersState, NamedKey, PhysicalKey};
+   |                                                ^^^^^^^^
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/mod.rs:71:58
+   |
+70 | #[cfg(winit)]
+   |       ----- the item is gated here
+71 | pub use winit::keyboard::{Key, ModifiersState, NamedKey, PhysicalKey};
+   |                                                          ^^^^^^^^^^^
+
+error[E0432]: unresolved import `crate::event::PhysicalKey`
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/messages.rs:14:5
+   |
+14 | use crate::event::PhysicalKey;
+   |     ^^^^^^^^^^^^^^-----------
+   |                   |
+   |                   no `PhysicalKey` in `event`
+   |
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/mod.rs:71:58
+   |
+70 | #[cfg(winit)]
+   |       ----- the item is gated here
+71 | pub use winit::keyboard::{Key, ModifiersState, NamedKey, PhysicalKey};
+   |                                                          ^^^^^^^^^^^
+
+error[E0432]: unresolved import `crate::event::Key`
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/text/string.rs:15:5
+   |
+15 | use crate::event::Key;
+   |     ^^^^^^^^^^^^^^---
+   |                   |
+   |                   no `Key` in `event`
+   |
+note: found an item that was configured out
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/mod.rs:71:27
+   |
+70 | #[cfg(winit)]
+   |       ----- the item is gated here
+71 | pub use winit::keyboard::{Key, ModifiersState, NamedKey, PhysicalKey};
+   |                           ^^^
+help: consider importing one of these variants instead
+   |
+15 | use crate::event::FocusSource::Key;
+   |                   +++++++++++++
+15 - use crate::event::Key;
+15 + use crate::prelude::Event::Key;
+   |
+
+error[E0433]: cannot find module or crate `winit` in this scope
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/app/common.rs:33:23
+   |
+33 |     EventLoop(#[from] winit::error::EventLoopError),
+   |                       ^^^^^ use of unresolved module or unlinked crate `winit`
+   |
+   = help: if you wanted to use a crate named `winit`, use `cargo add winit` to add it to your `Cargo.toml`
+
+error[E0433]: cannot find module or crate `winit` in this scope
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/app/common.rs:36:11
+   |
+36 | impl From<winit::error::OsError> for Error {
+   |           ^^^^^ use of unresolved module or unlinked crate `winit`
+   |
+   = help: if you wanted to use a crate named `winit`, use `cargo add winit` to add it to your `Cargo.toml`
+
+error[E0433]: cannot find module or crate `winit` in this scope
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/app/common.rs:37:20
+   |
+37 |     fn from(error: winit::error::OsError) -> Self {
+   |                    ^^^^^ use of unresolved module or unlinked crate `winit`
+   |
+   = help: if you wanted to use a crate named `winit`, use `cargo add winit` to add it to your `Cargo.toml`
+
+error[E0433]: cannot find module or crate `winit` in this scope
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/app/common.rs:38:26
+   |
+38 |         Error::EventLoop(winit::error::EventLoopError::Os(error))
+   |                          ^^^^^ use of unresolved module or unlinked crate `winit`
+   |
+   = help: if you wanted to use a crate named `winit`, use `cargo add winit` to add it to your `Cargo.toml`
+
+error[E0425]: cannot find type `Key` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/cx_pub.rs:363:52
+    |
+363 |     pub fn add_access_key(&mut self, id: &Id, key: Key) {
+    |                                                    ^^^ not found in this scope
+
+error[E0425]: cannot find type `PhysicalKey` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/cx_pub.rs:379:54
+    |
+379 |     pub fn depress_with_key(&mut self, id: Id, code: PhysicalKey) {
+    |                                                      ^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find type `Key` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:168:35
+    |
+168 | type AccessLayer = (bool, HashMap<Key, Id>);
+    |                                   ^^^ not found in this scope
+
+error[E0425]: cannot find type `PhysicalKey` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:202:28
+    |
+202 |     key_depress: LinearMap<PhysicalKey, Id>,
+    |                            ^^^^^^^^^^^ not found in this scope
+    |
+help: you might be missing a type parameter
+    |
+188 | pub struct EventState<PhysicalKey> {
+    |                      +++++++++++++
+
+error[E0425]: cannot find type `Key` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:390:63
+    |
+390 |     fn start_key_event(&mut self, mut widget: Node<'_>, vkey: Key, code: PhysicalKey) {
+    |                                                               ^^^ not found in this scope
+
+error[E0425]: cannot find type `PhysicalKey` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:390:74
+    |
+390 |     fn start_key_event(&mut self, mut widget: Node<'_>, vkey: Key, code: PhysicalKey) {
+    |                                                                          ^^^^^^^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Key` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:480:52
+    |
+480 |         } else if self.config.nav_focus && vkey == Key::Named(NamedKey::Tab) {
+    |                                                    ^^^ use of undeclared type `Key`
+
+error[E0433]: cannot find type `Key` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:483:27
+    |
+483 |         } else if vkey == Key::Named(NamedKey::Escape) {
+    |                           ^^^ use of undeclared type `Key`
+
+error[E0433]: cannot find type `NamedKey` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:480:63
+    |
+480 |         } else if self.config.nav_focus && vkey == Key::Named(NamedKey::Tab) {
+    |                                                               ^^^^^^^^ use of undeclared type `NamedKey`
+
+error[E0433]: cannot find type `NamedKey` in this scope
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/kas-core-0.14.1/src/event/cx/mod.rs:483:38
+    |
+483 |         } else if vkey == Key::Named(NamedKey::Escape) {
+    |                                      ^^^^^^^^ use of undeclared type `NamedKey`
+
+Some errors have detailed explanations: E0425, E0432, E0433.
+For more information about an error, try `rustc --explain E0425`.
+error: could not compile `kas-core` (lib) due to 21 previous errors
+
+-----
+
+error: failed to build rustdoc for crate kas-resvg v0.14.2
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/kas-resvg-0.14.2 --features svg &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate kas-resvg v0.14.2

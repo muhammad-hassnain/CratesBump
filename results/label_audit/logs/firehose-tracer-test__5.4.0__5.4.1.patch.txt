@@ -1,0 +1,13 @@
+
+    Building firehose-tracer-test v5.4.1 (current)
+       Built [  11.654s] (current)
+     Parsing firehose-tracer-test v5.4.1 (current)
+      Parsed [   0.005s] (current)
+    Building firehose-tracer-test v5.4.0 (baseline)
+       Built [  11.660s] (baseline)
+     Parsing firehose-tracer-test v5.4.0 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking firehose-tracer-test v5.4.0 -> v5.4.1 (assume patch change)
+     Checked [   0.026s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  24.115s] firehose-tracer-test

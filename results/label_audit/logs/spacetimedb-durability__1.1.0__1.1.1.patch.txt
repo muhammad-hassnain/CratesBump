@@ -1,0 +1,13 @@
+
+    Building spacetimedb-durability v1.1.1 (current)
+       Built [  13.716s] (current)
+     Parsing spacetimedb-durability v1.1.1 (current)
+      Parsed [   0.002s] (current)
+    Building spacetimedb-durability v1.1.0 (baseline)
+       Built [  16.204s] (baseline)
+     Parsing spacetimedb-durability v1.1.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking spacetimedb-durability v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  30.380s] spacetimedb-durability

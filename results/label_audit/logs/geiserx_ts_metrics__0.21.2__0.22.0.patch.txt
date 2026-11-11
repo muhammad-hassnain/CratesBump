@@ -1,0 +1,13 @@
+
+    Building geiserx_ts_metrics v0.22.0 (current)
+       Built [   0.127s] (current)
+     Parsing geiserx_ts_metrics v0.22.0 (current)
+      Parsed [   0.001s] (current)
+    Building geiserx_ts_metrics v0.21.2 (baseline)
+       Built [   0.116s] (baseline)
+     Parsing geiserx_ts_metrics v0.21.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking geiserx_ts_metrics v0.21.2 -> v0.22.0 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.376s] geiserx_ts_metrics

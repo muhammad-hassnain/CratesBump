@@ -1,0 +1,48 @@
+
+--- failure inherent_method_const_removed: pub method is no longer const ---
+
+Description:
+A publicly-visible method or associated fn is no longer `const` and can no longer be used in a `const` context.
+        ref: https://doc.rust-lang.org/reference/const_eval.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_const_removed.ron
+
+Failed in:
+  U192::is_zero in /work/jet-proto-math-1.0.4/src/number.rs:13
+  U192::one in /work/jet-proto-math-1.0.4/src/number.rs:13
+  U192::max_value in /work/jet-proto-math-1.0.4/src/number.rs:13
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  U192::from_str_radix, previously in file /work/jet-proto-math-1.0.2/src/number.rs:13
+  U192::integer_sqrt, previously in file /work/jet-proto-math-1.0.2/src/number.rs:13
+  U192::abs_diff, previously in file /work/jet-proto-math-1.0.2/src/number.rs:13
+
+--- failure repr_align_added: repr(align) added ---
+
+Description:
+repr(align(N)) was added to a type. This changes its alignment and prevents it from being used inside repr(packed) types.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#repr-align-add
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/repr_align_added.ron
+
+Failed in:
+  struct Number128 in /work/jet-proto-math-1.0.4/src/number_128.rs:27
+
+    Building jet-proto-math v1.0.4 (current)
+       Built [   2.852s] (current)
+     Parsing jet-proto-math v1.0.4 (current)
+      Parsed [   0.005s] (current)
+    Building jet-proto-math v1.0.2 (baseline)
+       Built [   2.867s] (baseline)
+     Parsing jet-proto-math v1.0.2 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking jet-proto-math v1.0.2 -> v1.0.4 (assume patch change)
+     Checked [   0.019s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [   5.966s] jet-proto-math

@@ -1,0 +1,41 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field AdaptiveStreamingGMMTrained.drift_running_mean in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:174
+  field AdaptiveStreamingGMMTrained.drift_min_cumsum in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:176
+  field AdaptiveStreamingGMMTrained.consecutive_outliers in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:179
+  field AdaptiveStreamingGMMTrained.n_iter in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:181
+  field AdaptiveStreamingGMMTrained.converged in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:183
+  field AdaptiveStreamingGMMTrained.drift_running_mean in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:174
+  field AdaptiveStreamingGMMTrained.drift_min_cumsum in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:176
+  field AdaptiveStreamingGMMTrained.consecutive_outliers in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:179
+  field AdaptiveStreamingGMMTrained.n_iter in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:181
+  field AdaptiveStreamingGMMTrained.converged in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:183
+  field AdaptiveStreamingConfig.max_iter in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:86
+  field AdaptiveStreamingConfig.tol in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:89
+  field AdaptiveStreamingConfig.reg_covar in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:91
+  field AdaptiveStreamingConfig.max_iter in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:86
+  field AdaptiveStreamingConfig.tol in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:89
+  field AdaptiveStreamingConfig.reg_covar in /work/sklears-mixture-0.2.0/src/adaptive_streaming.rs:91
+  field LaplaceGMMTrained.log_likelihood in /work/sklears-mixture-0.2.0/src/approximation.rs:120
+  field LaplaceGMMTrained.log_likelihood in /work/sklears-mixture-0.2.0/src/approximation.rs:120
+
+    Building sklears-mixture v0.2.0 (current)
+       Built [  47.753s] (current)
+     Parsing sklears-mixture v0.2.0 (current)
+      Parsed [   0.039s] (current)
+    Building sklears-mixture v0.1.2 (baseline)
+       Built [  38.873s] (baseline)
+     Parsing sklears-mixture v0.1.2 (baseline)
+      Parsed [   0.037s] (baseline)
+    Checking sklears-mixture v0.1.2 -> v0.2.0 (assume patch change)
+     Checked [   0.141s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  87.303s] sklears-mixture

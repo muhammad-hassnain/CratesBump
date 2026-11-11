@@ -1,0 +1,24 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field Node.tags in /work/varion-0.0.2/src/lib.rs:23
+
+    Building varion v0.0.2 (current)
+       Built [   0.131s] (current)
+     Parsing varion v0.0.2 (current)
+      Parsed [   0.001s] (current)
+    Building varion v0.0.1 (baseline)
+       Built [   0.133s] (baseline)
+     Parsing varion v0.0.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking varion v0.0.1 -> v0.0.2 (assume patch change)
+     Checked [   0.010s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.419s] varion

@@ -1,0 +1,13 @@
+
+    Building spl-token-2022-interface v3.0.1 (current)
+       Built [   6.376s] (current)
+     Parsing spl-token-2022-interface v3.0.1 (current)
+      Parsed [   0.016s] (current)
+    Building spl-token-2022-interface v3.0.0 (baseline)
+       Built [   6.659s] (baseline)
+     Parsing spl-token-2022-interface v3.0.0 (baseline)
+      Parsed [   0.022s] (baseline)
+    Checking spl-token-2022-interface v3.0.0 -> v3.0.1 (assume patch change)
+     Checked [   0.038s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  13.418s] spl-token-2022-interface

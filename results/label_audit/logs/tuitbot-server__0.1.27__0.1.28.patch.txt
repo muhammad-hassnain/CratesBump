@@ -1,0 +1,24 @@
+
+error: running 'cargo update' on crate 'tuitbot-server' failed with output:
+-----
+error: failed to select a version for the requirement `js-sys = "^0.3"`
+  version 0.3.88 is yanked
+location searched: crates.io index
+required by package `chrono v0.4.43`
+    ... which satisfies dependency `chrono = "^0.4"` of package `tuitbot-server v0.1.28 (/work/tuitbot-server-0.1.28)`
+    ... which satisfies path dependency `tuitbot-server` of package `placeholder v0.0.0 (/work/tuitbot-server-0.1.28/target/semver-checks/local-tuitbot_server-0_1_28-x86_64_unknown_linux_gnu-53560120d24a8b67)`
+note: offline mode (via `--offline`) can sometimes cause surprising resolution failures
+help: if this error is too confusing you may wish to retry without `--offline`
+
+-----
+error: failed to update dependencies for crate tuitbot-server v0.1.28
+note: this is unlikely to be a bug in cargo-semver-checks,
+      and is probably an issue with the crate's Cargo.toml
+note: the following command can be used to reproduce the compilation error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/tuitbot-server-0.1.28 &&
+          cargo update
+
+error: aborting due to failure to run 'cargo update' for crate tuitbot-server v0.1.28

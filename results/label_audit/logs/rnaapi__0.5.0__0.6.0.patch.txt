@@ -1,0 +1,13 @@
+
+    Building rnaapi v0.6.0 (current)
+       Built [  13.835s] (current)
+     Parsing rnaapi v0.6.0 (current)
+      Parsed [   0.008s] (current)
+    Building rnaapi v0.5.0 (baseline)
+       Built [  14.775s] (baseline)
+     Parsing rnaapi v0.5.0 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking rnaapi v0.5.0 -> v0.6.0 (assume patch change)
+     Checked [   0.034s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  29.470s] rnaapi

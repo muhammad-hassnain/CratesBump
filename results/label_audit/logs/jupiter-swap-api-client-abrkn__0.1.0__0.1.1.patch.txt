@@ -1,0 +1,13 @@
+
+    Building jupiter-swap-api-client-abrkn v0.1.1 (current)
+       Built [  33.695s] (current)
+     Parsing jupiter-swap-api-client-abrkn v0.1.1 (current)
+      Parsed [   0.007s] (current)
+    Building jupiter-swap-api-client-abrkn v0.1.0 (baseline)
+       Built [  32.450s] (baseline)
+     Parsing jupiter-swap-api-client-abrkn v0.1.0 (baseline)
+      Parsed [   0.007s] (baseline)
+    Checking jupiter-swap-api-client-abrkn v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  67.372s] jupiter-swap-api-client-abrkn

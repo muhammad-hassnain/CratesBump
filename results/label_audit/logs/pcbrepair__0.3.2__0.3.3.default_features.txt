@@ -1,0 +1,24 @@
+
+--- failure copy_impl_added: type now implements Copy ---
+
+Description:
+A public type now implements Copy, causing non-move closures to capture it by reference instead of moving it.
+        ref: https://github.com/rust-lang/rust/issues/100905
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/copy_impl_added.ron
+
+Failed in:
+  pcbrepair::parser::Units in /work/pcbrepair-0.3.3/src/parser.rs:77
+
+    Building pcbrepair v0.3.3 (current)
+       Built [   0.137s] (current)
+     Parsing pcbrepair v0.3.3 (current)
+      Parsed [   0.002s] (current)
+    Building pcbrepair v0.3.2 (baseline)
+       Built [   0.131s] (baseline)
+     Parsing pcbrepair v0.3.2 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking pcbrepair v0.3.2 -> v0.3.3 (assume patch change)
+     Checked [   0.018s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.533s] pcbrepair

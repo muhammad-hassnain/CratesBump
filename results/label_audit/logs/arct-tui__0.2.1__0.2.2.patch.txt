@@ -1,0 +1,24 @@
+
+error: running 'cargo update' on crate 'arct-tui' failed with output:
+-----
+error: failed to select a version for the requirement `arct-ai = "^0.2.0"`
+  version 0.2.1 is yanked
+  version 0.2.2 is yanked
+location searched: crates.io index
+required by package `arct-tui v0.2.2 (/work/arct-tui-0.2.2)`
+    ... which satisfies path dependency `arct-tui` of package `placeholder v0.0.0 (/work/arct-tui-0.2.2/target/semver-checks/local-arct_tui-0_2_2-x86_64_unknown_linux_gnu-f7be495a4ac1473f)`
+note: offline mode (via `--offline`) can sometimes cause surprising resolution failures
+help: if this error is too confusing you may wish to retry without `--offline`
+
+-----
+error: failed to update dependencies for crate arct-tui v0.2.2
+note: this is unlikely to be a bug in cargo-semver-checks,
+      and is probably an issue with the crate's Cargo.toml
+note: the following command can be used to reproduce the compilation error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/arct-tui-0.2.2 &&
+          cargo update
+
+error: aborting due to failure to run 'cargo update' for crate arct-tui v0.2.2

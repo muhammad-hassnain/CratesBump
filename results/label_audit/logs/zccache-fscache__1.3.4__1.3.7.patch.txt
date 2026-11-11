@@ -1,0 +1,13 @@
+
+    Building zccache-fscache v1.3.7 (current)
+       Built [   8.743s] (current)
+     Parsing zccache-fscache v1.3.7 (current)
+      Parsed [   0.002s] (current)
+    Building zccache-fscache v1.3.4 (baseline)
+       Built [   8.796s] (baseline)
+     Parsing zccache-fscache v1.3.4 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking zccache-fscache v1.3.4 -> v1.3.7 (assume patch change)
+     Checked [   0.023s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  17.911s] zccache-fscache

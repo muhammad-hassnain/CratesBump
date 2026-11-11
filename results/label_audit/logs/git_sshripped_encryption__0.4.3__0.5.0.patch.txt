@@ -1,0 +1,13 @@
+
+    Building git_sshripped_encryption v0.5.0 (current)
+       Built [   3.031s] (current)
+     Parsing git_sshripped_encryption v0.5.0 (current)
+      Parsed [   0.001s] (current)
+    Building git_sshripped_encryption v0.4.3 (baseline)
+       Built [   3.055s] (baseline)
+     Parsing git_sshripped_encryption v0.4.3 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking git_sshripped_encryption v0.4.3 -> v0.5.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.283s] git_sshripped_encryption

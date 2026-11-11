@@ -1,0 +1,13 @@
+
+    Building chuchi-postgres v0.1.7 (current)
+       Built [  14.269s] (current)
+     Parsing chuchi-postgres v0.1.7 (current)
+      Parsed [   0.013s] (current)
+    Building chuchi-postgres v0.1.6 (baseline)
+       Built [  13.092s] (baseline)
+     Parsing chuchi-postgres v0.1.6 (baseline)
+      Parsed [   0.011s] (baseline)
+    Checking chuchi-postgres v0.1.6 -> v0.1.7 (assume patch change)
+     Checked [   0.025s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  27.985s] chuchi-postgres

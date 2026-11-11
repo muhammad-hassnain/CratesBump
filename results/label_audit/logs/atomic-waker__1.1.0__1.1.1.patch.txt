@@ -1,0 +1,13 @@
+
+    Building atomic-waker v1.1.1 (current)
+       Built [   0.331s] (current)
+     Parsing atomic-waker v1.1.1 (current)
+      Parsed [   0.000s] (current)
+    Building atomic-waker v1.1.0 (baseline)
+       Built [   0.331s] (baseline)
+     Parsing atomic-waker v1.1.0 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking atomic-waker v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.810s] atomic-waker

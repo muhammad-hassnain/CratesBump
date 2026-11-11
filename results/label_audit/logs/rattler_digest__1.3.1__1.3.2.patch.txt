@@ -1,0 +1,13 @@
+
+    Building rattler_digest v1.3.2 (current)
+       Built [  10.504s] (current)
+     Parsing rattler_digest v1.3.2 (current)
+      Parsed [   0.002s] (current)
+    Building rattler_digest v1.3.1 (baseline)
+       Built [   7.454s] (baseline)
+     Parsing rattler_digest v1.3.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking rattler_digest v1.3.1 -> v1.3.2 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  18.428s] rattler_digest

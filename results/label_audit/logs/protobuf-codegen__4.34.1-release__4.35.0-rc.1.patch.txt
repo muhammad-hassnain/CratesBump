@@ -1,0 +1,13 @@
+
+    Building protobuf-codegen v4.35.0-rc.1 (current)
+       Built [   0.111s] (current)
+     Parsing protobuf-codegen v4.35.0-rc.1 (current)
+      Parsed [   0.001s] (current)
+    Building protobuf-codegen v4.34.1-release (baseline)
+       Built [   0.109s] (baseline)
+     Parsing protobuf-codegen v4.34.1-release (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking protobuf-codegen v4.34.1-release -> v4.35.0-rc.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.371s] protobuf-codegen

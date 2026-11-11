@@ -1,0 +1,13 @@
+
+    Building smcp-client-transport v0.4.0 (current)
+       Built [  10.208s] (current)
+     Parsing smcp-client-transport v0.4.0 (current)
+      Parsed [   0.002s] (current)
+    Building smcp-client-transport v0.3.2 (baseline)
+       Built [  12.022s] (baseline)
+     Parsing smcp-client-transport v0.3.2 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking smcp-client-transport v0.3.2 -> v0.4.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  22.908s] smcp-client-transport

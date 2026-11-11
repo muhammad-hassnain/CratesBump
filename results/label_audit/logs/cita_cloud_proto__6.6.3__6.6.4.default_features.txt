@@ -1,0 +1,60 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field NodeStatus.peers_count in /work/cita_cloud_proto-6.6.4/src/proto/common.rs:149
+  field NodeStatus.peers_status in /work/cita_cloud_proto-6.6.4/src/proto/common.rs:151
+  field NodeStatus.is_danger in /work/cita_cloud_proto-6.6.4/src/proto/common.rs:153
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  StatusCodeEnum::from_str_name, previously in file /work/cita_cloud_proto-6.6.3/target/semver-checks/local-cita_cloud_proto-6_6_3-x86_64_unknown_linux_gnu-6a61f1bf0c132278/target/debug/build/cita_cloud_proto-a9bb8b78f89db1be/out/status_code.rs:279
+  Regions::from_str_name, previously in file /work/cita_cloud_proto-6.6.3/target/semver-checks/local-cita_cloud_proto-6_6_3-x86_64_unknown_linux_gnu-6a61f1bf0c132278/target/debug/build/cita_cloud_proto-a9bb8b78f89db1be/out/storage.rs:70
+  ServingStatus::from_str_name, previously in file /work/cita_cloud_proto-6.6.3/target/semver-checks/local-cita_cloud_proto-6_6_3-x86_64_unknown_linux_gnu-6a61f1bf0c132278/target/debug/build/cita_cloud_proto-a9bb8b78f89db1be/out/grpc.health.v1.rs:45
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct cita_cloud_proto::common::NodeHeight, previously in file /work/cita_cloud_proto-6.6.3/target/semver-checks/local-cita_cloud_proto-6_6_3-x86_64_unknown_linux_gnu-6a61f1bf0c132278/target/debug/build/cita_cloud_proto-a9bb8b78f89db1be/out/common.rs:131
+
+--- failure struct_pub_field_missing: pub struct's pub field removed or renamed ---
+
+Description:
+A publicly-visible struct has at least one public field that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_pub_field_missing.ron
+
+Failed in:
+  field peer_status of struct NodeStatus, previously in file /work/cita_cloud_proto-6.6.3/target/semver-checks/local-cita_cloud_proto-6_6_3-x86_64_unknown_linux_gnu-6a61f1bf0c132278/target/debug/build/cita_cloud_proto-a9bb8b78f89db1be/out/common.rs:147
+  field connected_peer_count of struct NodeStatus, previously in file /work/cita_cloud_proto-6.6.3/target/semver-checks/local-cita_cloud_proto-6_6_3-x86_64_unknown_linux_gnu-6a61f1bf0c132278/target/debug/build/cita_cloud_proto-a9bb8b78f89db1be/out/common.rs:149
+  field connected_peers_info of struct NodeStatus, previously in file /work/cita_cloud_proto-6.6.3/target/semver-checks/local-cita_cloud_proto-6_6_3-x86_64_unknown_linux_gnu-6a61f1bf0c132278/target/debug/build/cita_cloud_proto-a9bb8b78f89db1be/out/common.rs:151
+
+    Building cita_cloud_proto v6.6.4 (current)
+       Built [   3.484s] (current)
+     Parsing cita_cloud_proto v6.6.4 (current)
+      Parsed [   0.030s] (current)
+    Building cita_cloud_proto v6.6.3 (baseline)
+       Built [   0.893s] (baseline)
+     Parsing cita_cloud_proto v6.6.3 (baseline)
+      Parsed [   0.026s] (baseline)
+    Checking cita_cloud_proto v6.6.3 -> v6.6.4 (assume patch change)
+     Checked [   0.045s] 229 checks: 225 pass, 4 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 4 major and 0 minor checks failed
+    Finished [   5.019s] cita_cloud_proto

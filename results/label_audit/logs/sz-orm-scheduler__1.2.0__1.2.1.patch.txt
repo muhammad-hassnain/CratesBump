@@ -1,0 +1,13 @@
+
+    Building sz-orm-scheduler v1.2.1 (current)
+       Built [   5.534s] (current)
+     Parsing sz-orm-scheduler v1.2.1 (current)
+      Parsed [   0.002s] (current)
+    Building sz-orm-scheduler v1.2.0 (baseline)
+       Built [   5.970s] (baseline)
+     Parsing sz-orm-scheduler v1.2.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking sz-orm-scheduler v1.2.0 -> v1.2.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  11.828s] sz-orm-scheduler

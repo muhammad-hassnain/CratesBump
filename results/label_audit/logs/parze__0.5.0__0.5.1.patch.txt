@@ -1,0 +1,24 @@
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct parze::chain::Single, previously in file /work/parze-0.5.0/src/chain.rs:15
+
+    Building parze v0.5.1 (current)
+       Built [   0.109s] (current)
+     Parsing parze v0.5.1 (current)
+      Parsed [   0.002s] (current)
+    Building parze v0.5.0 (baseline)
+       Built [   0.113s] (baseline)
+     Parsing parze v0.5.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking parze v0.5.0 -> v0.5.1 (assume patch change)
+     Checked [   0.014s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.352s] parze

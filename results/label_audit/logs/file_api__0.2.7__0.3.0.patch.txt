@@ -1,0 +1,35 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field Buffer.max_end_position in /work/file_api-0.3.0/src/buffer.rs:6
+
+--- failure trait_method_added: pub trait method added ---
+
+Description:
+A non-sealed public trait added a new method without a default implementation, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-item-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_added.ron
+
+Failed in:
+  trait method file_api::reader::Reader::get_max_end_position in file /work/file_api-0.3.0/src/reader.rs:10
+  trait method file_api::reader::Reader::set_max_end_position in file /work/file_api-0.3.0/src/reader.rs:11
+
+    Building file_api v0.3.0 (current)
+       Built [   3.109s] (current)
+     Parsing file_api v0.3.0 (current)
+      Parsed [   0.001s] (current)
+    Building file_api v0.2.7 (baseline)
+       Built [   3.089s] (baseline)
+     Parsing file_api v0.2.7 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking file_api v0.2.7 -> v0.3.0 (assume patch change)
+     Checked [   0.016s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   6.449s] file_api

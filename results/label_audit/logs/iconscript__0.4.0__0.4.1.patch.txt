@@ -1,0 +1,13 @@
+
+    Building iconscript v0.4.1 (current)
+       Built [   4.114s] (current)
+     Parsing iconscript v0.4.1 (current)
+      Parsed [   0.006s] (current)
+    Building iconscript v0.4.0 (baseline)
+       Built [   4.254s] (baseline)
+     Parsing iconscript v0.4.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking iconscript v0.4.0 -> v0.4.1 (assume patch change)
+     Checked [   0.023s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   8.664s] iconscript

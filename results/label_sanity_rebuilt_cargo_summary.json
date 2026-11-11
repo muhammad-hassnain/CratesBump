@@ -1,0 +1,21 @@
+{
+  "n_rows": 2079790,
+  "n_flagged": 678965,
+  "pct_flagged": 32.6458440515629,
+  "by_reason": {
+    "major_without_deletions": 521681,
+    "minor_with_deletions": 141289,
+    "patch_with_deletions": 15995
+  },
+  "by_label_and_reason": {
+    "major": {
+      "major_without_deletions": 521681
+    },
+    "minor": {
+      "minor_with_deletions": 141289
+    },
+    "patch": {
+      "patch_with_deletions": 15995
+    }
+  }
+}

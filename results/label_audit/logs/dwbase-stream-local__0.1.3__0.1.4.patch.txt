@@ -1,0 +1,13 @@
+
+    Building dwbase-stream-local v0.1.4 (current)
+       Built [   3.319s] (current)
+     Parsing dwbase-stream-local v0.1.4 (current)
+      Parsed [   0.001s] (current)
+    Building dwbase-stream-local v0.1.3 (baseline)
+       Built [   3.148s] (baseline)
+     Parsing dwbase-stream-local v0.1.3 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking dwbase-stream-local v0.1.3 -> v0.1.4 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.681s] dwbase-stream-local

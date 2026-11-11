@@ -1,0 +1,13 @@
+
+    Building napi-build-ohos v1.1.2 (current)
+       Built [   0.110s] (current)
+     Parsing napi-build-ohos v1.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building napi-build-ohos v1.1.1 (baseline)
+       Built [   0.112s] (baseline)
+     Parsing napi-build-ohos v1.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking napi-build-ohos v1.1.1 -> v1.1.2 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.360s] napi-build-ohos

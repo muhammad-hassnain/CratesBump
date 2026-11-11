@@ -1,0 +1,13 @@
+
+    Building garmin_client v0.1.6 (current)
+       Built [  17.566s] (current)
+     Parsing garmin_client v0.1.6 (current)
+      Parsed [   0.003s] (current)
+    Building garmin_client v0.1.5 (baseline)
+       Built [  17.260s] (baseline)
+     Parsing garmin_client v0.1.5 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking garmin_client v0.1.5 -> v0.1.6 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  35.526s] garmin_client

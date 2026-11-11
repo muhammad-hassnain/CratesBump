@@ -1,0 +1,13 @@
+
+    Building cortex-mem-config v2.5.1 (current)
+       Built [   2.748s] (current)
+     Parsing cortex-mem-config v2.5.1 (current)
+      Parsed [   0.001s] (current)
+    Building cortex-mem-config v2.5.0 (baseline)
+       Built [   2.715s] (baseline)
+     Parsing cortex-mem-config v2.5.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking cortex-mem-config v2.5.0 -> v2.5.1 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   5.725s] cortex-mem-config

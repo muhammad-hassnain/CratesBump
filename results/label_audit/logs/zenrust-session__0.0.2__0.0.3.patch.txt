@@ -1,0 +1,13 @@
+
+    Building zenrust-session v0.0.3 (current)
+       Built [   3.665s] (current)
+     Parsing zenrust-session v0.0.3 (current)
+      Parsed [   0.001s] (current)
+    Building zenrust-session v0.0.2 (baseline)
+       Built [   3.774s] (baseline)
+     Parsing zenrust-session v0.0.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking zenrust-session v0.0.2 -> v0.0.3 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   7.682s] zenrust-session

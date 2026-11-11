@@ -1,0 +1,24 @@
+
+--- failure enum_struct_variant_field_missing: pub enum struct variant's field removed or renamed ---
+
+Description:
+A publicly-visible enum has a struct variant whose field is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_struct_variant_field_missing.ron
+
+Failed in:
+  field backtrace of variant Error::Broadcast, previously in file /work/xio_common-0.10.0/src/error.rs:17
+
+    Building xio_common v0.10.1 (current)
+       Built [   0.214s] (current)
+     Parsing xio_common v0.10.1 (current)
+      Parsed [   0.009s] (current)
+    Building xio_common v0.10.0 (baseline)
+       Built [   0.225s] (baseline)
+     Parsing xio_common v0.10.0 (baseline)
+      Parsed [   0.008s] (baseline)
+    Checking xio_common v0.10.0 -> v0.10.1 (assume patch change)
+     Checked [   0.024s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.676s] xio_common

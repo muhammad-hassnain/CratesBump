@@ -1,0 +1,13 @@
+
+    Building faucet-sink-mssql v1.4.1 (current)
+       Built [  40.791s] (current)
+     Parsing faucet-sink-mssql v1.4.1 (current)
+      Parsed [   0.003s] (current)
+    Building faucet-sink-mssql v1.4.0 (baseline)
+       Built [  44.899s] (baseline)
+     Parsing faucet-sink-mssql v1.4.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking faucet-sink-mssql v1.4.0 -> v1.4.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  86.909s] faucet-sink-mssql

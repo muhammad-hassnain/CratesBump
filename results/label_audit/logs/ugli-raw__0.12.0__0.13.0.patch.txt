@@ -1,0 +1,13 @@
+
+    Building ugli-raw v0.13.0 (current)
+       Built [  13.079s] (current)
+     Parsing ugli-raw v0.13.0 (current)
+      Parsed [   0.001s] (current)
+    Building ugli-raw v0.12.0 (baseline)
+       Built [  11.453s] (baseline)
+     Parsing ugli-raw v0.12.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking ugli-raw v0.12.0 -> v0.13.0 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  25.035s] ugli-raw

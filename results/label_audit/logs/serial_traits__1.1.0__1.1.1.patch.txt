@@ -1,0 +1,13 @@
+
+    Building serial_traits v1.1.1 (current)
+       Built [   0.107s] (current)
+     Parsing serial_traits v1.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building serial_traits v1.1.0 (baseline)
+       Built [   0.099s] (baseline)
+     Parsing serial_traits v1.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking serial_traits v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.358s] serial_traits

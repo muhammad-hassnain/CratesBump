@@ -1,0 +1,13 @@
+
+    Building iceberg-file-catalog v0.7.0 (current)
+       Built [  28.110s] (current)
+     Parsing iceberg-file-catalog v0.7.0 (current)
+      Parsed [   0.003s] (current)
+    Building iceberg-file-catalog v0.6.1 (baseline)
+       Built [  30.414s] (baseline)
+     Parsing iceberg-file-catalog v0.6.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking iceberg-file-catalog v0.6.1 -> v0.7.0 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  59.474s] iceberg-file-catalog

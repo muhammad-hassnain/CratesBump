@@ -1,0 +1,24 @@
+
+--- failure function_parameter_count_changed: pub fn parameter count changed ---
+
+Description:
+A publicly-visible function now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_parameter_count_changed.ron
+
+Failed in:
+  pmcp_workbook_runtime::render::render_xlsx now takes 3 parameters instead of 2, in /work/pmcp-workbook-runtime-0.2.0/src/render/mod.rs:270
+
+    Building pmcp-workbook-runtime v0.2.0 (current)
+       Built [   5.010s] (current)
+     Parsing pmcp-workbook-runtime v0.2.0 (current)
+      Parsed [   0.012s] (current)
+    Building pmcp-workbook-runtime v0.1.0 (baseline)
+       Built [   5.440s] (baseline)
+     Parsing pmcp-workbook-runtime v0.1.0 (baseline)
+      Parsed [   0.009s] (baseline)
+    Checking pmcp-workbook-runtime v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.040s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  10.766s] pmcp-workbook-runtime

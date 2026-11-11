@@ -1,0 +1,13 @@
+
+    Building eth-valkyoth-hash v0.11.4 (current)
+       Built [   0.290s] (current)
+     Parsing eth-valkyoth-hash v0.11.4 (current)
+      Parsed [   0.001s] (current)
+    Building eth-valkyoth-hash v0.11.3 (baseline)
+       Built [   0.288s] (baseline)
+     Parsing eth-valkyoth-hash v0.11.3 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking eth-valkyoth-hash v0.11.3 -> v0.11.4 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.718s] eth-valkyoth-hash

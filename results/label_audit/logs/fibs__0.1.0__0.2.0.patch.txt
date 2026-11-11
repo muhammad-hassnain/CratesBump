@@ -1,0 +1,13 @@
+
+    Building fibs v0.2.0 (current)
+       Built [   1.095s] (current)
+     Parsing fibs v0.2.0 (current)
+      Parsed [   0.001s] (current)
+    Building fibs v0.1.0 (baseline)
+       Built [   1.135s] (baseline)
+     Parsing fibs v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking fibs v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   2.368s] fibs

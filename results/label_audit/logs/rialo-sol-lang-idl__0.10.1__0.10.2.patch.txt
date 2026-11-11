@@ -1,0 +1,13 @@
+
+    Building rialo-sol-lang-idl v0.10.2 (current)
+       Built [   4.022s] (current)
+     Parsing rialo-sol-lang-idl v0.10.2 (current)
+      Parsed [   0.004s] (current)
+    Building rialo-sol-lang-idl v0.10.1 (baseline)
+       Built [   3.746s] (baseline)
+     Parsing rialo-sol-lang-idl v0.10.1 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking rialo-sol-lang-idl v0.10.1 -> v0.10.2 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   8.006s] rialo-sol-lang-idl

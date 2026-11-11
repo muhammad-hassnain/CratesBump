@@ -1,0 +1,42 @@
+
+    Building iqa v0.2.0 (current)
+error: running cargo-doc on crate 'iqa' failed with output:
+-----
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+   Compiling thiserror v2.0.21
+   Compiling cc v1.11.1
+   Compiling pkg-config v0.3.34
+    Checking once_cell v1.21.4
+    Checking tracing-core v0.1.36
+   Compiling syn v2.0.119
+   Compiling syn v3.0.9
+   Compiling iqa v0.2.0 (/work/iqa-0.2.0)
+error: features `vendored-lcms2` and `system-lcms2` are mutually exclusive: enable exactly one
+  --> /work/iqa-0.2.0/build.rs:31:5
+   |
+31 | /     compile_error!(
+32 | |         "features `vendored-lcms2` and `system-lcms2` are mutually exclusive: enable exactly one"
+33 | |     );
+   | |_____^
+
+error: could not compile `iqa` (build script) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+
+-----
+
+error: failed to build rustdoc for crate iqa v0.2.0
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/iqa-0.2.0 --features butteraugli,ciede2000,default,dssim,full,ms-ssim,psnr,psnr-hvs-m,ssim,ssimulacra2,system-lcms2,vendored-lcms2 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate iqa v0.2.0

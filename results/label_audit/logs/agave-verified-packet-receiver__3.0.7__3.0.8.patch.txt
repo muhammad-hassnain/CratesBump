@@ -1,0 +1,13 @@
+
+    Building agave-verified-packet-receiver v3.0.8 (current)
+       Built [  24.201s] (current)
+     Parsing agave-verified-packet-receiver v3.0.8 (current)
+      Parsed [   0.003s] (current)
+    Building agave-verified-packet-receiver v3.0.7 (baseline)
+       Built [  18.347s] (baseline)
+     Parsing agave-verified-packet-receiver v3.0.7 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking agave-verified-packet-receiver v3.0.7 -> v3.0.8 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  43.531s] agave-verified-packet-receiver

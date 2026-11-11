@@ -1,0 +1,13 @@
+
+    Building fbas_analyzer v0.6.0 (current)
+       Built [  10.994s] (current)
+     Parsing fbas_analyzer v0.6.0 (current)
+      Parsed [   0.007s] (current)
+    Building fbas_analyzer v0.5.4 (baseline)
+       Built [   8.510s] (baseline)
+     Parsing fbas_analyzer v0.5.4 (baseline)
+      Parsed [   0.010s] (baseline)
+    Checking fbas_analyzer v0.5.4 -> v0.6.0 (assume patch change)
+     Checked [   0.029s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  19.886s] fbas_analyzer

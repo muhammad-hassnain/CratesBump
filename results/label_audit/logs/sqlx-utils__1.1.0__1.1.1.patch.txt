@@ -1,0 +1,13 @@
+
+    Building sqlx-utils v1.1.1 (current)
+       Built [  28.010s] (current)
+     Parsing sqlx-utils v1.1.1 (current)
+      Parsed [   0.009s] (current)
+    Building sqlx-utils v1.1.0 (baseline)
+       Built [  25.515s] (baseline)
+     Parsing sqlx-utils v1.1.0 (baseline)
+      Parsed [   0.008s] (baseline)
+    Checking sqlx-utils v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.049s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  54.064s] sqlx-utils

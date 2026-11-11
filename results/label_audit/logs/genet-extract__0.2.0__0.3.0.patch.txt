@@ -1,0 +1,13 @@
+
+    Building genet-extract v0.3.0 (current)
+       Built [   1.656s] (current)
+     Parsing genet-extract v0.3.0 (current)
+      Parsed [   0.000s] (current)
+    Building genet-extract v0.2.0 (baseline)
+       Built [   1.484s] (baseline)
+     Parsing genet-extract v0.2.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking genet-extract v0.2.0 -> v0.3.0 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.349s] genet-extract

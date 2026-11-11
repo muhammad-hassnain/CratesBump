@@ -1,0 +1,13 @@
+
+    Building am-fs-erofs v0.1.3 (current)
+       Built [   0.855s] (current)
+     Parsing am-fs-erofs v0.1.3 (current)
+      Parsed [   0.007s] (current)
+    Building am-fs-erofs v0.1.2 (baseline)
+       Built [   0.789s] (baseline)
+     Parsing am-fs-erofs v0.1.2 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking am-fs-erofs v0.1.2 -> v0.1.3 (assume patch change)
+     Checked [   0.031s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   1.849s] am-fs-erofs

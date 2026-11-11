@@ -1,0 +1,24 @@
+
+--- failure function_parameter_count_changed: pub fn parameter count changed ---
+
+Description:
+A publicly-visible function now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_parameter_count_changed.ron
+
+Failed in:
+  oas_sdk::anchor_policy::verify_with_anchor_policy now takes 4 parameters instead of 8, in /work/oas-sdk-1.1.1/src/anchor_policy.rs:275
+
+    Building oas-sdk v1.1.1 (current)
+       Built [   7.088s] (current)
+     Parsing oas-sdk v1.1.1 (current)
+      Parsed [   0.004s] (current)
+    Building oas-sdk v1.1.0 (baseline)
+       Built [   8.746s] (baseline)
+     Parsing oas-sdk v1.1.0 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking oas-sdk v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.016s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  16.167s] oas-sdk

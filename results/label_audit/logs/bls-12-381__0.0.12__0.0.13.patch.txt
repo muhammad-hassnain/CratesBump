@@ -1,0 +1,13 @@
+
+    Building bls-12-381 v0.0.13 (current)
+       Built [   5.364s] (current)
+     Parsing bls-12-381 v0.0.13 (current)
+      Parsed [   0.005s] (current)
+    Building bls-12-381 v0.0.12 (baseline)
+       Built [   5.158s] (baseline)
+     Parsing bls-12-381 v0.0.12 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking bls-12-381 v0.0.12 -> v0.0.13 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  10.751s] bls-12-381

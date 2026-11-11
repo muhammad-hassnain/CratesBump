@@ -1,0 +1,61 @@
+
+    Building rjq v0.2.0 (current)
+error: running cargo-doc on crate 'rjq' failed with output:
+-----
+warning: /work/rjq-0.2.0/Cargo.toml: `package.edition` is unspecified, defaulting to `2015` while the latest is `2024`
+warning: `rjq` (manifest) generated 1 warning
+   Compiling libc v0.2.191
+    Checking tinyvec v1.13.3
+    Checking unicode-bidi v0.3.18
+    Checking matches v0.1.10
+    Checking unicode-normalization v0.1.26
+    Checking percent-encoding v1.0.1
+   Compiling redis v0.8.0
+    Checking sha1 v0.2.0
+    Checking rustc-serialize v0.3.25
+    Checking idna v0.1.5
+    Checking url v1.7.2
+    Checking rand v0.4.6
+    Checking rand v0.3.23
+    Checking uuid v0.4.0
+ Documenting rjq v0.2.0 (/work/rjq-0.2.0)
+error: cannot find derive macro `RustcEncodable` in this scope
+  --> /work/rjq-0.2.0/src/lib.rs:67:10
+   |
+67 | #[derive(RustcEncodable, RustcDecodable, Debug, PartialEq)]
+   |          ^^^^^^^^^^^^^^
+
+error: cannot find derive macro `RustcDecodable` in this scope
+  --> /work/rjq-0.2.0/src/lib.rs:67:26
+   |
+67 | #[derive(RustcEncodable, RustcDecodable, Debug, PartialEq)]
+   |                          ^^^^^^^^^^^^^^
+
+error: cannot find derive macro `RustcEncodable` in this scope
+  --> /work/rjq-0.2.0/src/lib.rs:81:10
+   |
+81 | #[derive(RustcEncodable, RustcDecodable, Debug)]
+   |          ^^^^^^^^^^^^^^
+
+error: cannot find derive macro `RustcDecodable` in this scope
+  --> /work/rjq-0.2.0/src/lib.rs:81:26
+   |
+81 | #[derive(RustcEncodable, RustcDecodable, Debug)]
+   |                          ^^^^^^^^^^^^^^
+
+error: could not document `rjq`
+
+-----
+
+error: failed to build rustdoc for crate rjq v0.2.0
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/rjq-0.2.0 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate rjq v0.2.0

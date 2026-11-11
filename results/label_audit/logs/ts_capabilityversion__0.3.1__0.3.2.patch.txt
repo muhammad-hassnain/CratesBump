@@ -1,0 +1,13 @@
+
+    Building ts_capabilityversion v0.3.2 (current)
+       Built [   2.603s] (current)
+     Parsing ts_capabilityversion v0.3.2 (current)
+      Parsed [   0.001s] (current)
+    Building ts_capabilityversion v0.3.1 (baseline)
+       Built [   2.793s] (baseline)
+     Parsing ts_capabilityversion v0.3.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking ts_capabilityversion v0.3.1 -> v0.3.2 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   5.580s] ts_capabilityversion

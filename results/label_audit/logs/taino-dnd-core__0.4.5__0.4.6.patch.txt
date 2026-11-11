@@ -1,0 +1,13 @@
+
+    Building taino-dnd-core v0.4.6 (current)
+       Built [   1.687s] (current)
+     Parsing taino-dnd-core v0.4.6 (current)
+      Parsed [   0.003s] (current)
+    Building taino-dnd-core v0.4.5 (baseline)
+       Built [   1.656s] (baseline)
+     Parsing taino-dnd-core v0.4.5 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking taino-dnd-core v0.4.5 -> v0.4.6 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.526s] taino-dnd-core

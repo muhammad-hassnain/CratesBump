@@ -1,0 +1,13 @@
+
+    Building cu-memmon v1.1.1 (current)
+       Built [  30.134s] (current)
+     Parsing cu-memmon v1.1.1 (current)
+      Parsed [   0.002s] (current)
+    Building cu-memmon v1.1.0 (baseline)
+       Built [  24.412s] (baseline)
+     Parsing cu-memmon v1.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking cu-memmon v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.032s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  55.105s] cu-memmon

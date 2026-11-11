@@ -1,0 +1,13 @@
+
+    Building bcinr v26.4.22 (current)
+       Built [   0.259s] (current)
+     Parsing bcinr v26.4.22 (current)
+      Parsed [   0.000s] (current)
+    Building bcinr v26.4.21 (baseline)
+       Built [   0.259s] (baseline)
+     Parsing bcinr v26.4.21 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking bcinr v26.4.21 -> v26.4.22 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.668s] bcinr

@@ -1,0 +1,37 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field AnalyzeConfig.effort_model in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:535
+  field AnalyzeConfig.effort_layer in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:538
+  field AnalyzeConfig.effort_base_ref in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:541
+  field AnalyzeConfig.effort_head_ref in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:544
+  field AnalyzeConfig.effort_monte_carlo in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:547
+  field AnalyzeConfig.effort_mc_iterations in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:550
+  field AnalyzeConfig.effort_mc_seed in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:553
+  field AnalyzeSettings.effort_model in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:289
+  field AnalyzeSettings.effort_layer in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:293
+  field AnalyzeSettings.effort_base_ref in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:297
+  field AnalyzeSettings.effort_head_ref in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:301
+  field AnalyzeSettings.effort_monte_carlo in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:305
+  field AnalyzeSettings.effort_mc_iterations in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:309
+  field AnalyzeSettings.effort_mc_seed in /work/tokmd-settings-1.8.0-rc.1/src/lib.rs:313
+
+    Building tokmd-settings v1.8.0-rc.1 (current)
+       Built [   4.027s] (current)
+     Parsing tokmd-settings v1.8.0-rc.1 (current)
+      Parsed [   0.002s] (current)
+    Building tokmd-settings v1.7.3 (baseline)
+       Built [   3.901s] (baseline)
+     Parsing tokmd-settings v1.7.3 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking tokmd-settings v1.7.3 -> v1.8.0-rc.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   8.147s] tokmd-settings

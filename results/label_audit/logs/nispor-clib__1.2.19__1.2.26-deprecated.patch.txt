@@ -1,0 +1,13 @@
+
+    Building nispor-clib v1.2.26-deprecated (current)
+       Built [   8.653s] (current)
+     Parsing nispor-clib v1.2.26-deprecated (current)
+      Parsed [   0.001s] (current)
+    Building nispor-clib v1.2.19 (baseline)
+       Built [   7.494s] (baseline)
+     Parsing nispor-clib v1.2.19 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking nispor-clib v1.2.19 -> v1.2.26-deprecated (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  16.445s] nispor-clib

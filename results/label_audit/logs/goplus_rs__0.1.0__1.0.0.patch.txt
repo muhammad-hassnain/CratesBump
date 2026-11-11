@@ -1,0 +1,54 @@
+
+--- failure enum_missing: pub enum removed or renamed ---
+
+Description:
+A publicly-visible enum cannot be imported by its prior path. A `pub use` may have been removed, or the enum itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_missing.ron
+
+Failed in:
+  enum goplus_rs::Error, previously in file /work/goplus_rs-0.1.0/src/lib.rs:15
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function goplus_rs::interpret_status_code, previously in file /work/goplus_rs-0.1.0/src/lib.rs:356
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  goplus_rs::Session::approval_security_v2 takes 0 parameters in /work/goplus_rs-0.1.0/src/lib.rs:212, but now takes 3 parameters in /work/goplus_rs-1.0.0/src/lib.rs:178
+
+--- failure type_method_marked_deprecated: type method #[deprecated] added ---
+
+Description:
+A type method is now #[deprecated]. Downstream crates will get a compiler warning when using this method.
+        ref: https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-deprecated-attribute
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/type_method_marked_deprecated.ron
+
+Failed in:
+  method goplus_rs::Session::get_access_token in /work/goplus_rs-1.0.0/src/lib.rs:365
+
+    Building goplus_rs v1.0.0 (current)
+       Built [   9.633s] (current)
+     Parsing goplus_rs v1.0.0 (current)
+      Parsed [   0.006s] (current)
+    Building goplus_rs v0.1.0 (baseline)
+       Built [   9.754s] (baseline)
+     Parsing goplus_rs v0.1.0 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking goplus_rs v0.1.0 -> v1.0.0 (assume patch change)
+     Checked [   0.013s] 229 checks: 225 pass, 4 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 1 minor checks failed
+    Finished [  19.990s] goplus_rs

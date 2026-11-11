@@ -1,0 +1,13 @@
+
+    Building athena-scheduler v3.26.4 (current)
+       Built [   2.932s] (current)
+     Parsing athena-scheduler v3.26.4 (current)
+      Parsed [   0.001s] (current)
+    Building athena-scheduler v3.26.3 (baseline)
+       Built [   2.758s] (baseline)
+     Parsing athena-scheduler v3.26.3 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking athena-scheduler v3.26.3 -> v3.26.4 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   5.965s] athena-scheduler

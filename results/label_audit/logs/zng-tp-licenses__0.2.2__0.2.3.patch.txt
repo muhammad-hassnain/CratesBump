@@ -1,0 +1,13 @@
+
+    Building zng-tp-licenses v0.2.3 (current)
+       Built [   2.751s] (current)
+     Parsing zng-tp-licenses v0.2.3 (current)
+      Parsed [   0.001s] (current)
+    Building zng-tp-licenses v0.2.2 (baseline)
+       Built [   3.104s] (baseline)
+     Parsing zng-tp-licenses v0.2.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking zng-tp-licenses v0.2.2 -> v0.2.3 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.049s] zng-tp-licenses

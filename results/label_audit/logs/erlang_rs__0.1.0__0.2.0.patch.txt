@@ -1,0 +1,13 @@
+
+    Building erlang_rs v0.2.0 (current)
+       Built [   0.117s] (current)
+     Parsing erlang_rs v0.2.0 (current)
+      Parsed [   0.002s] (current)
+    Building erlang_rs v0.1.0 (baseline)
+       Built [   0.113s] (baseline)
+     Parsing erlang_rs v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking erlang_rs v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.370s] erlang_rs

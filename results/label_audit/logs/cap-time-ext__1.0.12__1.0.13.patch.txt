@@ -1,0 +1,61 @@
+
+    Building cap-time-ext v1.0.13 (current)
+error: running cargo-doc on crate 'cap-time-ext' failed with output:
+-----
+   Compiling libc v0.2.191
+   Compiling io-lifetimes v1.0.11
+   Compiling rustix v0.38.44
+   Compiling io-extras v0.17.4
+    Checking linux-raw-sys v0.4.15
+    Checking bitflags v2.13.2
+   Compiling rustix v0.37.28
+    Checking bitflags v1.3.2
+   Compiling cap-primitives v1.0.15
+    Checking once_cell v1.21.4
+    Checking linux-raw-sys v0.3.8
+    Checking itoa v1.0.18
+    Checking ambient-authority v0.0.2
+    Checking maybe-owned v0.3.4
+error: attributes starting with `rustc` are reserved for use by the `rustc` compiler
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-0.37.28/src/backend/linux_raw/io/errno.rs:28:25
+   |
+28 | #[cfg_attr(rustc_attrs, rustc_layout_scalar_valid_range_start(0xf001))]
+   |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: attributes starting with `rustc` are reserved for use by the `rustc` compiler
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-0.37.28/src/backend/linux_raw/io/errno.rs:29:25
+   |
+29 | #[cfg_attr(rustc_attrs, rustc_layout_scalar_valid_range_end(0xffff))]
+   |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: cannot find attribute `rustc_layout_scalar_valid_range_start` in this scope
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-0.37.28/src/backend/linux_raw/io/errno.rs:28:25
+   |
+28 | #[cfg_attr(rustc_attrs, rustc_layout_scalar_valid_range_start(0xf001))]
+   |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: cannot find attribute `rustc_layout_scalar_valid_range_end` in this scope
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-0.37.28/src/backend/linux_raw/io/errno.rs:29:25
+   |
+29 | #[cfg_attr(rustc_attrs, rustc_layout_scalar_valid_range_end(0xffff))]
+   |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    Checking ipnet v2.12.2
+    Checking fs-set-times v0.19.2
+   Compiling cap-std v1.0.15
+error: could not compile `rustix` (lib) due to 4 previous errors
+
+-----
+
+error: failed to build rustdoc for crate cap-time-ext v1.0.13
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/cap-time-ext-1.0.13 --features cap-std &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate cap-time-ext v1.0.13

@@ -1,0 +1,46 @@
+
+--- failure enum_variant_missing: pub enum variant removed or renamed ---
+
+Description:
+A publicly-visible enum has at least one variant that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_missing.ron
+
+Failed in:
+  variant Error::Pin, previously in file /work/lsm303agr-0.3.0/src/types.rs:11
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  lsm303agr::Lsm303agr::new_with_spi takes 3 parameters in /work/lsm303agr-0.3.0/src/device_impl.rs:41, but now takes 2 parameters in /work/lsm303agr-1.0.0/src/device_impl.rs:41
+
+--- failure type_allows_fewer_generic_type_params: type now allows fewer generic type parameters ---
+
+Description:
+A type now allows fewer generic type parameters than it used to. Uses of this type that supplied all previously-supported generic types will be broken.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-parameter-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/type_allows_fewer_generic_type_params.ron
+
+Failed in:
+  Struct SpiInterface allows 3 -> 2 generic types in /work/lsm303agr-1.0.0/src/interface.rs:22
+  Struct ModeChangeError allows 3 -> 2 generic types in /work/lsm303agr-1.0.0/src/types.rs:22
+  Enum Error allows 2 -> 1 generic types in /work/lsm303agr-1.0.0/src/types.rs:7
+
+    Building lsm303agr v1.0.0 (current)
+       Built [   0.280s] (current)
+     Parsing lsm303agr v1.0.0 (current)
+      Parsed [   0.009s] (current)
+    Building lsm303agr v0.3.0 (baseline)
+       Built [   0.281s] (baseline)
+     Parsing lsm303agr v0.3.0 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking lsm303agr v0.3.0 -> v1.0.0 (assume patch change)
+     Checked [   0.021s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [   0.750s] lsm303agr

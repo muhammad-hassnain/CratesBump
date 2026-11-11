@@ -1,0 +1,13 @@
+
+    Building gemachain-banks-server v1.8.2 (current)
+       Built [  53.216s] (current)
+     Parsing gemachain-banks-server v1.8.2 (current)
+      Parsed [   0.003s] (current)
+    Building gemachain-banks-server v1.8.0 (baseline)
+       Built [  56.164s] (baseline)
+     Parsing gemachain-banks-server v1.8.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking gemachain-banks-server v1.8.0 -> v1.8.2 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [ 110.481s] gemachain-banks-server

@@ -1,0 +1,36 @@
+
+--- failure function_requires_different_const_generic_params: function now requires a different number of const generic parameters ---
+
+Description:
+A function now requires a different number of const generic parameters than it used to. Uses of this function that supplied the previous number of const generics will be broken.
+        ref: https://doc.rust-lang.org/reference/items/generics.html#const-generics
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_requires_different_const_generic_params.ron
+
+Failed in:
+  function serialize (0 -> 1 const generics) in /work/iris-grpc-proto-0.1.3/src/lib.rs:188
+  function deserialize (0 -> 1 const generics) in /work/iris-grpc-proto-0.1.3/src/lib.rs:208
+
+--- failure function_requires_different_generic_type_params: function now requires a different number of generic type parameters ---
+
+Description:
+A function now requires a different number of generic type parameters than it used to. Uses of this function that supplied the previous number of generic types (e.g. via turbofish syntax) will be broken.
+        ref: https://doc.rust-lang.org/reference/items/generics.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_requires_different_generic_type_params.ron
+
+Failed in:
+  function serialize (1 -> 2 generic types) in /work/iris-grpc-proto-0.1.3/src/lib.rs:188
+  function deserialize (1 -> 2 generic types) in /work/iris-grpc-proto-0.1.3/src/lib.rs:208
+
+    Building iris-grpc-proto v0.1.3 (current)
+       Built [  12.978s] (current)
+     Parsing iris-grpc-proto v0.1.3 (current)
+      Parsed [   0.030s] (current)
+    Building iris-grpc-proto v0.1.0 (baseline)
+       Built [  12.358s] (baseline)
+     Parsing iris-grpc-proto v0.1.0 (baseline)
+      Parsed [   0.026s] (baseline)
+    Checking iris-grpc-proto v0.1.0 -> v0.1.3 (assume patch change)
+     Checked [   0.029s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [  25.891s] iris-grpc-proto

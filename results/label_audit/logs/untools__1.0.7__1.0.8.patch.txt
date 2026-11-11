@@ -1,0 +1,24 @@
+
+--- failure function_parameter_count_changed: pub fn parameter count changed ---
+
+Description:
+A publicly-visible function now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_parameter_count_changed.ron
+
+Failed in:
+  untools::batch_convert now takes 4 parameters instead of 3, in /work/untools-1.0.8/src/lib.rs:89
+
+    Building untools v1.0.8 (current)
+       Built [   3.265s] (current)
+     Parsing untools v1.0.8 (current)
+      Parsed [   0.001s] (current)
+    Building untools v1.0.7 (baseline)
+       Built [   1.055s] (baseline)
+     Parsing untools v1.0.7 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking untools v1.0.7 -> v1.0.8 (assume patch change)
+     Checked [   0.011s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   4.521s] untools

@@ -1,0 +1,25 @@
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function cairo_vm::hint_processor::builtin_hint_processor::memcpy_hint_utils::memcpy_continue_copying, previously in file /work/cairo-vm-0.7.0/src/hint_processor/builtin_hint_processor/memcpy_hint_utils.rs:54
+  function cairo_vm::hint_processor::builtin_hint_processor::memset_utils::memset_continue_loop, previously in file /work/cairo-vm-0.7.0/src/hint_processor/builtin_hint_processor/memset_utils.rs:37
+
+    Building cairo-vm v0.8.0 (current)
+       Built [  25.231s] (current)
+     Parsing cairo-vm v0.8.0 (current)
+      Parsed [   0.049s] (current)
+    Building cairo-vm v0.7.0 (baseline)
+       Built [  23.084s] (baseline)
+     Parsing cairo-vm v0.7.0 (baseline)
+      Parsed [   0.037s] (baseline)
+    Checking cairo-vm v0.7.0 -> v0.8.0 (assume patch change)
+     Checked [   0.050s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  49.087s] cairo-vm

@@ -1,0 +1,13 @@
+
+    Building extism-pdk v0.1.1 (current)
+       Built [   4.379s] (current)
+     Parsing extism-pdk v0.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building extism-pdk v0.1.0 (baseline)
+       Built [   4.678s] (baseline)
+     Parsing extism-pdk v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking extism-pdk v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   9.251s] extism-pdk

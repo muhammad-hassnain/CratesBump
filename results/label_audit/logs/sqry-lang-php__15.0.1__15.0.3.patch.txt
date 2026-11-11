@@ -1,0 +1,13 @@
+
+    Building sqry-lang-php v15.0.3 (current)
+       Built [  22.615s] (current)
+     Parsing sqry-lang-php v15.0.3 (current)
+      Parsed [   0.002s] (current)
+    Building sqry-lang-php v15.0.1 (baseline)
+       Built [  22.727s] (baseline)
+     Parsing sqry-lang-php v15.0.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking sqry-lang-php v15.0.1 -> v15.0.3 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  45.964s] sqry-lang-php

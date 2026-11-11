@@ -1,0 +1,13 @@
+
+    Building aion-store v0.5.0 (current)
+       Built [   5.824s] (current)
+     Parsing aion-store v0.5.0 (current)
+      Parsed [   0.003s] (current)
+    Building aion-store v0.4.0 (baseline)
+       Built [   5.005s] (baseline)
+     Parsing aion-store v0.4.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking aion-store v0.4.0 -> v0.5.0 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  11.253s] aion-store

@@ -1,0 +1,13 @@
+
+    Building psd v0.2.0 (current)
+       Built [   1.525s] (current)
+     Parsing psd v0.2.0 (current)
+      Parsed [   0.006s] (current)
+    Building psd v0.1.9 (baseline)
+       Built [   2.813s] (baseline)
+     Parsing psd v0.1.9 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking psd v0.1.9 -> v0.2.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   4.514s] psd

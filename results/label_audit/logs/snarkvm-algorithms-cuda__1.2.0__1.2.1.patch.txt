@@ -1,0 +1,13 @@
+
+    Building snarkvm-algorithms-cuda v1.2.1 (current)
+       Built [   3.413s] (current)
+     Parsing snarkvm-algorithms-cuda v1.2.1 (current)
+      Parsed [   0.001s] (current)
+    Building snarkvm-algorithms-cuda v1.2.0 (baseline)
+       Built [   3.196s] (baseline)
+     Parsing snarkvm-algorithms-cuda v1.2.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking snarkvm-algorithms-cuda v1.2.0 -> v1.2.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.880s] snarkvm-algorithms-cuda

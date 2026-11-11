@@ -1,0 +1,13 @@
+
+    Building bevy_key_rotation v0.2.0 (current)
+       Built [  17.802s] (current)
+     Parsing bevy_key_rotation v0.2.0 (current)
+      Parsed [   0.004s] (current)
+    Building bevy_key_rotation v0.1.0 (baseline)
+       Built [  12.840s] (baseline)
+     Parsing bevy_key_rotation v0.1.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking bevy_key_rotation v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  31.586s] bevy_key_rotation

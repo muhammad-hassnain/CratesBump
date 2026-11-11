@@ -1,0 +1,24 @@
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant RunTimeVersion:EasyAntiCheat in /work/proton-call-3.1.2/src/runtime.rs:81
+
+    Building proton-call v3.1.2 (current)
+       Built [   0.170s] (current)
+     Parsing proton-call v3.1.2 (current)
+      Parsed [   0.002s] (current)
+    Building proton-call v3.1.1 (baseline)
+       Built [   0.183s] (baseline)
+     Parsing proton-call v3.1.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking proton-call v3.1.1 -> v3.1.2 (assume patch change)
+     Checked [   0.021s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.584s] proton-call

@@ -1,0 +1,49 @@
+# Rust build output
+/target/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Per-crate extractor CSVs (consolidated into data/*.csv.gz)
+/crate_csvs*/
+/compliant_csvs*/
+
+# Local caches and scratch: crates.io dump, GitHub crawl cache, audit work
+.dump_cache/
+enrich_cache/
+enrich_work/
+.audit_work/
+
+# Logs
+*.log
+/logs/
+
+# Trained models (written by make pipeline)
+models/
+*.joblib
+
+# Runtime cache of predict.py
+predictions_cache.json
+
+# API tokens and local environment files
+.token
+.typesafe_token
+.anthropic_token
+.env
+.env.*
+
+# Local notes
+HANDOFF.md
+
+# LLM response caches: keep only the ones behind the published LLM-hybrid
+# runs, so they can be reproduced without an API key.
+jev_cache/*
+!jev_cache/README.md
+!jev_cache/v2cargo.json
+!jev_cache/ollama_deepseek-r1-8b.json
+!jev_cache/ollama_gemma2-9b.json
+!jev_cache/ollama_llama31-8b.json
+!jev_cache/ollama_mistral-nemo-12b.json
+!jev_cache/ollama_qwen25-7b.json

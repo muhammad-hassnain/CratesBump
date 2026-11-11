@@ -1,0 +1,13 @@
+
+    Building svgplot v2025.6.0 (current)
+       Built [   0.119s] (current)
+     Parsing svgplot v2025.6.0 (current)
+      Parsed [   0.002s] (current)
+    Building svgplot v2025.5.0 (baseline)
+       Built [   0.125s] (baseline)
+     Parsing svgplot v2025.5.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking svgplot v2025.5.0 -> v2025.6.0 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.424s] svgplot

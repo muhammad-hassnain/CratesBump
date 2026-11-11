@@ -1,0 +1,13 @@
+
+    Building geometry-model v0.0.3 (current)
+       Built [   2.422s] (current)
+     Parsing geometry-model v0.0.3 (current)
+      Parsed [   0.002s] (current)
+    Building geometry-model v0.0.2 (baseline)
+       Built [   2.402s] (baseline)
+     Parsing geometry-model v0.0.2 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking geometry-model v0.0.2 -> v0.0.3 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   4.986s] geometry-model

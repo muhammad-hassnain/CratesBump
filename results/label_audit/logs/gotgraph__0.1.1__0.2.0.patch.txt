@@ -1,0 +1,25 @@
+
+--- failure trait_method_added: pub trait method added ---
+
+Description:
+A non-sealed public trait added a new method without a default implementation, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-item-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_added.ron
+
+Failed in:
+  trait method gotgraph::graph::Graph::reverse_edge_unchecked in file /work/gotgraph-0.2.0/src/graph.rs:654
+  trait method gotgraph::prelude::Graph::reverse_edge_unchecked in file /work/gotgraph-0.2.0/src/graph.rs:654
+
+    Building gotgraph v0.2.0 (current)
+       Built [   0.221s] (current)
+     Parsing gotgraph v0.2.0 (current)
+      Parsed [   0.004s] (current)
+    Building gotgraph v0.1.1 (baseline)
+       Built [   0.162s] (baseline)
+     Parsing gotgraph v0.1.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking gotgraph v0.1.1 -> v0.2.0 (assume patch change)
+     Checked [   0.041s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.560s] gotgraph

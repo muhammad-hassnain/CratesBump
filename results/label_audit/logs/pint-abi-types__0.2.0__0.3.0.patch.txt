@@ -1,0 +1,24 @@
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant TypeABI:Union in /work/pint-abi-types-0.3.0/src/lib.rs:50
+
+    Building pint-abi-types v0.3.0 (current)
+       Built [   2.562s] (current)
+     Parsing pint-abi-types v0.3.0 (current)
+      Parsed [   0.001s] (current)
+    Building pint-abi-types v0.2.0 (baseline)
+       Built [   2.532s] (baseline)
+     Parsing pint-abi-types v0.2.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking pint-abi-types v0.2.0 -> v0.3.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   5.255s] pint-abi-types

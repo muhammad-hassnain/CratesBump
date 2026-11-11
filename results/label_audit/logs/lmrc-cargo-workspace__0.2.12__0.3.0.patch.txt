@@ -1,0 +1,13 @@
+
+    Building lmrc-cargo-workspace v0.3.0 (current)
+       Built [   2.904s] (current)
+     Parsing lmrc-cargo-workspace v0.3.0 (current)
+      Parsed [   0.003s] (current)
+    Building lmrc-cargo-workspace v0.2.12 (baseline)
+       Built [   2.869s] (baseline)
+     Parsing lmrc-cargo-workspace v0.2.12 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking lmrc-cargo-workspace v0.2.12 -> v0.3.0 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   5.989s] lmrc-cargo-workspace

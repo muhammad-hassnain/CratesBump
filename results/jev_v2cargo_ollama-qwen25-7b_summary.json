@@ -1,0 +1,48 @@
+{
+  "test_sample": 2000,
+  "val_sample": 800,
+  "split": "grouped",
+  "few_shot": 6,
+  "backbones": [
+    {
+      "backbone": "XGBoost",
+      "ml_only": 0.5629396695155675,
+      "ml_plus_jev": 0.5591919840385243,
+      "ml_plus_jev_plus_rule": 0.5591919840385243,
+      "jev_only": 0.4418633653949202,
+      "alpha_mj": 0.9500000000000001,
+      "alpha_mjr": 0.95,
+      "beta_mjr": 0.0
+    },
+    {
+      "backbone": "LightGBM",
+      "ml_only": 0.5888982067548877,
+      "ml_plus_jev": 0.5888982067548877,
+      "ml_plus_jev_plus_rule": 0.5888982067548877,
+      "jev_only": 0.4418633653949202,
+      "alpha_mj": 1.0,
+      "alpha_mjr": 1.0,
+      "beta_mjr": 0.0
+    },
+    {
+      "backbone": "Hist Gradient Boosting",
+      "ml_only": 0.5779531248853864,
+      "ml_plus_jev": 0.574270206083632,
+      "ml_plus_jev_plus_rule": 0.5738378082276343,
+      "jev_only": 0.4418633653949202,
+      "alpha_mj": 0.9,
+      "alpha_mjr": 0.8,
+      "beta_mjr": 0.05
+    },
+    {
+      "backbone": "Random Forest",
+      "ml_only": 0.6408774794944464,
+      "ml_plus_jev": 0.6408774794944464,
+      "ml_plus_jev_plus_rule": 0.6407609314571704,
+      "jev_only": 0.4418633653949202,
+      "alpha_mj": 1.0,
+      "alpha_mjr": 0.95,
+      "beta_mjr": 0.05
+    }
+  ]
+}

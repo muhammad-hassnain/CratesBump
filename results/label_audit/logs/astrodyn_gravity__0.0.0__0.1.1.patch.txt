@@ -1,0 +1,13 @@
+
+    Building astrodyn_gravity v0.1.1 (current)
+       Built [   5.855s] (current)
+     Parsing astrodyn_gravity v0.1.1 (current)
+      Parsed [   0.021s] (current)
+    Building astrodyn_gravity v0.0.0 (baseline)
+       Built [   0.103s] (baseline)
+     Parsing astrodyn_gravity v0.0.0 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking astrodyn_gravity v0.0.0 -> v0.1.1 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.142s] astrodyn_gravity

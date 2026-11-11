@@ -1,0 +1,72 @@
+
+--- failure enum_marked_non_exhaustive: enum marked #[non_exhaustive] ---
+
+Description:
+A public enum has been marked #[non_exhaustive]. Pattern-matching on it outside of its crate must now include a wildcard pattern like `_`, or it will fail to compile.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#attr-adding-non-exhaustive
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_marked_non_exhaustive.ron
+
+Failed in:
+  enum Error in /work/lampshade-0.12.0/src/error.rs:6
+  enum Error in /work/lampshade-0.12.0/src/error.rs:6
+
+--- failure enum_missing: pub enum removed or renamed ---
+
+Description:
+A publicly-visible enum cannot be imported by its prior path. A `pub use` may have been removed, or the enum itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_missing.ron
+
+Failed in:
+  enum lampshade::v2::Extent, previously in file /work/lampshade-0.11.0/src/pipeline.rs:92
+
+--- failure module_missing: pub module removed or renamed ---
+
+Description:
+A publicly-visible module cannot be imported by its prior path. A `pub use` may have been removed, or the module may have been renamed, removed, or made non-public.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/module_missing.ron
+
+Failed in:
+  mod lampshade::v2, previously in file /work/lampshade-0.11.0/src/v2.rs:1
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct lampshade::v2::WorkspaceRequirements, previously in file /work/lampshade-0.11.0/src/pipeline.rs:288
+  struct lampshade::v2::SortOptions, previously in file /work/lampshade-0.11.0/src/pipeline.rs:257
+  struct lampshade::v2::Primitives, previously in file /work/lampshade-0.11.0/src/pipeline.rs:389
+  struct lampshade::v2::GpuSlice, previously in file /work/lampshade-0.11.0/src/pipeline.rs:102
+  struct lampshade::v2::GpuCount, previously in file /work/lampshade-0.11.0/src/pipeline.rs:43
+  struct lampshade::v2::GpuSliceMut, previously in file /work/lampshade-0.11.0/src/pipeline.rs:191
+  struct lampshade::v2::Recorder, previously in file /work/lampshade-0.11.0/src/pipeline.rs:640
+  struct lampshade::v2::RunLengthOutput, previously in file /work/lampshade-0.11.0/src/pipeline.rs:647
+
+--- failure trait_missing: pub trait removed or renamed ---
+
+Description:
+A publicly-visible trait cannot be imported by its prior path. A `pub use` may have been removed, or the trait itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_missing.ron
+
+Failed in:
+  trait lampshade::v2::GpuElement, previously in file /work/lampshade-0.11.0/src/pipeline.rs:28
+
+    Building lampshade v0.12.0 (current)
+       Built [  13.881s] (current)
+     Parsing lampshade v0.12.0 (current)
+      Parsed [   0.021s] (current)
+    Building lampshade v0.11.0 (baseline)
+       Built [  11.654s] (baseline)
+     Parsing lampshade v0.11.0 (baseline)
+      Parsed [   0.018s] (baseline)
+    Checking lampshade v0.11.0 -> v0.12.0 (assume patch change)
+     Checked [   0.032s] 229 checks: 224 pass, 5 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 5 major and 0 minor checks failed
+    Finished [  26.158s] lampshade

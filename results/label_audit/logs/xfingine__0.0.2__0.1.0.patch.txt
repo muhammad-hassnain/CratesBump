@@ -1,0 +1,13 @@
+
+    Building xfingine v0.1.0 (current)
+       Built [   2.283s] (current)
+     Parsing xfingine v0.1.0 (current)
+      Parsed [   0.002s] (current)
+    Building xfingine v0.0.2 (baseline)
+       Built [   2.410s] (baseline)
+     Parsing xfingine v0.0.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking xfingine v0.0.2 -> v0.1.0 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   4.858s] xfingine

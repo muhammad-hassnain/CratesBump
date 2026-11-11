@@ -1,0 +1,13 @@
+
+    Building rancher_client v1.0.6 (current)
+       Built [  15.391s] (current)
+     Parsing rancher_client v1.0.6 (current)
+      Parsed [   0.015s] (current)
+    Building rancher_client v1.0.5 (baseline)
+       Built [  14.137s] (baseline)
+     Parsing rancher_client v1.0.5 (baseline)
+      Parsed [   0.015s] (baseline)
+    Checking rancher_client v1.0.5 -> v1.0.6 (assume patch change)
+     Checked [   0.046s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  30.432s] rancher_client

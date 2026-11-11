@@ -1,0 +1,13 @@
+
+    Building yoa-marketdata-query-sdk v3.0.1 (current)
+       Built [   9.895s] (current)
+     Parsing yoa-marketdata-query-sdk v3.0.1 (current)
+      Parsed [   0.021s] (current)
+    Building yoa-marketdata-query-sdk v3.0.0 (baseline)
+       Built [   9.210s] (baseline)
+     Parsing yoa-marketdata-query-sdk v3.0.0 (baseline)
+      Parsed [   0.020s] (baseline)
+    Checking yoa-marketdata-query-sdk v3.0.0 -> v3.0.1 (assume patch change)
+     Checked [   0.030s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  19.586s] yoa-marketdata-query-sdk

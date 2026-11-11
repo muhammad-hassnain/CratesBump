@@ -1,0 +1,133 @@
+
+    Building lcax_convert v2.1.2 (current)
+error: running cargo-doc on crate 'lcax_convert' failed with output:
+-----
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling libm v0.2.16
+   Compiling autocfg v1.5.1
+   Compiling num-traits v0.2.19
+   Compiling syn v2.0.119
+    Checking cfg-if v1.0.5
+   Compiling libc v0.2.191
+   Compiling syn v3.0.9
+   Compiling serde_core v1.0.229
+   Compiling zmij v1.0.23
+   Compiling proc-macro-hack v0.5.20+deprecated
+    Checking num-integer v0.1.47
+   Compiling serde_json v1.0.154
+   Compiling zerocopy v0.8.63
+    Checking iana-time-zone v0.1.65
+   Compiling serde v1.0.229
+    Checking chrono v0.4.45
+   Compiling serde_derive_internals v0.29.1
+   Compiling serde_derive v1.0.229
+   Compiling zerocopy-derive v0.8.63
+   Compiling paste v1.0.15
+   Compiling schemars v0.8.22
+    Checking itoa v1.0.18
+   Compiling version_check v0.9.5
+   Compiling getrandom v0.3.4
+    Checking memchr v2.8.3
+   Compiling crc32fast v1.5.4
+   Compiling getrandom v0.4.3
+   Compiling ahash v0.8.12
+   Compiling pkg-version-impl v0.1.1
+   Compiling schemars_derive v0.8.22
+    Checking dyn-clone v1.0.20
+    Checking simd-adler32 v0.3.10
+   Compiling snap v1.1.2
+    Checking adler2 v2.0.1
+    Checking miniz_oxide v0.9.1
+    Checking pkg-version v1.0.0
+    Checking num-rational v0.4.2
+    Checking num-iter v0.1.46
+    Checking ordered-float v2.10.1
+    Checking num-complex v0.4.6
+    Checking integer-encoding v3.0.4
+    Checking byteorder v1.5.0
+    Checking static_assertions v1.1.0
+    Checking once_cell v1.21.4
+    Checking sha1_smol v1.0.1
+    Checking thrift v0.17.0
+    Checking uuid v1.29.0
+    Checking twox-hash v1.6.3
+    Checking num v0.4.3
+    Checking lcax_core v3.8.0
+    Checking half v2.7.1
+    Checking flate2 v1.1.11
+    Checking num-bigint v0.4.8
+   Compiling field_access_derive v0.1.12
+    Checking bytes v1.12.1
+   Compiling seq-macro v0.3.6
+    Checking hashbrown v0.14.5
+    Checking field_access v0.1.13
+    Checking lcax_models v3.8.0
+    Checking parquet v51.0.0
+ Documenting lcax_convert v2.1.2 (/work/lcax_convert-2.1.2)
+error[E0432]: unresolved import `lcax_models::life_cycle_base::LifeCycleStage`
+ --> /work/lcax_convert-2.1.2/src/ilcd/parse.rs:6:71
+  |
+6 | use lcax_models::life_cycle_base::{ImpactCategory, ImpactCategoryKey, LifeCycleStage};
+  |                                                                       ^^^^^^^^^^^^^^ no `LifeCycleStage` in `life_cycle_base`
+
+error[E0432]: unresolved import `lcax_models::life_cycle_base::LifeCycleStage`
+ --> /work/lcax_convert-2.1.2/src/lcabyg/nodes.rs:5:71
+  |
+5 | use lcax_models::life_cycle_base::{ImpactCategory, ImpactCategoryKey, LifeCycleStage};
+  |                                                                       ^^^^^^^^^^^^^^ no `LifeCycleStage` in `life_cycle_base`
+
+error[E0432]: unresolved import `lcax_models::life_cycle_base::LifeCycleStage`
+  --> /work/lcax_convert-2.1.2/src/lcabyg/parse.rs:10:55
+   |
+10 | use lcax_models::life_cycle_base::{ImpactCategoryKey, LifeCycleStage};
+   |                                                       ^^^^^^^^^^^^^^ no `LifeCycleStage` in `life_cycle_base`
+
+error[E0432]: unresolved import `lcax_models::product::ImpactDataSource`
+  --> /work/lcax_convert-2.1.2/src/lcabyg/parse.rs:11:28
+   |
+11 | use lcax_models::product::{ImpactDataSource, Product as LCAxProduct};
+   |                            ^^^^^^^^^^^^^^^^ no `ImpactDataSource` in `product`
+
+error[E0432]: unresolved import `lcax_models::project::ProjectInfo`
+  --> /work/lcax_convert-2.1.2/src/lcabyg/parse.rs:14:29
+   |
+14 |     Project as LCAxProject, ProjectInfo, RoofType, SoftwareInfo,
+   |                             ^^^^^^^^^^^ no `ProjectInfo` in `project`
+
+error[E0432]: unresolved import `lcax_models::life_cycle_base::LifeCycleStage`
+ --> /work/lcax_convert-2.1.2/src/slice/model.rs:6:71
+  |
+6 | use lcax_models::life_cycle_base::{ImpactCategory, ImpactCategoryKey, LifeCycleStage};
+  |                                                                       ^^^^^^^^^^^^^^ no `LifeCycleStage` in `life_cycle_base`
+
+error[E0432]: unresolved import `lcax_models::product::ImpactDataSource`
+ --> /work/lcax_convert-2.1.2/src/slice/model.rs:7:28
+  |
+7 | use lcax_models::product::{ImpactDataSource, Product};
+  |                            ^^^^^^^^^^^^^^^^ no `ImpactDataSource` in `product`
+
+error[E0432]: unresolved import `lcax_models::techflow`
+  --> /work/lcax_convert-2.1.2/src/slice/model.rs:10:18
+   |
+10 | use lcax_models::techflow::TechFlow;
+   |                  ^^^^^^^^ could not find `techflow` in `lcax_models`
+
+For more information about this error, try `rustc --explain E0432`.
+error: could not document `lcax_convert`
+
+-----
+
+error: failed to build rustdoc for crate lcax_convert v2.1.2
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/lcax_convert-2.1.2 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate lcax_convert v2.1.2

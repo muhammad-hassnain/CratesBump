@@ -1,0 +1,24 @@
+
+--- failure trait_added_supertrait: non-sealed trait added new supertraits ---
+
+Description:
+A non-sealed trait added one or more supertraits, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#generic-bounds-tighten
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_added_supertrait.ron
+
+Failed in:
+  trait cf_rustracing::sampler::Sampler gained Debug in file /work/cf-rustracing-1.0.1/src/sampler.rs:8
+
+    Building cf-rustracing v1.0.1 (current)
+       Built [   4.517s] (current)
+     Parsing cf-rustracing v1.0.1 (current)
+      Parsed [   0.009s] (current)
+    Building cf-rustracing v1.0.0 (baseline)
+       Built [   4.254s] (baseline)
+     Parsing cf-rustracing v1.0.0 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking cf-rustracing v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.023s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   9.039s] cf-rustracing

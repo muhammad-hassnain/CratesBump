@@ -1,0 +1,13 @@
+
+    Building fnmatch-regex v0.3.1 (current)
+       Built [   1.446s] (current)
+     Parsing fnmatch-regex v0.3.1 (current)
+      Parsed [   0.001s] (current)
+    Building fnmatch-regex v0.3.0 (baseline)
+       Built [   1.456s] (baseline)
+     Parsing fnmatch-regex v0.3.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking fnmatch-regex v0.3.0 -> v0.3.1 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.053s] fnmatch-regex

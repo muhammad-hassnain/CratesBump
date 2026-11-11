@@ -1,0 +1,24 @@
+
+--- failure trait_missing: pub trait removed or renamed ---
+
+Description:
+A publicly-visible trait cannot be imported by its prior path. A `pub use` may have been removed, or the trait itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_missing.ron
+
+Failed in:
+  trait clone::TryClone, previously in file /work/clone-0.1.1/src/lib.rs:7
+
+    Building clone v0.1.2 (current)
+       Built [   0.092s] (current)
+     Parsing clone v0.1.2 (current)
+      Parsed [   0.000s] (current)
+    Building clone v0.1.1 (baseline)
+       Built [   0.096s] (baseline)
+     Parsing clone v0.1.1 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking clone v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.010s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.311s] clone

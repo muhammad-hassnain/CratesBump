@@ -1,0 +1,568 @@
+{
+  "crates_in_scope": 225799,
+  "crates_with_no_pair_under_plan_pairs": 4633,
+  "crates_with_pairs": 221166,
+  "crates_extracted": 221027,
+  "crates_with_pairs_not_extracted": 139,
+  "not_extracted_by_cdn_status": {
+    "403": 139
+  },
+  "not_extracted": {
+    "PrintLib": {
+      "first_unavailable_version": "1.2.0",
+      "http_status": 403
+    },
+    "Ygen": {
+      "first_unavailable_version": "0.1.1",
+      "http_status": 403
+    },
+    "adamo": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "agents-sesame": {
+      "first_unavailable_version": "0.1.1",
+      "http_status": 403
+    },
+    "ai_homeless_man": {
+      "first_unavailable_version": "67.0.25",
+      "http_status": 403
+    },
+    "ai_minecraft_image": {
+      "first_unavailable_version": "67.0.8",
+      "http_status": 403
+    },
+    "ai_soulmate_sketch_filter": {
+      "first_unavailable_version": "67.0.50",
+      "http_status": 403
+    },
+    "aikit-sdk": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "am-fs-btrfs": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "am-fs-ntfs": {
+      "first_unavailable_version": "0.3.2",
+      "http_status": 403
+    },
+    "am-fs-squashfs": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "am-fs-xfs": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "am-img-qcow2": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "am-img-vhd": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "am-img-vmdk": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "aptove-bridge": {
+      "first_unavailable_version": "0.1.2",
+      "http_status": 403
+    },
+    "arrlist": {
+      "first_unavailable_version": "0.1.3",
+      "http_status": 403
+    },
+    "as_cast": {
+      "first_unavailable_version": "0.3.0",
+      "http_status": 403
+    },
+    "bevy_filter_enum": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "bevy_filter_enum_derive": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "bolt-web": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "bolt-web-macro": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "build-tools": {
+      "first_unavailable_version": "0.1.1",
+      "http_status": 403
+    },
+    "callisto-moon": {
+      "first_unavailable_version": "0.3.1",
+      "http_status": 403
+    },
+    "cargo-archtest": {
+      "first_unavailable_version": "0.1.3",
+      "http_status": 403
+    },
+    "cekanje": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "cerium": {
+      "first_unavailable_version": "0.1.1",
+      "http_status": 403
+    },
+    "claude-code-rust": {
+      "first_unavailable_version": "0.2.0",
+      "http_status": 403
+    },
+    "cli-grid": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "conditional-assignment": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "cribler": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "crook_calculator": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "csvx": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "cvm_cli": {
+      "first_unavailable_version": "1.0.2",
+      "http_status": 403
+    },
+    "d2-stampede": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "d2-stampede-macros": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "d2-stampede-observers": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "d2-stampede-protobufs": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "dependency-tree-svg": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "diaryx": {
+      "first_unavailable_version": "0.4.2",
+      "http_status": 403
+    },
+    "directoree": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "discord-ferris": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "docsrs-poc-readme-path-leak": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "docsrs-poc-symlink-doc-leak": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "dotfiles-manager": {
+      "first_unavailable_version": "1.0.0",
+      "http_status": 403
+    },
+    "droidtui": {
+      "first_unavailable_version": "0.2.2",
+      "http_status": 403
+    },
+    "drosera": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "error-rail": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "fattureincloud-rs": {
+      "first_unavailable_version": "2.0.29",
+      "http_status": 403
+    },
+    "feed-reader": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "feedyourai": {
+      "first_unavailable_version": "1.0.0",
+      "http_status": 403
+    },
+    "fenir": {
+      "first_unavailable_version": "3.0.3",
+      "http_status": 403
+    },
+    "formatic": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "fume": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "fume-core": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "get-capec": {
+      "first_unavailable_version": "1.9.6",
+      "http_status": 403
+    },
+    "get-cpe": {
+      "first_unavailable_version": "0.6.3",
+      "http_status": 403
+    },
+    "get-cve": {
+      "first_unavailable_version": "1.5.5",
+      "http_status": 403
+    },
+    "get-cwe": {
+      "first_unavailable_version": "1.10.6",
+      "http_status": 403
+    },
+    "get-mitre": {
+      "first_unavailable_version": "0.1.6",
+      "http_status": 403
+    },
+    "github-trending-rs": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "gma-lite": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "gmodx": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "humanly": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "injectum": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "kosa": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "largo": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "logs-update": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "magihuman-ai": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "memfd-runner": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "nano_banana_2": {
+      "first_unavailable_version": "67.0.44",
+      "http_status": 403
+    },
+    "nft-gate-gateway": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "numerilib": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "ock": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "osd-core": {
+      "first_unavailable_version": "0.2.4",
+      "http_status": 403
+    },
+    "pari-core": {
+      "first_unavailable_version": "0.2.0",
+      "http_status": 403
+    },
+    "pari-format": {
+      "first_unavailable_version": "0.2.0",
+      "http_status": 403
+    },
+    "pari-index": {
+      "first_unavailable_version": "0.2.0",
+      "http_status": 403
+    },
+    "pari-store": {
+      "first_unavailable_version": "0.2.0",
+      "http_status": 403
+    },
+    "pi-recipe-check": {
+      "first_unavailable_version": "0.4.0",
+      "http_status": 403
+    },
+    "pick_action_from_image": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "pnger": {
+      "first_unavailable_version": "0.1.1",
+      "http_status": 403
+    },
+    "portkey-sdk": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "quickbench": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "quickbench-macros": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "quo": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-arithmetic": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-carriage": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-envelope": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-line": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-notation": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-warden": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-wire": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "quo-zero": {
+      "first_unavailable_version": "0.0.0",
+      "http_status": 403
+    },
+    "radion-sdk": {
+      "first_unavailable_version": "0.2.1",
+      "http_status": 403
+    },
+    "rains": {
+      "first_unavailable_version": "0.1.1",
+      "http_status": 403
+    },
+    "ratdmp": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "ratin": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "rdml-qpcr": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "reg4th": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "reviewloop": {
+      "first_unavailable_version": "0.1.1",
+      "http_status": 403
+    },
+    "rng-pack": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "roofy-math": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "rta": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "rta-derive": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "ruxvt": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "sdi": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "sec-mem": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "shell-engine": {
+      "first_unavailable_version": "0.2.0",
+      "http_status": 403
+    },
+    "shopify_storefront": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "slash": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "statespace": {
+      "first_unavailable_version": "0.1.3",
+      "http_status": 403
+    },
+    "steperb": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "subimpl": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "swapx": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "syscaller": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "syscaller-core": {
+      "first_unavailable_version": "0.2.1",
+      "http_status": 403
+    },
+    "syscaller-wrap-macro": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "taskcmd": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "terminal-mcp": {
+      "first_unavailable_version": "0.1.6",
+      "http_status": 403
+    },
+    "tezaursapi": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "tnn": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "tower-sessions-fs-store": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "treetest": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "turbo_base64": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "turbofox": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "unwrap_helpers": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "updates": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "urng": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "veo_4": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "virtio-drivers-and-devices": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "vision-graphql": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "vision-graphql-cli": {
+      "first_unavailable_version": "0.3.0",
+      "http_status": 403
+    },
+    "warptrixy": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "web_ui": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "webidl-utils": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "winr": {
+      "first_unavailable_version": "0.0.1",
+      "http_status": 403
+    },
+    "xad-rs": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    },
+    "yggdryl": {
+      "first_unavailable_version": "0.1.0",
+      "http_status": 403
+    }
+  }
+}

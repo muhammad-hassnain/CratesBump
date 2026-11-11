@@ -1,0 +1,13 @@
+
+    Building e2e-test-client v0.3.0 (current)
+       Built [  11.562s] (current)
+     Parsing e2e-test-client v0.3.0 (current)
+      Parsed [   0.002s] (current)
+    Building e2e-test-client v0.2.1 (baseline)
+       Built [  12.164s] (baseline)
+     Parsing e2e-test-client v0.2.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking e2e-test-client v0.2.1 -> v0.3.0 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  24.345s] e2e-test-client

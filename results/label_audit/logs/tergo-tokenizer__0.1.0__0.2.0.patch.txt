@@ -1,0 +1,50 @@
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant Token:Stop in /work/tergo-tokenizer-0.2.0/src/tokens.rs:84
+  variant Token:SuperAssign in /work/tergo-tokenizer-0.2.0/src/tokens.rs:98
+  variant Token:ColonAssign in /work/tergo-tokenizer-0.2.0/src/tokens.rs:99
+  variant Token:Stop in /work/tergo-tokenizer-0.2.0/src/tokens.rs:84
+  variant Token:SuperAssign in /work/tergo-tokenizer-0.2.0/src/tokens.rs:98
+  variant Token:ColonAssign in /work/tergo-tokenizer-0.2.0/src/tokens.rs:99
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  tergo_tokenizer::tokens::CommentedToken::new takes 3 parameters in /work/tergo-tokenizer-0.1.0/src/tokens.rs:22, but now takes 2 parameters in /work/tergo-tokenizer-0.2.0/src/tokens.rs:27
+  tergo_tokenizer::tokens::CommentedToken::with_comments takes 5 parameters in /work/tergo-tokenizer-0.1.0/src/tokens.rs:32, but now takes 4 parameters in /work/tergo-tokenizer-0.2.0/src/tokens.rs:36
+
+--- failure struct_pub_field_missing: pub struct's pub field removed or renamed ---
+
+Description:
+A publicly-visible struct has at least one public field that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_pub_field_missing.ron
+
+Failed in:
+  field line of struct CommentedToken, previously in file /work/tergo-tokenizer-0.1.0/src/tokens.rs:11
+
+    Building tergo-tokenizer v0.2.0 (current)
+       Built [   1.758s] (current)
+     Parsing tergo-tokenizer v0.2.0 (current)
+      Parsed [   0.001s] (current)
+    Building tergo-tokenizer v0.1.0 (baseline)
+       Built [   0.173s] (baseline)
+     Parsing tergo-tokenizer v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking tergo-tokenizer v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.014s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [   2.119s] tergo-tokenizer

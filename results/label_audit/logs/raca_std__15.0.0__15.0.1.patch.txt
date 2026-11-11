@@ -1,0 +1,41 @@
+
+    Building raca_std v15.0.1 (current)
+error: running cargo-doc on crate 'raca_std' failed with output:
+-----
+   Compiling const_fn v0.4.12
+   Compiling rustversion v1.0.23
+    Checking scopeguard v1.2.0
+    Checking lock_api v0.4.14
+    Checking volatile v0.4.6
+    Checking bitflags v2.13.2
+    Checking bit_field v0.10.3
+    Checking spin v0.9.9
+    Checking x86_64 v0.15.5
+ Documenting raca_std v15.0.1 (/work/raca_std-15.0.1)
+error: unsafe attribute used without unsafe
+  --> /work/raca_std-15.0.1/src/lib.rs:27:3
+   |
+27 | #[naked]
+   |   ^^^^^ usage of unsafe attribute
+   |
+help: wrap the attribute in `unsafe(...)`
+   |
+27 | #[unsafe(naked)]
+   |   +++++++     +
+
+error: could not document `raca_std`
+
+-----
+
+error: failed to build rustdoc for crate raca_std v15.0.1
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/raca_std-15.0.1 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate raca_std v15.0.1

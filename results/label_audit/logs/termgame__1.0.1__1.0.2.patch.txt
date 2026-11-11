@@ -1,0 +1,13 @@
+
+    Building termgame v1.0.2 (current)
+       Built [   1.506s] (current)
+     Parsing termgame v1.0.2 (current)
+      Parsed [   0.002s] (current)
+    Building termgame v1.0.1 (baseline)
+       Built [   1.887s] (baseline)
+     Parsing termgame v1.0.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking termgame v1.0.1 -> v1.0.2 (assume patch change)
+     Checked [   0.017s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.634s] termgame

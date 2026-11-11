@@ -1,0 +1,13 @@
+
+    Building deed-dap v0.2.13 (current)
+       Built [   0.929s] (current)
+     Parsing deed-dap v0.2.13 (current)
+      Parsed [   0.002s] (current)
+    Building deed-dap v0.2.12 (baseline)
+       Built [   0.989s] (baseline)
+     Parsing deed-dap v0.2.12 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking deed-dap v0.2.12 -> v0.2.13 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   2.066s] deed-dap

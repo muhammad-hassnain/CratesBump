@@ -1,0 +1,13 @@
+
+    Building leo-interpreter v2.6.1 (current)
+       Built [  30.915s] (current)
+     Parsing leo-interpreter v2.6.1 (current)
+      Parsed [   0.009s] (current)
+    Building leo-interpreter v2.6.0 (baseline)
+       Built [  26.643s] (baseline)
+     Parsing leo-interpreter v2.6.0 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking leo-interpreter v2.6.0 -> v2.6.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  58.799s] leo-interpreter

@@ -1,0 +1,158 @@
+
+    Building wai v0.1.1 (current)
+error: running cargo-doc on crate 'wai' failed with output:
+-----
+warning: /work/wai-0.1.1/Cargo.toml: `package.edition` is unspecified, defaulting to `2015` while the latest is `2024`
+warning: `wai` (manifest) generated 1 warning
+   Compiling libc v0.2.191
+   Compiling autocfg v1.5.1
+    Checking cfg-if v0.1.10
+    Checking lazy_static v1.5.1
+    Checking log v0.4.35
+   Compiling maybe-uninit v2.0.0
+   Compiling semver-parser v0.7.0
+   Compiling crossbeam-utils v0.7.2
+    Checking futures v0.1.31
+   Compiling semver v0.9.0
+   Compiling rustc_version v0.2.3
+    Checking scopeguard v1.2.0
+    Checking slab v0.4.12
+    Checking iovec v0.1.4
+    Checking byteorder v1.5.0
+   Compiling parking_lot_core v0.6.3
+    Checking bytes v0.4.12
+    Checking tokio-executor v0.1.10
+    Checking net2 v0.2.39
+    Checking num_cpus v1.17.0
+   Compiling parking_lot v0.9.0
+   Compiling memoffset v0.5.6
+    Checking tokio-io v0.1.13
+    Checking smallvec v0.6.14
+    Checking fnv v1.0.7
+   Compiling pkg-config v0.3.34
+    Checking mio v0.6.23
+    Checking lock_api v0.3.4
+   Compiling crossbeam-epoch v0.8.2
+   Compiling winapi-build v0.1.1
+   Compiling kernel32-sys v0.2.2
+    Checking tokio-sync v0.1.8
+    Checking winapi v0.2.8
+   Compiling x11 v2.21.0
+    Checking crossbeam-deque v0.7.4
+    Checking tokio-codec v0.1.2
+    Checking crossbeam-queue v0.2.3
+    Checking tokio-threadpool v0.1.18
+    Checking tokio-reactor v0.1.12
+error: failed to run custom build command for `x11 v2.21.0`
+
+Caused by:
+  process didn't exit successfully: `/work/wai-0.1.1/target/semver-checks/local-wai-0_1_1-x86_64_unknown_linux_gnu-2c1c7bf74508b0ab/target/debug/build/x11-4a6a50f6b70dcf9c/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=X11_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=X11_STATIC
+  cargo:rerun-if-env-changed=X11_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=SYSROOT
+  cargo:rerun-if-env-changed=X11_STATIC
+  cargo:rerun-if-env-changed=X11_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rustc-link-search=native=/usr/lib/x86_64-linux-gnu
+  cargo:rustc-link-lib=X11
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=X11_STATIC
+  cargo:rerun-if-env-changed=X11_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=XI_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=XI_STATIC
+  cargo:rerun-if-env-changed=XI_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+
+  --- stderr
+
+  thread 'main' (558) panicked at /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/x11-2.21.0/build.rs:42:14:
+  called `Result::unwrap()` on an `Err` value: 
+  pkg-config exited with status code 1
+  > PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 pkg-config --libs --cflags xi 'xi >= 1.7'
+
+  pkg-config output:
+    Package xi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `xi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    Package 'xi', required by 'virtual:world', not found
+    Package 'xi', required by 'virtual:world', not found
+
+  The system library `xi` required by crate `x11` was not found.
+  The file `xi.pc` needs to be installed and the PKG_CONFIG_PATH environment variable must contain its parent directory.
+  The PKG_CONFIG_PATH environment variable is not set.
+
+  HINT: if you have installed the library, try setting PKG_CONFIG_PATH to the directory containing `xi.pc`.
+
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
+
+-----
+
+error: failed to build rustdoc for crate wai v0.1.1
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/wai-0.1.1 --features default,evdev-backend,libudev-sys,vulkano,x11,x11-backend,xcb,xkbcommon &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate wai v0.1.1

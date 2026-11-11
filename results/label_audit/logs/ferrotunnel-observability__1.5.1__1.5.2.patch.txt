@@ -1,0 +1,13 @@
+
+    Building ferrotunnel-observability v1.5.2 (current)
+       Built [  37.378s] (current)
+     Parsing ferrotunnel-observability v1.5.2 (current)
+      Parsed [   0.007s] (current)
+    Building ferrotunnel-observability v1.5.1 (baseline)
+       Built [  33.926s] (baseline)
+     Parsing ferrotunnel-observability v1.5.1 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking ferrotunnel-observability v1.5.1 -> v1.5.2 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  72.211s] ferrotunnel-observability

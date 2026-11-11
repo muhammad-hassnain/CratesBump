@@ -1,0 +1,13 @@
+
+    Building fx-callback v1.0.2 (current)
+       Built [   2.536s] (current)
+     Parsing fx-callback v1.0.2 (current)
+      Parsed [   0.002s] (current)
+    Building fx-callback v1.0.1 (baseline)
+       Built [   2.848s] (baseline)
+     Parsing fx-callback v1.0.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking fx-callback v1.0.1 -> v1.0.2 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   5.607s] fx-callback

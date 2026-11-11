@@ -1,0 +1,24 @@
+
+--- failure enum_missing: pub enum removed or renamed ---
+
+Description:
+A publicly-visible enum cannot be imported by its prior path. A `pub use` may have been removed, or the enum itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_missing.ron
+
+Failed in:
+  enum pcap_rs::iter::NextBlock, previously in file /work/pcap-rs-1.0.2/src/iter.rs:6
+
+    Building pcap-rs v1.0.3 (current)
+       Built [   0.450s] (current)
+     Parsing pcap-rs v1.0.3 (current)
+      Parsed [   0.001s] (current)
+    Building pcap-rs v1.0.2 (baseline)
+       Built [   0.492s] (baseline)
+     Parsing pcap-rs v1.0.2 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking pcap-rs v1.0.2 -> v1.0.3 (assume patch change)
+     Checked [   0.015s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   1.110s] pcap-rs

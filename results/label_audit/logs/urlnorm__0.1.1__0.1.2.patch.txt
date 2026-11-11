@@ -1,0 +1,13 @@
+
+    Building urlnorm v0.1.2 (current)
+       Built [   4.019s] (current)
+     Parsing urlnorm v0.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building urlnorm v0.1.1 (baseline)
+       Built [   3.749s] (baseline)
+     Parsing urlnorm v0.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking urlnorm v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   7.986s] urlnorm

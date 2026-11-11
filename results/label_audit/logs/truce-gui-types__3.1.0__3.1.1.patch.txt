@@ -1,0 +1,13 @@
+
+    Building truce-gui-types v3.1.1 (current)
+       Built [   1.069s] (current)
+     Parsing truce-gui-types v3.1.1 (current)
+      Parsed [   0.003s] (current)
+    Building truce-gui-types v3.1.0 (baseline)
+       Built [   0.961s] (baseline)
+     Parsing truce-gui-types v3.1.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking truce-gui-types v3.1.0 -> v3.1.1 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   2.230s] truce-gui-types

@@ -1,0 +1,775 @@
+
+    Building portfu v1.3.2 (current)
+error: running cargo-doc on crate 'portfu' failed with output:
+-----
+   Compiling libc v0.2.191
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+    Checking cfg-if v1.0.5
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+   Compiling syn v3.0.9
+   Compiling jobserver v0.1.35
+   Compiling version_check v0.9.5
+   Compiling cc v1.11.1
+   Compiling generic-array v0.14.7
+   Compiling dunce v1.0.5
+   Compiling fs_extra v1.3.0
+   Compiling pkg-config v0.3.34
+   Compiling zerocopy v0.8.63
+   Compiling cmake v0.1.58
+   Compiling zeroize v1.9.1
+   Compiling aws-lc-rs v1.19.0
+   Compiling aws-lc-sys v0.47.0
+   Compiling ring v0.17.14
+   Compiling synstructure v0.14.0
+   Compiling syn v2.0.119
+   Compiling zerofrom-derive v0.1.8
+   Compiling yoke-derive v0.8.4
+   Compiling zerovec-derive v0.11.7
+   Compiling displaydoc v0.2.7
+   Compiling tokio-macros v2.7.2
+   Compiling icu_normalizer_data v2.4.0
+   Compiling httparse v1.10.1
+   Compiling serde_core v1.0.229
+   Compiling icu_properties_data v2.4.0
+   Compiling zerofrom v0.1.8
+   Compiling futures-macro v0.3.34
+   Compiling getrandom v0.2.17
+   Compiling bytes v1.12.1
+   Compiling stable_deref_trait v1.2.1
+   Compiling yoke v0.8.4
+   Compiling rustls v0.23.46
+   Compiling getrandom v0.3.4
+   Compiling itoa v1.0.18
+   Compiling pin-project-lite v0.2.17
+   Compiling libm v0.2.16
+    Checking smallvec v1.16.4
+   Compiling der_derive v0.7.3
+   Compiling futures-core v0.3.34
+   Compiling autocfg v1.5.1
+   Compiling num-traits v0.2.19
+   Compiling zerovec v0.11.9
+   Compiling errno v0.3.14
+   Compiling const-oid v0.9.6
+   Compiling signal-hook-registry v1.4.8
+   Compiling socket2 v0.6.5
+   Compiling mio v1.2.4
+    Checking once_cell v1.21.4
+   Compiling typenum v1.20.1
+   Compiling tokio v1.54.1
+   Compiling http v1.5.0
+   Compiling rustls-pki-types v1.15.1
+   Compiling futures-sink v0.3.34
+   Compiling tinystr v0.8.5
+   Compiling litemap v0.8.3
+   Compiling writeable v0.6.4
+   Compiling utf_types v1.0.0
+   Compiling slab v0.4.12
+   Compiling utf8_iter v1.1.0
+   Compiling icu_locale_core v2.4.0
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling potential_utf v0.1.6
+   Compiling zerotrie v0.2.5
+   Compiling ppv-lite86 v0.2.21
+   Compiling crossbeam-utils v0.8.23
+   Compiling untrusted v0.9.0
+   Compiling percent-encoding v2.3.2
+   Compiling thiserror v2.0.21
+   Compiling serde v1.0.229
+   Compiling log v0.4.35
+   Compiling inotify-sys v0.1.8
+   Compiling zmij v1.0.23
+   Compiling icu_provider v2.4.0
+   Compiling icu_collections v2.4.0
+   Compiling digest v0.10.7
+   Compiling thiserror-impl v2.0.21
+   Compiling serde_derive v1.0.229
+   Compiling base64ct v1.8.3
+   Compiling subtle v2.6.1
+   Compiling equivalent v1.0.3
+   Compiling futures-task v0.3.34
+   Compiling hashbrown v0.17.1
+   Compiling indexmap v2.14.2
+   Compiling futures-util v0.3.34
+   Compiling pem-rfc7468 v0.7.0
+   Compiling http-body v1.1.0
+   Compiling tracing-core v0.1.36
+   Compiling rand_core v0.6.4
+   Compiling flagset v0.4.7
+   Compiling cpufeatures v0.2.17
+   Compiling serde_json v1.0.154
+   Compiling getrandom v0.4.3
+   Compiling num-bigint-dig v0.8.6
+   Compiling der v0.7.10
+   Compiling icu_properties v2.4.0
+   Compiling icu_normalizer v2.4.0
+   Compiling tracing v0.1.44
+   Compiling form_urlencoded v1.2.2
+   Compiling tokio-util v0.7.20
+   Compiling unicase v2.10.0
+   Compiling fnv v1.0.7
+    Checking memchr v2.8.3
+   Compiling atomic-waker v1.1.2
+   Compiling tower-layer v0.3.3
+   Compiling try-lock v0.2.5
+   Compiling tower-service v0.3.3
+   Compiling want v0.3.2
+   Compiling h2 v0.4.20
+   Compiling mime_guess v2.0.5
+    Checking rustls-webpki v0.103.16
+   Compiling rand_core v0.9.5
+   Compiling idna_adapter v1.2.2
+   Compiling spki v0.7.3
+   Compiling webpki-roots v1.0.11
+   Compiling futures-channel v0.3.34
+   Compiling httpdate v1.0.3
+   Compiling hyper v1.12.0
+   Compiling tokio-rustls v0.26.6
+   Compiling idna v1.1.0
+   Compiling rand_chacha v0.9.0
+   Compiling num-integer v0.1.47
+   Compiling sha1 v0.10.7
+   Compiling rand_chacha v0.3.1
+   Compiling sync_wrapper v1.0.2
+   Compiling parking_lot_core v0.9.12
+   Compiling ipnet v2.12.2
+    Checking spin v0.9.9
+   Compiling ryu v1.0.23
+   Compiling base64 v0.23.1
+   Compiling lazy_static v1.5.1
+   Compiling tower v0.5.3
+   Compiling hyper-util v0.1.21
+   Compiling rand v0.8.8
+   Compiling num-iter v0.1.46
+   Compiling url v2.5.8
+   Compiling rand v0.9.5
+   Compiling pkcs8 v0.10.2
+   Compiling aho-corasick v1.1.5
+   Compiling signature v2.2.0
+   Compiling bitflags v2.13.2
+   Compiling utf-8 v0.7.6
+   Compiling same-file v1.0.6
+   Compiling data-encoding v2.11.1
+    Checking scopeguard v1.2.0
+   Compiling regex-syntax v0.8.11
+   Compiling bitflags v1.3.2
+   Compiling inotify v0.9.6
+   Compiling tungstenite v0.26.2
+    Checking lock_api v0.4.14
+   Compiling regex-automata v0.4.18
+   Compiling walkdir v2.5.0
+   Compiling tower-http v0.6.11
+   Compiling crossbeam-channel v0.5.17
+   Compiling serde_urlencoded v0.7.1
+   Compiling pkcs1 v0.7.5
+   Compiling hyper-rustls v0.27.10
+   Compiling webpki-roots v0.26.11
+   Compiling sha2 v0.10.9
+   Compiling http-body-util v0.1.5
+   Compiling mio v0.8.11
+   Compiling async-trait v0.1.92
+   Compiling filetime v0.2.29
+   Compiling num-conv v0.2.2
+   Compiling protobuf v2.28.0
+   Compiling base64 v0.22.1
+   Compiling time-core v0.1.9
+   Compiling mime v0.3.18
+   Compiling thiserror v1.0.69
+   Compiling time-macros v0.2.32
+   Compiling reqwest v0.12.28
+   Compiling notify v6.1.1
+   Compiling rsa v0.9.10
+   Compiling uuid v1.29.0
+   Compiling tokio-tungstenite v0.26.2
+   Compiling regex v1.13.1
+   Compiling x509-cert v0.2.5
+   Compiling serde_html_form v0.2.8
+   Compiling rustls-pemfile v2.2.0
+   Compiling thiserror-impl v1.0.69
+   Compiling cookie v0.18.2
+    Checking deranged v0.5.9
+   Compiling urlencoding v2.1.3
+   Compiling prometheus v0.13.4
+    Checking powerfmt v0.2.1
+   Compiling portfu_core v1.3.3
+    Checking time v0.3.55
+    Checking parking_lot v0.12.5
+    Checking hashbrown v0.14.5
+    Checking dashmap v5.5.3
+   Compiling portfu_macros v1.3.3
+    Checking hex v0.4.3
+error[E0432]: unresolved imports `syn::FnArg`, `syn::Pat`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/client/websocket.rs:3:24
+    |
+  3 | use syn::{parse_quote, FnArg, Pat, Type};
+    |                        ^^^^^  ^^^ no `Pat` in the root
+    |                        |
+    |                        no `FnArg` in the root
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:430:5
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+430 |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
+    |     ^^^^^
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:487:15
+    |
+484 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+487 |     FieldPat, Pat, PatConst, PatIdent, PatLit, PatMacro, PatOr, PatParen, PatPath, PatRange,
+    |               ^^^
+help: a similar name exists in the module
+    |
+  3 | use syn::{parse_quote, FnArg, Path, Type};
+    |                                  +
+
+error[E0432]: unresolved imports `syn::FnArg`, `syn::Pat`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/endpoints.rs:7:42
+    |
+  7 |     parse_quote, punctuated::Punctuated, FnArg, GenericArgument, GenericParam, Generics, LitStr,
+    |                                          ^^^^^ no `FnArg` in the root
+  8 |     Pat, Path, PathArguments, Token, Type,
+    |     ^^^ no `Pat` in the root
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:430:5
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+430 |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
+    |     ^^^^^
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:487:15
+    |
+484 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+487 |     FieldPat, Pat, PatConst, PatIdent, PatLit, PatMacro, PatOr, PatParen, PatPath, PatRange,
+    |               ^^^
+help: a similar name exists in the module
+    |
+  8 |     Path, Path, PathArguments, Token, Type,
+    |        +
+
+error[E0432]: unresolved imports `syn::FnArg`, `syn::Pat`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/interval.rs:3:24
+    |
+  3 | use syn::{parse_quote, FnArg, GenericArgument, Pat, PathArguments, Type};
+    |                        ^^^^^                   ^^^ no `Pat` in the root
+    |                        |
+    |                        no `FnArg` in the root
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:430:5
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+430 |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
+    |     ^^^^^
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:487:15
+    |
+484 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+487 |     FieldPat, Pat, PatConst, PatIdent, PatLit, PatMacro, PatOr, PatParen, PatPath, PatRange,
+    |               ^^^
+help: a similar name exists in the module
+    |
+  3 | use syn::{parse_quote, FnArg, GenericArgument, Path, PathArguments, Type};
+    |                                                   +
+
+error[E0432]: unresolved imports `syn::FnArg`, `syn::Pat`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/task.rs:3:24
+    |
+  3 | use syn::{parse_quote, FnArg, GenericArgument, Pat, PathArguments, Type};
+    |                        ^^^^^                   ^^^ no `Pat` in the root
+    |                        |
+    |                        no `FnArg` in the root
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:430:5
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+430 |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
+    |     ^^^^^
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:487:15
+    |
+484 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+487 |     FieldPat, Pat, PatConst, PatIdent, PatLit, PatMacro, PatOr, PatParen, PatPath, PatRange,
+    |               ^^^
+help: a similar name exists in the module
+    |
+  3 | use syn::{parse_quote, FnArg, GenericArgument, Path, PathArguments, Type};
+    |                                                   +
+
+error[E0432]: unresolved imports `syn::FnArg`, `syn::Pat`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/websocket.rs:5:24
+    |
+  5 | use syn::{parse_quote, FnArg, GenericArgument, LitStr, Pat, Path, PathArguments, Type};
+    |                        ^^^^^ no `FnArg` in the root    ^^^ no `Pat` in the root
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:430:5
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+430 |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
+    |     ^^^^^
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:487:15
+    |
+484 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+487 |     FieldPat, Pat, PatConst, PatIdent, PatLit, PatMacro, PatOr, PatParen, PatPath, PatRange,
+    |               ^^^
+help: a similar name exists in the module
+    |
+  5 | use syn::{parse_quote, FnArg, GenericArgument, LitStr, Path, Path, PathArguments, Type};
+    |                                                           +
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/client/websocket.rs:33:15
+    |
+ 33 |     ast: syn::ItemFn,
+    |               ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/client/websocket.rs:38:41
+    |
+ 38 |     pub fn new(args: UrlArgs, ast: syn::ItemFn) -> syn::Result<Self> {
+    |                                         ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/endpoints.rs:86:15
+    |
+ 86 |     ast: syn::ItemFn,
+    |               ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/endpoints.rs:91:46
+    |
+ 91 |     pub fn new(args: EndpointArgs, ast: syn::ItemFn, methods: Vec<Method>) -> syn::Result<Self> {
+    |                                              ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/interval.rs:27:15
+    |
+ 27 |     ast: syn::ItemFn,
+    |               ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/interval.rs:33:46
+    |
+ 33 |     pub fn new(args: IntervalArgs, ast: syn::ItemFn) -> syn::Result<Self> {
+    |                                              ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/task.rs:9:15
+    |
+  9 |     ast: syn::ItemFn,
+    |               ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/task.rs:14:26
+    |
+ 14 |     pub fn new(ast: syn::ItemFn) -> syn::Result<Self> {
+    |                          ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/websocket.rs:13:15
+    |
+ 13 |     ast: syn::ItemFn,
+    |               ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/server/websocket.rs:18:46
+    |
+ 18 |     pub fn new(args: EndpointArgs, ast: syn::ItemFn) -> syn::Result<Self> {
+    |                                              ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 56 | method_macro!(Get, get);
+    | ----------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 57 | method_macro!(Post, post);
+    | ------------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 58 | method_macro!(Put, put);
+    | ----------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 59 | method_macro!(Delete, delete);
+    | ----------------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 60 | method_macro!(Head, head);
+    | ------------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 61 | method_macro!(Connect, connect);
+    | ------------------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 62 | method_macro!(Options, options);
+    | ------------------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 63 | method_macro!(Trace, trace);
+    | --------------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:40:47
+    |
+ 40 |             let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                               ^^^^^^ not found in `syn`
+...
+ 64 | method_macro!(Patch, patch);
+    | --------------------------- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+    = note: this error originates in the macro `method_macro` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find type `ItemStruct` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:72:39
+    |
+ 72 |     let ast = match syn::parse::<syn::ItemStruct>(input.clone()) {
+    |                                       ^^^^^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:433:17
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+433 |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
+    |                 ^^^^^^^^^^
+
+error[E0425]: cannot find type `ItemStruct` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:88:39
+    |
+ 88 |     let ast = match syn::parse::<syn::ItemStruct>(input.clone()) {
+    |                                       ^^^^^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:433:17
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+433 |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
+    |                 ^^^^^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:104:39
+    |
+104 |     let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                       ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:120:39
+    |
+120 |     let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                       ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:132:39
+    |
+132 |     let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                       ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+error[E0425]: cannot find type `ItemFn` in crate `syn`
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/portfu_macros-1.3.3/src/lib.rs:148:39
+    |
+148 |     let ast = match syn::parse::<syn::ItemFn>(input.clone()) {
+    |                                       ^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119/src/lib.rs:432:43
+    |
+427 | #[cfg(feature = "full")]
+    |       ---------------- the item is gated behind the `full` feature
+...
+432 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
+
+Some errors have detailed explanations: E0425, E0432.
+For more information about an error, try `rustc --explain E0425`.
+error: could not compile `portfu_macros` (lib) due to 30 previous errors
+
+-----
+
+error: failed to build rustdoc for crate portfu v1.3.2
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/portfu-1.3.2 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate portfu v1.3.2

@@ -1,0 +1,112 @@
+
+    Building razor-libnvpair v0.5.0 (current)
+error: running cargo-doc on crate 'razor-libnvpair' failed with output:
+-----
+   Compiling memchr v2.8.3
+   Compiling proc-macro2 v1.0.107
+   Compiling libc v0.2.191
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling glob v0.3.4
+   Compiling clang-sys v1.9.1
+   Compiling aho-corasick v1.1.5
+   Compiling rustix v0.38.44
+   Compiling regex-syntax v0.8.11
+   Compiling atty v0.2.14
+   Compiling minimal-lexical v0.2.1
+   Compiling unicode-width v0.1.14
+   Compiling linux-raw-sys v0.4.15
+   Compiling bitflags v2.13.2
+   Compiling cfg-if v1.0.5
+   Compiling libloading v0.8.9
+   Compiling textwrap v0.11.0
+   Compiling nom v7.1.3
+   Compiling regex-automata v0.4.18
+   Compiling log v0.4.35
+   Compiling strsim v0.8.0
+   Compiling humantime v2.4.0
+   Compiling bitflags v1.3.2
+   Compiling termcolor v1.4.1
+   Compiling bindgen v0.59.2
+   Compiling vec_map v0.8.2
+   Compiling home v0.5.12
+   Compiling ansi_term v0.12.1
+   Compiling either v1.19.0
+   Compiling which v4.4.2
+   Compiling regex v1.13.1
+   Compiling clap v2.34.0
+   Compiling env_logger v0.9.3
+   Compiling cexpr v0.6.0
+   Compiling lazycell v1.3.0
+   Compiling shlex v1.3.0
+   Compiling lazy_static v1.5.1
+   Compiling rustc-hash v1.1.0
+   Compiling peeking_take_while v0.1.2
+   Compiling pkg-config v0.3.34
+   Compiling syn v2.0.119
+   Compiling thiserror v1.0.69
+   Compiling thiserror-impl v1.0.69
+   Compiling razor-libnvpair-sys v0.5.0
+error: failed to run custom build command for `razor-libnvpair-sys v0.5.0`
+
+Caused by:
+  process didn't exit successfully: `/work/razor-libnvpair-0.5.0/target/semver-checks/local-razor_libnvpair-0_5_0-x86_64_unknown_linux_gnu-79afbfec81c89b50/target/debug/build/razor-libnvpair-sys-abf6294b050c06d1/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=LIBZFS_CORE_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=LIBZFS_CORE_STATIC
+  cargo:rerun-if-env-changed=LIBZFS_CORE_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+
+  --- stderr
+
+  thread 'main' (810) panicked at /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/razor-libnvpair-sys-0.5.0/build.rs:9:10:
+  ZFS development environment is not installed: 
+  pkg-config exited with status code 1
+  > PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 pkg-config --libs --cflags libzfs_core 'libzfs_core >= 0.8'
+
+  pkg-config output:
+    Package libzfs_core was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libzfs_core.pc'
+    to the PKG_CONFIG_PATH environment variable
+    Package 'libzfs_core', required by 'virtual:world', not found
+    Package 'libzfs_core', required by 'virtual:world', not found
+
+  The system library `libzfs_core` required by crate `razor-libnvpair-sys` was not found.
+  The file `libzfs_core.pc` needs to be installed and the PKG_CONFIG_PATH environment variable must contain its parent directory.
+  The PKG_CONFIG_PATH environment variable is not set.
+
+  HINT: if you have installed the library, try setting PKG_CONFIG_PATH to the directory containing `libzfs_core.pc`.
+
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+-----
+
+error: failed to build rustdoc for crate razor-libnvpair v0.5.0
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/razor-libnvpair-0.5.0 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate razor-libnvpair v0.5.0

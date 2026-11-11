@@ -1,0 +1,13 @@
+
+    Building uu_sha256sum v0.11.0 (current)
+       Built [  62.663s] (current)
+     Parsing uu_sha256sum v0.11.0 (current)
+      Parsed [   0.001s] (current)
+    Building uu_sha256sum v0.10.0 (baseline)
+       Built [  60.739s] (baseline)
+     Parsing uu_sha256sum v0.10.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking uu_sha256sum v0.10.0 -> v0.11.0 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [ 123.742s] uu_sha256sum

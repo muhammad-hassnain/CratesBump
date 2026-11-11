@@ -1,0 +1,25 @@
+
+error: running 'cargo update' on crate 'simple_ecdsa_verifier' failed with output:
+-----
+error: failed to select a version for the requirement `keccak = "^0.1"`
+  version 0.1.5 is yanked
+location searched: crates.io index
+required by package `sha3 v0.8.2`
+    ... which satisfies dependency `sha3 = "^0.8.2"` of package `easy-hasher v2.2.1`
+    ... which satisfies dependency `easy-hasher = "^2.2.1"` of package `simple_ecdsa_verifier v0.1.1 (/work/simple_ecdsa_verifier-0.1.1)`
+    ... which satisfies path dependency `simple_ecdsa_verifier` of package `placeholder v0.0.0 (/work/simple_ecdsa_verifier-0.1.1/target/semver-checks/local-simple_ecdsa_verifier-0_1_1-x86_64_unknown_linux_gnu-988cd917c3be2710)`
+note: offline mode (via `--offline`) can sometimes cause surprising resolution failures
+help: if this error is too confusing you may wish to retry without `--offline`
+
+-----
+error: failed to update dependencies for crate simple_ecdsa_verifier v0.1.1
+note: this is unlikely to be a bug in cargo-semver-checks,
+      and is probably an issue with the crate's Cargo.toml
+note: the following command can be used to reproduce the compilation error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/simple_ecdsa_verifier-0.1.1 &&
+          cargo update
+
+error: aborting due to failure to run 'cargo update' for crate simple_ecdsa_verifier v0.1.1

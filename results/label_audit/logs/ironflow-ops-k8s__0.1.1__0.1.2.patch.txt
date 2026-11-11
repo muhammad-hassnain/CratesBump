@@ -1,0 +1,13 @@
+
+    Building ironflow-ops-k8s v0.1.2 (current)
+       Built [  30.301s] (current)
+     Parsing ironflow-ops-k8s v0.1.2 (current)
+      Parsed [   0.004s] (current)
+    Building ironflow-ops-k8s v0.1.1 (baseline)
+       Built [  30.808s] (baseline)
+     Parsing ironflow-ops-k8s v0.1.1 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking ironflow-ops-k8s v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  61.919s] ironflow-ops-k8s

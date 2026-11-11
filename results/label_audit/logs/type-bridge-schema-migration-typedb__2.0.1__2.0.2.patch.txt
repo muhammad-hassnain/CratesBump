@@ -1,0 +1,13 @@
+
+    Building type-bridge-schema-migration-typedb v2.0.2 (current)
+       Built [  40.119s] (current)
+     Parsing type-bridge-schema-migration-typedb v2.0.2 (current)
+      Parsed [   0.011s] (current)
+    Building type-bridge-schema-migration-typedb v2.0.1 (baseline)
+       Built [  40.364s] (baseline)
+     Parsing type-bridge-schema-migration-typedb v2.0.1 (baseline)
+      Parsed [   0.011s] (baseline)
+    Checking type-bridge-schema-migration-typedb v2.0.1 -> v2.0.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  81.220s] type-bridge-schema-migration-typedb

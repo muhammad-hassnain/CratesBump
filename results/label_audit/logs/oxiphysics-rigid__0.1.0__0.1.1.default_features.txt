@@ -1,0 +1,24 @@
+
+--- failure function_parameter_count_changed: pub fn parameter count changed ---
+
+Description:
+A publicly-visible function now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_parameter_count_changed.ron
+
+Failed in:
+  oxiphysics_rigid::aerospace_rigid::breguet_range now takes 5 parameters instead of 4, in /work/oxiphysics-rigid-0.1.1/src/aerospace_rigid.rs:1069
+
+    Building oxiphysics-rigid v0.1.1 (current)
+       Built [   1.194s] (current)
+     Parsing oxiphysics-rigid v0.1.1 (current)
+      Parsed [   0.112s] (current)
+    Building oxiphysics-rigid v0.1.0 (baseline)
+       Built [   1.220s] (baseline)
+     Parsing oxiphysics-rigid v0.1.0 (baseline)
+      Parsed [   0.123s] (baseline)
+    Checking oxiphysics-rigid v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.507s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   3.480s] oxiphysics-rigid

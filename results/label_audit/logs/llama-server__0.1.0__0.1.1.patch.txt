@@ -1,0 +1,13 @@
+
+    Building llama-server v0.1.1 (current)
+       Built [  28.498s] (current)
+     Parsing llama-server v0.1.1 (current)
+      Parsed [   0.005s] (current)
+    Building llama-server v0.1.0 (baseline)
+       Built [  12.947s] (baseline)
+     Parsing llama-server v0.1.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking llama-server v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  42.259s] llama-server

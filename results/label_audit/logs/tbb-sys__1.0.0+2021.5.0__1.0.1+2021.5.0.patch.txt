@@ -1,0 +1,13 @@
+
+    Building tbb-sys v1.0.1+2021.5.0 (current)
+       Built [   3.980s] (current)
+     Parsing tbb-sys v1.0.1+2021.5.0 (current)
+      Parsed [   0.001s] (current)
+    Building tbb-sys v1.0.0+2021.5.0 (baseline)
+       Built [  11.495s] (baseline)
+     Parsing tbb-sys v1.0.0+2021.5.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking tbb-sys v1.0.0+2021.5.0 -> v1.0.1+2021.5.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  15.766s] tbb-sys

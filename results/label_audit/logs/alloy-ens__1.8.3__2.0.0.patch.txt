@@ -1,0 +1,26 @@
+
+--- failure trait_method_default_impl_removed: pub trait default method impl removed ---
+
+Description:
+A method's default impl in an unsealed trait has been removed, breaking trait implementations that relied on that default
+        ref: https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_default_impl_removed.ron
+
+Failed in:
+  trait method alloy_ens::ProviderEnsExt::resolve_name in file /work/alloy-ens-2.0.0/src/lib.rs:192
+  trait method alloy_ens::ProviderEnsExt::lookup_address in file /work/alloy-ens-2.0.0/src/lib.rs:195
+  trait method alloy_ens::ProviderEnsExt::lookup_txt in file /work/alloy-ens-2.0.0/src/lib.rs:198
+
+    Building alloy-ens v2.0.0 (current)
+       Built [  16.610s] (current)
+     Parsing alloy-ens v2.0.0 (current)
+      Parsed [   0.005s] (current)
+    Building alloy-ens v1.8.3 (baseline)
+       Built [  14.460s] (baseline)
+     Parsing alloy-ens v1.8.3 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking alloy-ens v1.8.3 -> v2.0.0 (assume patch change)
+     Checked [   0.013s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  31.842s] alloy-ens

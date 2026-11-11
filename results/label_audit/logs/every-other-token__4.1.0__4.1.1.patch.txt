@@ -1,0 +1,13 @@
+
+    Building every-other-token v4.1.1 (current)
+       Built [  21.751s] (current)
+     Parsing every-other-token v4.1.1 (current)
+      Parsed [   0.064s] (current)
+    Building every-other-token v4.1.0 (baseline)
+       Built [  18.918s] (baseline)
+     Parsing every-other-token v4.1.0 (baseline)
+      Parsed [   0.048s] (baseline)
+    Checking every-other-token v4.1.0 -> v4.1.1 (assume patch change)
+     Checked [   0.081s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  41.721s] every-other-token

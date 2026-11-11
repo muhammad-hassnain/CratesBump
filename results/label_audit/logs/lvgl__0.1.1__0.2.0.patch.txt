@@ -1,0 +1,72 @@
+
+    Building lvgl v0.2.0 (current)
+error: running cargo-doc on crate 'lvgl' failed with output:
+-----
+   Compiling libc v0.2.191
+   Compiling memchr v2.8.3
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+   Compiling cc v1.11.1
+   Compiling version_check v0.9.5
+   Compiling glob v0.3.4
+   Compiling clang-sys v0.29.3
+   Compiling nom v5.1.3
+   Compiling aho-corasick v1.1.5
+   Compiling regex-syntax v0.8.11
+   Compiling libloading v0.5.2
+   Compiling proc-macro2 v1.0.107
+   Compiling atty v0.2.14
+   Compiling unicode-width v0.1.14
+   Compiling quote v1.0.47
+   Compiling regex-automata v0.4.18
+   Compiling quick-error v1.2.3
+   Compiling unicode-ident v1.0.27
+   Compiling humantime v1.3.0
+   Compiling textwrap v0.11.0
+   Compiling log v0.4.35
+   Compiling strsim v0.8.0
+   Compiling termcolor v1.4.1
+   Compiling bindgen v0.53.3
+   Compiling bitflags v1.3.2
+   Compiling ansi_term v0.12.1
+   Compiling vec_map v0.8.2
+   Compiling clap v2.34.0
+   Compiling cexpr v0.4.0
+   Compiling regex v1.13.1
+   Compiling env_logger v0.7.1
+   Compiling which v3.1.1
+   Compiling shlex v0.1.1
+   Compiling peeking_take_while v0.1.2
+   Compiling rustc-hash v1.1.0
+   Compiling lazycell v1.3.0
+   Compiling lazy_static v1.5.1
+   Compiling cfg-if v0.1.10
+    Checking cty v0.2.2
+    Checking byteorder v1.5.0
+    Checking cstr_core v0.2.6
+    Checking embedded-graphics v0.6.2
+   Compiling lvgl-sys v0.2.0
+error: failed to run custom build command for `lvgl-sys v0.2.0`
+
+Caused by:
+  process didn't exit successfully: `/work/lvgl-0.2.0/target/semver-checks/local-lvgl-0_2_0-x86_64_unknown_linux_gnu-094c4832da53f4b8/target/debug/build/lvgl-sys-b81554a6e11b261e/build-script-build` (exit status: 101)
+  --- stderr
+
+  thread 'main' (714) panicked at /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/lvgl-sys-0.2.0/build.rs:16:46:
+  The environment variable DEP_LV_CONFIG_PATH is required to be defined: NotPresent
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+-----
+
+error: failed to build rustdoc for crate lvgl v0.2.0
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/lvgl-0.2.0 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate lvgl v0.2.0

@@ -1,0 +1,13 @@
+
+    Building config-more-formats v1.1.1 (current)
+       Built [  12.046s] (current)
+     Parsing config-more-formats v1.1.1 (current)
+      Parsed [   0.002s] (current)
+    Building config-more-formats v1.1.0 (baseline)
+       Built [  14.621s] (baseline)
+     Parsing config-more-formats v1.1.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking config-more-formats v1.1.0 -> v1.1.1 (assume patch change)
+     Checked [   0.029s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  27.816s] config-more-formats

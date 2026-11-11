@@ -1,0 +1,13 @@
+
+    Building oi-pkg-checker-core v2.0.1 (current)
+       Built [   5.800s] (current)
+     Parsing oi-pkg-checker-core v2.0.1 (current)
+      Parsed [   0.003s] (current)
+    Building oi-pkg-checker-core v2.0.0 (baseline)
+       Built [   4.912s] (baseline)
+     Parsing oi-pkg-checker-core v2.0.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking oi-pkg-checker-core v2.0.0 -> v2.0.1 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  11.153s] oi-pkg-checker-core

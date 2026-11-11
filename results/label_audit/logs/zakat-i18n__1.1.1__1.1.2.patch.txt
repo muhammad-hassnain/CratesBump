@@ -1,0 +1,13 @@
+
+    Building zakat-i18n v1.1.2 (current)
+       Built [  36.443s] (current)
+     Parsing zakat-i18n v1.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building zakat-i18n v1.1.1 (baseline)
+       Built [  43.477s] (baseline)
+     Parsing zakat-i18n v1.1.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking zakat-i18n v1.1.1 -> v1.1.2 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  80.407s] zakat-i18n

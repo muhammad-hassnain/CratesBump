@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this dataset or tool, please cite it as below."
+title: "CratesBump: A Version-Bump Dataset for the Rust Ecosystem"
+type: dataset
+authors:
+  - family-names: "Hassnain"
+    given-names: "Muhammad"
+    affiliation: "University of California, Davis"
+version: "1.0.0"
+date-released: "2026-11-10"
+license:
+  - "CC-BY-4.0"   # the dataset files in data/ (see data/LICENSE)
+  - "MIT"         # the code
+repository-code: "https://github.com/muhammad-hassnain/CratesBump"
+keywords:
+  - "semantic versioning"
+  - "mining software repositories"
+  - "Rust"
+  - "crates.io"
+  - "machine learning"
+  - "software evolution"
+abstract: >-
+  CratesBump: 2,079,790 consecutive release pairs from 219,955 crates, covering
+  every crates.io crate with at least two non-yanked releases before
+  2026-09-14 (crates.io dump of 2026-10-12). Each pair has 41 features
+  (AST change types, dependency changes, complexity, release cadence, GitHub
+  commit and issue/PR activity), the verified predecessor version, the
+  source repository, and two labels: the literal MAJOR.MINOR.PATCH bump and
+  the bump under Cargo's rule for 0.y.z versions. Ships with the Rust
+  extractor and Python pipeline that rebuild it from a crates.io dump and
+  the GitHub API. Feature design follows Abdalkareem et al. (2022) for npm.
+# DOI is pending a Zenodo deposit; add the `doi:` and `identifiers:` fields
+# once the archive is published, and update `version`/`date-released` to match.
+references:
+  - type: article
+    title: "A Machine Learning Approach to Determine the Semantic Versioning Type of npm Packages Releases"
+    authors:
+      - family-names: "Abdalkareem"
+        given-names: "Rabe"
+      - family-names: "Chowdhury"
+        given-names: "Md Atique Reza"
+      - family-names: "Shihab"
+        given-names: "Emad"
+    year: 2022
+    url: "https://arxiv.org/abs/2204.05929"

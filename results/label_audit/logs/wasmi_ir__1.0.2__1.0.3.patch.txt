@@ -1,0 +1,13 @@
+
+    Building wasmi_ir v1.0.3 (current)
+       Built [   2.275s] (current)
+     Parsing wasmi_ir v1.0.3 (current)
+      Parsed [   0.014s] (current)
+    Building wasmi_ir v1.0.2 (baseline)
+       Built [   2.322s] (baseline)
+     Parsing wasmi_ir v1.0.2 (baseline)
+      Parsed [   0.016s] (baseline)
+    Checking wasmi_ir v1.0.2 -> v1.0.3 (assume patch change)
+     Checked [   0.124s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   4.894s] wasmi_ir

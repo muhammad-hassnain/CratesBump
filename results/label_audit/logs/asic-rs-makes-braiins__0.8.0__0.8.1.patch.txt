@@ -1,0 +1,13 @@
+
+    Building asic-rs-makes-braiins v0.8.1 (current)
+       Built [  36.468s] (current)
+     Parsing asic-rs-makes-braiins v0.8.1 (current)
+      Parsed [   0.002s] (current)
+    Building asic-rs-makes-braiins v0.8.0 (baseline)
+       Built [  35.436s] (baseline)
+     Parsing asic-rs-makes-braiins v0.8.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking asic-rs-makes-braiins v0.8.0 -> v0.8.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  72.655s] asic-rs-makes-braiins

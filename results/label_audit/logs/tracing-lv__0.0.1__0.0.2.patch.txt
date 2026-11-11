@@ -1,0 +1,13 @@
+
+    Building tracing-lv v0.0.2 (current)
+       Built [  13.462s] (current)
+     Parsing tracing-lv v0.0.2 (current)
+      Parsed [   0.004s] (current)
+    Building tracing-lv v0.0.1 (baseline)
+       Built [  15.957s] (baseline)
+     Parsing tracing-lv v0.0.1 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking tracing-lv v0.0.1 -> v0.0.2 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  29.827s] tracing-lv

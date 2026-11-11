@@ -1,0 +1,13 @@
+
+    Building gpoint v0.1.2 (current)
+       Built [   0.675s] (current)
+     Parsing gpoint v0.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building gpoint v0.1.1 (baseline)
+       Built [   0.693s] (baseline)
+     Parsing gpoint v0.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking gpoint v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   1.516s] gpoint

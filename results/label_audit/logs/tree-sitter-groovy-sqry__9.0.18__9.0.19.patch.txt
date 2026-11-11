@@ -1,0 +1,13 @@
+
+    Building tree-sitter-groovy-sqry v9.0.19 (current)
+       Built [   5.525s] (current)
+     Parsing tree-sitter-groovy-sqry v9.0.19 (current)
+      Parsed [   0.001s] (current)
+    Building tree-sitter-groovy-sqry v9.0.18 (baseline)
+       Built [   5.529s] (baseline)
+     Parsing tree-sitter-groovy-sqry v9.0.18 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking tree-sitter-groovy-sqry v9.0.18 -> v9.0.19 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  11.303s] tree-sitter-groovy-sqry

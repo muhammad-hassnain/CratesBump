@@ -1,0 +1,13 @@
+
+    Building hedge_rs v1.2.12 (current)
+       Built [  17.033s] (current)
+     Parsing hedge_rs v1.2.12 (current)
+      Parsed [   0.002s] (current)
+    Building hedge_rs v1.2.11 (baseline)
+       Built [  15.328s] (baseline)
+     Parsing hedge_rs v1.2.11 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking hedge_rs v1.2.11 -> v1.2.12 (assume patch change)
+     Checked [   0.036s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  33.123s] hedge_rs

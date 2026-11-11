@@ -1,0 +1,56 @@
+
+--- failure enum_missing: pub enum removed or renamed ---
+
+Description:
+A publicly-visible enum cannot be imported by its prior path. A `pub use` may have been removed, or the enum itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_missing.ron
+
+Failed in:
+  enum token_bindings::TokenMsg, previously in file /work/token-bindings-0.10.3/src/msg.rs:15
+  enum token_bindings::TokenQuery, previously in file /work/token-bindings-0.10.3/src/query.rs:13
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant TokenFactoryMsg:CreateDenom in /work/token-bindings-0.11.0/src/msg.rs:18
+  variant TokenFactoryMsg:ChangeAdmin in /work/token-bindings-0.11.0/src/msg.rs:26
+  variant TokenFactoryMsg:MintTokens in /work/token-bindings-0.11.0/src/msg.rs:32
+  variant TokenFactoryMsg:BurnTokens in /work/token-bindings-0.11.0/src/msg.rs:39
+  variant TokenFactoryMsg:ForceTransfer in /work/token-bindings-0.11.0/src/msg.rs:46
+  variant TokenFactoryMsg:SetMetadata in /work/token-bindings-0.11.0/src/msg.rs:52
+  variant TokenFactoryQuery:FullDenom in /work/token-bindings-0.11.0/src/query.rs:13
+  variant TokenFactoryQuery:Metadata in /work/token-bindings-0.11.0/src/query.rs:21
+  variant TokenFactoryQuery:Admin in /work/token-bindings-0.11.0/src/query.rs:25
+  variant TokenFactoryQuery:DenomsByCreator in /work/token-bindings-0.11.0/src/query.rs:30
+  variant TokenFactoryQuery:Params in /work/token-bindings-0.11.0/src/query.rs:33
+
+--- failure enum_variant_missing: pub enum variant removed or renamed ---
+
+Description:
+A publicly-visible enum has at least one variant that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_missing.ron
+
+Failed in:
+  variant TokenFactoryMsg::Token, previously in file /work/token-bindings-0.10.3/src/msg.rs:10
+  variant TokenFactoryQuery::Token, previously in file /work/token-bindings-0.10.3/src/query.rs:8
+
+    Building token-bindings v0.11.0 (current)
+       Built [   8.728s] (current)
+     Parsing token-bindings v0.11.0 (current)
+      Parsed [   0.003s] (current)
+    Building token-bindings v0.10.3 (baseline)
+       Built [   7.543s] (baseline)
+     Parsing token-bindings v0.10.3 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking token-bindings v0.10.3 -> v0.11.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [  16.655s] token-bindings

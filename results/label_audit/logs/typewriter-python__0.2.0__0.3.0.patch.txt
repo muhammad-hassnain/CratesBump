@@ -1,0 +1,13 @@
+
+    Building typewriter-python v0.3.0 (current)
+       Built [   2.982s] (current)
+     Parsing typewriter-python v0.3.0 (current)
+      Parsed [   0.001s] (current)
+    Building typewriter-python v0.2.0 (baseline)
+       Built [   3.188s] (baseline)
+     Parsing typewriter-python v0.2.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking typewriter-python v0.2.0 -> v0.3.0 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.342s] typewriter-python

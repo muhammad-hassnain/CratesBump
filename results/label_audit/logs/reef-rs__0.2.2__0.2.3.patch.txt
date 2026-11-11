@@ -1,0 +1,13 @@
+
+    Building reef-rs v0.2.3 (current)
+       Built [   3.126s] (current)
+     Parsing reef-rs v0.2.3 (current)
+      Parsed [   0.001s] (current)
+    Building reef-rs v0.2.2 (baseline)
+       Built [   3.048s] (baseline)
+     Parsing reef-rs v0.2.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking reef-rs v0.2.2 -> v0.2.3 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.340s] reef-rs

@@ -1,0 +1,13 @@
+
+    Building dotzuki-rules v0.1.1 (current)
+       Built [   5.282s] (current)
+     Parsing dotzuki-rules v0.1.1 (current)
+      Parsed [   0.004s] (current)
+    Building dotzuki-rules v0.1.0 (baseline)
+       Built [   4.993s] (baseline)
+     Parsing dotzuki-rules v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking dotzuki-rules v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  10.553s] dotzuki-rules

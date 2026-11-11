@@ -1,0 +1,32 @@
+
+    Building mongo-sys v0.1.1 (current)
+error: running cargo-doc on crate 'mongo-sys' failed with output:
+-----
+warning: /work/mongo-sys-0.1.1/Cargo.toml: `package.edition` is unspecified, defaulting to `2015` while the latest is `2024`
+warning: `mongo-sys` (manifest) generated 1 warning
+   Compiling mongo-sys v0.1.1 (/work/mongo-sys-0.1.1)
+    Checking libc v0.1.12
+error: failed to run custom build command for `mongo-sys v0.1.1 (/work/mongo-sys-0.1.1)`
+
+Caused by:
+  process didn't exit successfully: `/work/mongo-sys-0.1.1/target/semver-checks/local-mongo_sys-0_1_1-x86_64_unknown_linux_gnu-e21fc6056f8b8af0/target/debug/build/mongo-sys-29f2475bb825ff95/build-script-build` (exit status: 101)
+  --- stderr
+
+  thread 'main' (130) panicked at /work/mongo-sys-0.1.1/build.rs:9:74:
+  called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+-----
+
+error: failed to build rustdoc for crate mongo-sys v0.1.1
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/mongo-sys-0.1.1 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate mongo-sys v0.1.1

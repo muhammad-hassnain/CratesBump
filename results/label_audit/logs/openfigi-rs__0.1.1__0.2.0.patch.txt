@@ -1,0 +1,24 @@
+
+--- failure inherent_method_const_removed: pub method is no longer const ---
+
+Description:
+A publicly-visible method or associated fn is no longer `const` and can no longer be used in a `const` context.
+        ref: https://doc.rust-lang.org/reference/const_eval.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_const_removed.ron
+
+Failed in:
+  OpenFIGIClientBuilder::new in /work/openfigi-rs-0.2.0/src/client_builder.rs:158
+
+    Building openfigi-rs v0.2.0 (current)
+       Built [  11.331s] (current)
+     Parsing openfigi-rs v0.2.0 (current)
+      Parsed [   0.008s] (current)
+    Building openfigi-rs v0.1.1 (baseline)
+       Built [  10.164s] (baseline)
+     Parsing openfigi-rs v0.1.1 (baseline)
+      Parsed [   0.007s] (baseline)
+    Checking openfigi-rs v0.1.1 -> v0.2.0 (assume patch change)
+     Checked [   0.290s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  22.403s] openfigi-rs

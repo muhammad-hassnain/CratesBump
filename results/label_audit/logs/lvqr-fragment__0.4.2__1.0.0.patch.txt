@@ -1,0 +1,13 @@
+
+    Building lvqr-fragment v1.0.0 (current)
+       Built [   6.731s] (current)
+     Parsing lvqr-fragment v1.0.0 (current)
+      Parsed [   0.005s] (current)
+    Building lvqr-fragment v0.4.2 (baseline)
+       Built [   6.869s] (baseline)
+     Parsing lvqr-fragment v0.4.2 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking lvqr-fragment v0.4.2 -> v1.0.0 (assume patch change)
+     Checked [   0.021s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  13.925s] lvqr-fragment

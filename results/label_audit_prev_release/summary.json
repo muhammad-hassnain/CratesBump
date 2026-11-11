@@ -1,0 +1,187 @@
+{
+  "dataset": "x",
+  "n_sampled": 300,
+  "sampling": "300 pairs from 294 distinct crates",
+  "outcomes": {
+    "agree": 81,
+    "tool_error": 118,
+    "shipped_higher": 77,
+    "shipped_lower": 24
+  },
+  "n_evaluated": 182,
+  "evaluated_rate": 0.6067,
+  "declared_vs_required": {
+    "agree": 81,
+    "shipped_higher": 77,
+    "shipped_lower_flags": 24
+  },
+  "by_shipped_class": {
+    "major": {
+      "evaluated": 59,
+      "agree": 22,
+      "shipped_higher": 37
+    },
+    "minor": {
+      "evaluated": 59,
+      "shipped_higher": 40,
+      "shipped_lower": 18,
+      "agree": 1
+    },
+    "patch": {
+      "evaluated": 64,
+      "agree": 58,
+      "shipped_lower": 6
+    }
+  },
+  "flags": {
+    "minor": {
+      "k": 18,
+      "n": 59,
+      "rate": 0.3051,
+      "wilson95": [
+        0.2025,
+        0.4315
+      ]
+    },
+    "patch": {
+      "k": 6,
+      "n": 64,
+      "rate": 0.0938,
+      "wilson95": [
+        0.0437,
+        0.1898
+      ]
+    },
+    "minor_plus_patch": {
+      "k": 24,
+      "n": 123,
+      "rate": 0.1951,
+      "wilson95": [
+        0.1348,
+        0.2739
+      ]
+    },
+    "flagged_minor_that_are_0y_patch_number_bumps": 5,
+    "still_flagged_with_default_features": 0,
+    "no_verdict_with_default_features": 24,
+    "lints_0_22_only": {
+      "minor": {
+        "k": 14,
+        "n": 59,
+        "rate": 0.2373,
+        "wilson95": [
+          0.1469,
+          0.3598
+        ]
+      },
+      "patch": {
+        "k": 5,
+        "n": 64,
+        "rate": 0.0781,
+        "wilson95": [
+          0.0338,
+          0.1702
+        ]
+      }
+    }
+  },
+  "tool_error_kinds": {
+    "no_lib_target": 44,
+    "build_failed": 63,
+    "fetch_failed": 9,
+    "offline_resolution": 1,
+    "other": 1
+  },
+  "by_version_range": {
+    "pre_1.0": {
+      "shipped_higher": 46,
+      "agree": 7,
+      "shipped_lower": 5
+    },
+    "stable": {
+      "agree": 74,
+      "shipped_higher": 31,
+      "shipped_lower": 19
+    }
+  },
+  "sandbox": {
+    "image": "cratesbump-audit:0.51.0",
+    "cpus": 3,
+    "memory": "6g",
+    "network_during_build": "none"
+  },
+  "confirmed": {
+    "hand_reviewed": 24,
+    "flagged_without_review": 0,
+    "genuine": {
+      "minor": {
+        "k": 10,
+        "n": 59,
+        "rate": 0.1695,
+        "wilson95": [
+          0.0948,
+          0.2846
+        ]
+      },
+      "patch": {
+        "k": 3,
+        "n": 64,
+        "rate": 0.0469,
+        "wilson95": [
+          0.0161,
+          0.129
+        ]
+      },
+      "minor_plus_patch": {
+        "k": 13,
+        "n": 123,
+        "rate": 0.1057,
+        "wilson95": [
+          0.0628,
+          0.1725
+        ]
+      }
+    },
+    "stops_code_compiling": "not recorded in hand_review.csv",
+    "per_crate_minor_plus_patch": {
+      "k": 13,
+      "n": 122,
+      "rate": 0.1066,
+      "wilson95": [
+        0.0633,
+        0.1738
+      ]
+    },
+    "genuine_with_0_22_lints": {
+      "minor": {
+        "k": 9,
+        "n": 59,
+        "rate": 0.1525,
+        "wilson95": [
+          0.0824,
+          0.2652
+        ]
+      },
+      "patch": {
+        "k": 3,
+        "n": 64,
+        "rate": 0.0469,
+        "wilson95": [
+          0.0161,
+          0.129
+        ]
+      }
+    },
+    "genuine_minor_that_are_0y_patch_number_bumps": 1,
+    "not_genuine_reasons": {
+      "harmless: private_module": 1,
+      "harmless: discriminant_only": 2,
+      "harmless: cli_incidental_lib": 3,
+      "not_a_break: wrong_pairing": 1,
+      "harmless: never_linkable": 1,
+      "harmless: pinned_workspace_sibling": 1,
+      "harmless: generated": 2
+    }
+  },
+  "note": "Tool reads only the public API. shipped_higher is expected (features, behaviour changes, unlinted changes). shipped_lower is a flag; 'confirmed' counts flags that a hand review of both versions' source found to be genuine breaks."
+}

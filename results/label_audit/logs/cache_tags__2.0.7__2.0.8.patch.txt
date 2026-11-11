@@ -1,0 +1,13 @@
+
+    Building cache_tags v2.0.8 (current)
+       Built [   1.206s] (current)
+     Parsing cache_tags v2.0.8 (current)
+      Parsed [   0.001s] (current)
+    Building cache_tags v2.0.7 (baseline)
+       Built [   1.195s] (baseline)
+     Parsing cache_tags v2.0.7 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking cache_tags v2.0.7 -> v2.0.8 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   2.590s] cache_tags

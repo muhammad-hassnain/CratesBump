@@ -1,0 +1,13 @@
+
+    Building cf-modkit-node-info v0.6.1 (current)
+       Built [  12.918s] (current)
+     Parsing cf-modkit-node-info v0.6.1 (current)
+      Parsed [   0.004s] (current)
+    Building cf-modkit-node-info v0.6.0 (baseline)
+       Built [  14.206s] (baseline)
+     Parsing cf-modkit-node-info v0.6.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking cf-modkit-node-info v0.6.0 -> v0.6.1 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  27.613s] cf-modkit-node-info

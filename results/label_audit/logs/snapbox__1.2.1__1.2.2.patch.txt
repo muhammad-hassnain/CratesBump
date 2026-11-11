@@ -1,0 +1,13 @@
+
+    Building snapbox v1.2.2 (current)
+       Built [   4.692s] (current)
+     Parsing snapbox v1.2.2 (current)
+      Parsed [   0.004s] (current)
+    Building snapbox v1.2.1 (baseline)
+       Built [   5.160s] (baseline)
+     Parsing snapbox v1.2.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking snapbox v1.2.1 -> v1.2.2 (assume patch change)
+     Checked [   0.024s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  10.215s] snapbox

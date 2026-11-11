@@ -1,0 +1,36 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field UpdateOptions.skip_attestation in /work/fresh-update-0.5.0/src/engine.rs:81
+  field UpdateOptions.skip_attestation in /work/fresh-update-0.5.0/src/engine.rs:81
+  field Endpoints.redirect_url in /work/fresh-update-0.5.0/src/endpoint.rs:143
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant AttestationError:RateLimited in /work/fresh-update-0.5.0/src/attestation.rs:50
+
+    Building fresh-update v0.5.0 (current)
+       Built [   7.623s] (current)
+     Parsing fresh-update v0.5.0 (current)
+      Parsed [   0.008s] (current)
+    Building fresh-update v0.4.10 (baseline)
+       Built [   7.635s] (baseline)
+     Parsing fresh-update v0.4.10 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking fresh-update v0.4.10 -> v0.5.0 (assume patch change)
+     Checked [   0.030s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [  15.730s] fresh-update

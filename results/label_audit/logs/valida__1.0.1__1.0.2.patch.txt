@@ -1,0 +1,13 @@
+
+    Building valida v1.0.2 (current)
+       Built [  24.878s] (current)
+     Parsing valida v1.0.2 (current)
+      Parsed [   0.007s] (current)
+    Building valida v1.0.1 (baseline)
+       Built [  16.537s] (baseline)
+     Parsing valida v1.0.1 (baseline)
+      Parsed [   0.007s] (baseline)
+    Checking valida v1.0.1 -> v1.0.2 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  42.304s] valida

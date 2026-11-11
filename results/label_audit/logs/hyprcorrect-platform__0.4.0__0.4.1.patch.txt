@@ -1,0 +1,13 @@
+
+    Building hyprcorrect-platform v0.4.1 (current)
+       Built [  16.797s] (current)
+     Parsing hyprcorrect-platform v0.4.1 (current)
+      Parsed [   0.005s] (current)
+    Building hyprcorrect-platform v0.4.0 (baseline)
+       Built [  14.249s] (baseline)
+     Parsing hyprcorrect-platform v0.4.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking hyprcorrect-platform v0.4.0 -> v0.4.1 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  31.660s] hyprcorrect-platform

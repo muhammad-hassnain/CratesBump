@@ -1,0 +1,46 @@
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  HiddenMarkov::num_states, previously in file /work/hmm-0.1.0/src/models.rs:71
+  HiddenMarkov::num_labels, previously in file /work/hmm-0.1.0/src/models.rs:73
+
+--- failure module_missing: pub module removed or renamed ---
+
+Description:
+A publicly-visible module cannot be imported by its prior path. A `pub use` may have been removed, or the module may have been renamed, removed, or made non-public.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/module_missing.ron
+
+Failed in:
+  mod hmm::matrices, previously in file /work/hmm-0.1.0/src/matrices.rs:2
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct hmm::matrices::Matrix, previously in file /work/hmm-0.1.0/src/matrices.rs:14
+  struct hmm::matrices::Vector, previously in file /work/hmm-0.1.0/src/matrices.rs:8
+
+    Building hmm v0.2.0 (current)
+       Built [   0.102s] (current)
+     Parsing hmm v0.2.0 (current)
+      Parsed [   0.001s] (current)
+    Building hmm v0.1.0 (baseline)
+       Built [   0.101s] (baseline)
+     Parsing hmm v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking hmm v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [   0.342s] hmm

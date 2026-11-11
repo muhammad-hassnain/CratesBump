@@ -1,0 +1,515 @@
+
+    Building kanidm_client v1.1.0-alpha (current)
+error: running cargo-doc on crate 'kanidm_client' failed with output:
+-----
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.229
+   Compiling libc v0.2.191
+   Compiling version_check v0.9.5
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling serde v1.0.229
+    Checking cfg-if v1.0.5
+   Compiling autocfg v1.5.1
+    Checking typenum v1.20.1
+    Checking getrandom v0.2.17
+    Checking rand_core v0.6.4
+   Compiling generic-array v0.14.7
+   Compiling thiserror v2.0.21
+   Compiling getrandom v0.4.3
+   Compiling stable_deref_trait v1.2.1
+    Checking subtle v2.6.1
+   Compiling memchr v2.8.3
+   Compiling regex-automata v0.4.18
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.21
+   Compiling bstr v1.13.1
+   Compiling synstructure v0.14.0
+   Compiling smallvec v1.16.4
+   Compiling zerofrom-derive v0.1.8
+   Compiling yoke-derive v0.8.4
+    Checking log v0.4.35
+   Compiling displaydoc v0.2.7
+   Compiling gix-trace v0.1.21
+    Checking zeroize v1.9.1
+   Compiling gix-validate v0.11.4
+   Compiling tinyvec v1.13.3
+    Checking pin-project-lite v0.2.17
+    Checking crypto-common v0.1.7
+   Compiling parking_lot_core v0.9.12
+   Compiling fastrand v2.5.0
+   Compiling gix-path v0.12.6
+   Compiling zerovec-derive v0.11.7
+   Compiling unicode-normalization v0.1.26
+   Compiling scopeguard v1.2.0
+   Compiling lock_api v0.4.14
+   Compiling gix-utils v0.3.6
+    Checking const-oid v0.9.6
+   Compiling crc32fast v1.5.4
+   Compiling parking_lot v0.12.5
+   Compiling once_cell v1.21.4
+   Compiling same-file v1.0.6
+   Compiling prodash v31.0.1
+   Compiling walkdir v2.5.0
+    Checking block-buffer v0.10.4
+   Compiling zlib-rs v0.6.8
+    Checking digest v0.10.7
+    Checking tracing-core v0.1.36
+    Checking itoa v1.0.18
+    Checking cpufeatures v0.2.17
+   Compiling heapless v0.8.0
+    Checking futures-core v0.3.34
+   Compiling byteorder v1.5.0
+   Compiling hash32 v0.3.1
+   Compiling tracing-attributes v0.1.31
+   Compiling faster-hex v0.10.1
+    Checking bytes v1.12.1
+    Checking tracing v0.1.44
+   Compiling gix-error v0.2.5
+   Compiling hashbrown v0.17.1
+    Checking block-padding v0.3.3
+    Checking inout v0.1.4
+   Compiling sha1 v0.10.7
+    Checking cipher v0.4.4
+   Compiling sha1-checked v0.10.0
+   Compiling gix-features v0.48.1
+    Checking futures-sink v0.3.34
+   Compiling bitflags v2.13.2
+   Compiling gix-hash v0.25.1
+    Checking slab v0.4.12
+    Checking base64ct v1.8.3
+   Compiling jiff-core v0.1.2
+    Checking zerofrom v0.1.8
+   Compiling icu_properties_data v2.4.0
+    Checking spin v0.9.9
+   Compiling icu_normalizer_data v2.4.0
+    Checking yoke v0.8.4
+    Checking lazy_static v1.5.1
+    Checking hmac v0.12.1
+   Compiling zerocopy v0.8.63
+    Checking pem-rfc7468 v0.7.0
+   Compiling gix-hashtable v0.15.2
+   Compiling der_derive v0.7.3
+   Compiling zerocopy-derive v0.8.63
+   Compiling jiff v0.2.39
+    Checking flagset v0.4.7
+    Checking fnv v1.0.7
+    Checking der v0.7.10
+    Checking zerovec v0.11.9
+    Checking aes v0.8.4
+    Checking sha2 v0.10.9
+   Compiling memmap2 v0.9.12
+   Compiling rustix v1.1.6
+    Checking percent-encoding v2.3.2
+   Compiling gix-date v0.15.6
+   Compiling gix-actor v0.41.2
+   Compiling gix-object v0.60.0
+    Checking spki v0.7.3
+    Checking pbkdf2 v0.12.2
+    Checking salsa20 v0.10.2
+   Compiling libm v0.2.16
+   Compiling linux-raw-sys v0.12.1
+   Compiling rustversion v1.0.23
+   Compiling equivalent v1.0.3
+    Checking scrypt v0.11.0
+    Checking cbc v0.1.2
+   Compiling futures-macro v0.3.34
+   Compiling tokio-macros v2.7.2
+   Compiling num-traits v0.2.19
+    Checking mio v1.2.4
+    Checking socket2 v0.6.5
+    Checking futures-task v0.3.34
+    Checking futures-io v0.3.34
+    Checking tokio v1.54.1
+    Checking futures-util v0.3.34
+   Compiling tempfile v3.27.0
+    Checking pkcs5 v0.7.1
+    Checking ppv-lite86 v0.2.21
+    Checking tinystr v0.8.5
+   Compiling gix-fs v0.21.2
+    Checking utf_types v1.0.0
+    Checking writeable v0.6.4
+    Checking litemap v0.8.3
+    Checking utf8_iter v1.1.0
+    Checking icu_locale_core v2.4.0
+    Checking pkcs8 v0.10.2
+    Checking potential_utf v0.1.6
+    Checking zerotrie v0.2.5
+   Compiling gix-chunk v0.7.3
+   Compiling nonempty v0.12.0
+   Compiling httparse v1.10.1
+    Checking icu_provider v2.4.0
+    Checking indexmap v2.14.2
+    Checking icu_collections v2.4.0
+   Compiling gix-tempfile v23.0.2
+    Checking http v1.5.0
+    Checking futures-channel v0.3.34
+    Checking try-lock v0.2.5
+   Compiling num-conv v0.2.2
+   Compiling time-core v0.1.9
+    Checking want v0.3.2
+   Compiling gix-lock v23.0.1
+   Compiling time-macros v0.2.32
+   Compiling pin-project-internal v1.1.13
+    Checking ff v0.13.1
+    Checking deranged v0.5.9
+    Checking num_threads v0.1.8
+    Checking base16ct v0.2.0
+    Checking tower-service v0.3.3
+   Compiling getrandom v0.3.4
+    Checking powerfmt v0.2.1
+    Checking sec1 v0.7.3
+    Checking pin-project v1.1.13
+    Checking group v0.13.0
+    Checking time v0.3.55
+    Checking icu_normalizer v2.4.0
+    Checking icu_properties v2.4.0
+   Compiling gix-commitgraph v0.37.1
+    Checking num-integer v0.1.47
+    Checking tokio-util v0.7.20
+    Checking hkdf v0.12.4
+   Compiling gix-sec v0.14.2
+   Compiling gix-quote v0.7.2
+    Checking signature v2.2.0
+    Checking crypto-bigint v0.5.5
+    Checking hybrid-array v0.4.15
+   Compiling strsim v0.11.1
+   Compiling ident_case v1.0.1
+   Compiling allocator-api2 v0.2.21
+   Compiling winnow v1.0.5
+    Checking base64 v0.22.1
+   Compiling foldhash v0.2.0
+   Compiling shlex v2.0.1
+   Compiling zmij v1.0.23
+   Compiling find-msvc-tools v0.1.15
+   Compiling cc v1.11.1
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling hashbrown v0.16.1
+    Checking elliptic-curve v0.13.8
+   Compiling darling_core v0.24.1
+    Checking idna_adapter v1.2.2
+   Compiling gix-revwalk v0.31.0
+    Checking http-body v1.1.0
+   Compiling gix-ref v0.63.0
+   Compiling toml_datetime v1.1.3+spec-1.1.0
+    Checking form_urlencoded v1.2.2
+   Compiling vcpkg v0.2.15
+    Checking atomic-waker v1.1.2
+    Checking rand_core v0.10.1
+   Compiling serde_json v1.0.154
+   Compiling shell-words v1.1.1
+   Compiling pkg-config v0.3.34
+   Compiling gix-command v0.9.2
+    Checking crypto-common v0.2.2
+   Compiling openssl-sys v0.9.118
+    Checking h2 v0.4.20
+   Compiling darling_macro v0.24.1
+    Checking rand_core v0.9.5
+    Checking idna v1.1.0
+   Compiling clru v0.6.3
+    Checking block-buffer v0.11.0
+   Compiling gix-url v0.36.2
+    Checking rfc6979 v0.4.0
+   Compiling gix-glob v0.26.1
+   Compiling gix-packetline v0.21.5
+    Checking aho-corasick v1.1.5
+   Compiling anyhow v1.0.104
+   Compiling thiserror v1.0.69
+    Checking minimal-lexical v0.2.1
+    Checking regex-syntax v0.8.11
+    Checking cfg-if v0.1.10
+    Checking net2 v0.2.39
+    Checking nom v7.1.3
+    Checking hyper v1.12.0
+    Checking uuid v1.29.0
+   Compiling gix-transport v0.57.2
+    Checking ecdsa v0.16.9
+    Checking digest v0.11.0-rc.12
+   Compiling gix-pack v0.70.0
+    Checking url v2.5.8
+    Checking rand_chacha v0.9.0
+   Compiling darling v0.24.1
+   Compiling gix-revision v0.45.0
+    Checking primeorder v0.13.6
+   Compiling gix-shallow v0.12.1
+    Checking rand_chacha v0.3.1
+   Compiling arc-swap v1.9.3
+   Compiling gix-config-value v0.18.1
+    Checking universal-hash v0.5.1
+   Compiling maybe-async v0.2.11
+   Compiling thiserror-impl v1.0.69
+   Compiling synstructure v0.13.2
+    Checking iovec v0.1.4
+   Compiling standback v0.2.17
+   Compiling unicode-bom v2.0.3
+    Checking bytes v0.5.6
+    Checking hex v0.4.3
+   Compiling num-bigint-dig v0.8.6
+   Compiling syn v1.0.109
+   Compiling proc-macro-hack v0.5.20+deprecated
+   Compiling either v1.19.0
+    Checking opaque-debug v0.3.1
+    Checking polyval v0.6.2
+   Compiling itertools v0.14.0
+   Compiling asn1-rs-derive v0.5.1
+   Compiling gix-config v0.56.0
+    Checking mio v0.6.23
+   Compiling gix-protocol v0.61.0
+   Compiling gix-odb v0.80.0
+    Checking rand v0.8.8
+   Compiling gix-refspec v0.41.0
+   Compiling serde_with_macros v3.24.0
+    Checking rand v0.9.5
+    Checking rusticata-macros v4.1.0
+    Checking hyper-util v0.1.21
+    Checking opentelemetry v0.31.0
+   Compiling gix-discover v0.51.0
+   Compiling gix-traverse v0.57.0
+    Checking num-iter v0.1.46
+    Checking tokio-stream v0.1.19
+   Compiling gix-diff v0.63.0
+   Compiling asn1-rs-impl v0.2.0
+   Compiling async-trait v0.1.92
+    Checking num_cpus v1.17.0
+    Checking tower-layer v0.3.3
+    Checking pin-project-lite v0.1.12
+    Checking sync_wrapper v1.0.2
+    Checking base64 v0.23.1
+    Checking tower v0.5.3
+    Checking serde_with v3.24.0
+    Checking tokio v0.2.25
+    Checking asn1-rs v0.6.2
+   Compiling gix v0.83.0
+    Checking hyper-timeout v0.5.2
+   Compiling prost-derive v0.14.4
+    Checking ghash v0.5.1
+    Checking http-body-util v0.1.5
+    Checking pkcs1 v0.7.5
+    Checking password-hash v0.5.0
+    Checking ctr v0.9.2
+    Checking blake2 v0.10.6
+    Checking aead v0.5.2
+   Compiling indexmap v1.9.3
+   Compiling const_fn v0.4.12
+    Checking foreign-types-shared v0.1.1
+   Compiling oid-registry v0.7.1
+    Checking base64 v0.21.7
+   Compiling openssl v0.10.82
+   Compiling const-oid v0.10.2
+   Compiling kanidm_build_profiles v1.10.4
+    Checking foreign-types v0.3.2
+    Checking argon2 v0.5.3
+    Checking aes-gcm v0.10.3
+    Checking x509-cert v0.2.5
+   Compiling toml_edit v0.25.19+spec-1.1.0
+    Checking rsa v0.9.10
+    Checking tonic v0.14.9
+   Compiling time-macros-impl v0.1.2
+    Checking prost v0.14.4
+    Checking p521 v0.13.3
+    Checking p256 v0.13.2
+    Checking p384 v0.13.1
+    Checking matchers v0.2.0
+    Checking sha2 v0.11.0-rc.5
+    Checking kbkdf v0.1.0-rc.1
+    Checking hmac v0.13.0-rc.5
+    Checking num-bigint v0.4.8
+    Checking futures-executor v0.3.34
+   Compiling serde_spanned v1.1.3
+    Checking aes-kw v0.2.1
+    Checking http v0.2.12
+    Checking sharded-slab v0.1.7
+    Checking tracing-log v0.2.0
+   Compiling openssl-macros v0.1.1
+    Checking thread_local v1.1.10
+   Compiling time v0.2.27
+    Checking utf8parse v0.2.2
+    Checking hashbrown v0.12.3
+   Compiling native-tls v0.2.18
+   Compiling toml_writer v1.2.0+spec-1.1.0
+    Checking nu-ansi-term v0.50.3
+    Checking tracing-subscriber v0.3.23
+   Compiling toml v1.2.1+spec-1.1.0
+    Checking anstyle-parse v1.0.0
+    Checking der-parser v9.0.0
+    Checking crypto-glue v0.1.18
+    Checking opentelemetry_sdk v0.31.0
+    Checking tonic-prost v0.14.9
+    Checking time-macros v0.1.1
+   Compiling proc-macro-crate v3.5.0
+    Checking tokio-util v0.3.1
+    Checking tracing-futures v0.2.5
+    Checking half v2.7.1
+   Compiling cookie v0.14.4
+    Checking data-encoding v2.11.1
+    Checking anstyle-query v1.1.5
+    Checking unicode-bidi v0.3.18
+    Checking is_terminal_polyfill v1.70.2
+   Compiling peg-runtime v0.8.6
+    Checking anstyle v1.0.14
+    Checking openssl-probe v0.2.2
+    Checking matches v0.1.10
+   Compiling unicase v2.10.0
+    Checking colorchoice v1.0.5
+    Checking anstream v1.0.0
+   Compiling mime_guess v2.0.5
+    Checking idna v0.2.3
+   Compiling peg-macros v0.8.6
+    Checking x509-parser v0.16.0
+   Compiling utoipa-gen v5.5.0
+    Checking serde_cbor_2 v0.13.0
+    Checking h2 v0.2.7
+    Checking opentelemetry-proto v0.31.0
+   Compiling num_enum_derive v0.7.6
+    Checking webauthn-attestation-ca v0.6.1-dev
+    Checking http-body v0.3.1
+    Checking webauthn-rs-proto v0.6.1-dev
+    Checking opentelemetry-http v0.31.0
+   Compiling encoding_rs v0.8.44
+   Compiling smartstring v1.0.1
+    Checking socket2 v0.3.19
+    Checking clap_lex v1.1.1
+    Checking itoa v0.4.8
+   Compiling heck v0.5.0
+    Checking httpdate v0.3.2
+   Compiling pastey v0.1.1
+    Checking clap_builder v4.6.7
+    Checking base64urlsafedata v0.6.2
+   Compiling clap_derive v4.6.7
+    Checking utoipa v5.5.0
+    Checking hyper v0.13.10
+    Checking peg v0.8.6
+    Checking sshkeys v0.3.4
+    Checking webauthn-rs-core v0.6.1-dev
+    Checking opentelemetry-otlp v0.31.1
+    Checking num_enum v0.7.6
+   Compiling kanidm_proto v1.10.4
+    Checking publicsuffix v1.5.6
+    Checking tokio-tls v0.3.1
+    Checking gethostname v1.1.0
+    Checking tracing-opentelemetry v0.32.1
+    Checking tracing-forest v0.3.1
+    Checking core_detect v1.0.0
+    Checking mime v0.3.18
+    Checking static_assertions v1.1.0
+    Checking quick-error v1.2.3
+   Compiling multiversion_no_op v1.0.0
+    Checking opentelemetry-semantic-conventions v0.31.0
+    Checking ryu v1.0.23
+    Checking simdutf8 v0.1.5
+    Checking serde_urlencoded v0.7.1
+    Checking sketching v1.10.4
+    Checking humantime v1.3.0
+    Checking sshkey-attest v0.6.1-dev
+    Checking hyper-tls v0.4.3
+    Checking cookie_store v0.12.0
+    Checking scim_proto v1.10.4
+    Checking clap v4.6.7
+    Checking regex v1.13.1
+    Checking atty v0.2.14
+    Checking ipnet v2.12.2
+    Checking urlencoding v2.1.3
+    Checking termcolor v1.4.1
+    Checking base64 v0.13.1
+    Checking base32 v0.5.1
+    Checking env_logger v0.7.1
+    Checking reqwest v0.10.10
+    Checking toml v0.5.11
+    Checking uuid v0.8.2
+ Documenting kanidm_client v1.1.0-alpha (/work/kanidm_client-1.1.0-alpha)
+error[E0432]: unresolved imports `kanidm_proto::v1::CreateRequest`, `kanidm_proto::v1::DeleteRequest`, `kanidm_proto::v1::Filter`, `kanidm_proto::v1::ModifyList`, `kanidm_proto::v1::ModifyRequest`, `kanidm_proto::v1::OperationError`, `kanidm_proto::v1::OperationResponse`, `kanidm_proto::v1::RadiusAuthToken`, `kanidm_proto::v1::SearchRequest`, `kanidm_proto::v1::SearchResponse`, `kanidm_proto::v1::SetCredentialRequest`, `kanidm_proto::v1::SetCredentialResponse`, `kanidm_proto::v1::TOTPSecret`, `kanidm_proto::v1::UserAuthToken`
+  --> /work/kanidm_client-1.1.0-alpha/src/lib.rs:20:5
+   |
+20 |     CreateRequest, DeleteRequest, Entry, Filter, GroupUnixExtend, ModifyList, ModifyRequest,
+   |     ^^^^^^^^^^^^^  ^^^^^^^^^^^^^         ^^^^^^                   ^^^^^^^^^^  ^^^^^^^^^^^^^ no `ModifyRequest` in `v1`
+   |     |              |                     |                        |
+   |     |              |                     |                        no `ModifyList` in `v1`
+   |     |              |                     no `Filter` in `v1`
+   |     |              no `DeleteRequest` in `v1`
+   |     no `CreateRequest` in `v1`
+21 |     OperationError, OperationResponse, RadiusAuthToken, SearchRequest, SearchResponse,
+   |     ^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^  ^^^^^^^^^^^^^^ no `SearchResponse` in `v1`
+   |     |               |                  |                |
+   |     |               |                  |                no `SearchRequest` in `v1`
+   |     |               |                  no `RadiusAuthToken` in `v1`
+   |     |               no `OperationResponse` in `v1`
+   |     no `OperationError` in `v1`
+22 |     SetCredentialRequest, SetCredentialResponse, SingleStringRequest, TOTPSecret, UnixGroupToken,
+   |     ^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^                       ^^^^^^^^^^
+23 |     UnixUserToken, UserAuthToken, WhoamiResponse,
+   |                    ^^^^^^^^^^^^^
+   |
+   = help: consider importing this struct instead:
+           kanidm_proto::internal::CreateRequest
+   = help: consider importing this struct instead:
+           kanidm_proto::internal::DeleteRequest
+   = help: consider importing one of these items instead:
+           std::iter::Filter
+           env_logger::filter::Filter
+           kanidm_proto::internal::Filter
+   = help: consider importing this struct instead:
+           kanidm_proto::internal::ModifyList
+   = help: consider importing this struct instead:
+           kanidm_proto::internal::ModifyRequest
+   = help: consider importing this enum instead:
+           kanidm_proto::internal::OperationError
+   = help: consider importing this struct instead:
+           kanidm_proto::internal::RadiusAuthToken
+   = help: consider importing this struct instead:
+           kanidm_proto::internal::SearchRequest
+   = help: consider importing this struct instead:
+           kanidm_proto::internal::SearchResponse
+
+error[E0425]: cannot find type `UserAuthToken` in this scope
+   --> /work/kanidm_client-1.1.0-alpha/src/asynchronous.rs:158:17
+    |
+158 |     ) -> Result<UserAuthToken, ClientError> {
+    |                 ^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this struct
+    |
+  1 + use kanidm_proto::internal::UserAuthToken;
+    |
+
+error[E0425]: cannot find type `UserAuthToken` in this scope
+   --> /work/kanidm_client-1.1.0-alpha/src/asynchronous.rs:180:50
+    |
+180 |     pub async fn auth_anonymous(&self) -> Result<UserAuthToken, ClientError> {
+    |                                                  ^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this struct
+    |
+  1 + use kanidm_proto::internal::UserAuthToken;
+    |
+
+error[E0425]: cannot find type `UserAuthToken` in this scope
+   --> /work/kanidm_client-1.1.0-alpha/src/asynchronous.rs:204:57
+    |
+204 |     pub async fn whoami(&self) -> Result<Option<(Entry, UserAuthToken)>, ClientError> {
+    |                                                         ^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this struct
+    |
+  1 + use kanidm_proto::internal::UserAuthToken;
+    |
+
+Some errors have detailed explanations: E0425, E0432.
+For more information about an error, try `rustc --explain E0425`.
+error: could not document `kanidm_client`
+
+-----
+
+error: failed to build rustdoc for crate kanidm_client v1.1.0-alpha
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/kanidm_client-1.1.0-alpha &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate kanidm_client v1.1.0-alpha

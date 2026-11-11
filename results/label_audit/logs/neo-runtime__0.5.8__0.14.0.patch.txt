@@ -1,0 +1,13 @@
+
+    Building neo-runtime v0.14.0 (current)
+       Built [   3.860s] (current)
+     Parsing neo-runtime v0.14.0 (current)
+      Parsed [   0.002s] (current)
+    Building neo-runtime v0.5.8 (baseline)
+       Built [   3.348s] (baseline)
+     Parsing neo-runtime v0.5.8 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking neo-runtime v0.5.8 -> v0.14.0 (assume patch change)
+     Checked [   0.017s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   7.426s] neo-runtime

@@ -1,0 +1,13 @@
+
+    Building flightradar24-api v0.2.0 (current)
+       Built [   7.836s] (current)
+     Parsing flightradar24-api v0.2.0 (current)
+      Parsed [   0.002s] (current)
+    Building flightradar24-api v0.1.0 (baseline)
+       Built [   9.932s] (baseline)
+     Parsing flightradar24-api v0.1.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking flightradar24-api v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  18.319s] flightradar24-api

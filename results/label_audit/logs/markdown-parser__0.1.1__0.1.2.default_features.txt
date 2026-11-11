@@ -1,0 +1,38 @@
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct markdown_parser::adapt::SafeObject, previously in file /work/markdown-parser-0.1.1/src/adapt/mod.rs:50
+  struct markdown_parser::SafeObject, previously in file /work/markdown-parser-0.1.1/src/adapt/mod.rs:50
+  struct markdown_parser::adapt::CommonObject, previously in file /work/markdown-parser-0.1.1/src/adapt/mod.rs:31
+  struct markdown_parser::CommonObject, previously in file /work/markdown-parser-0.1.1/src/adapt/mod.rs:31
+
+--- failure trait_missing: pub trait removed or renamed ---
+
+Description:
+A publicly-visible trait cannot be imported by its prior path. A `pub use` may have been removed, or the trait itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_missing.ron
+
+Failed in:
+  trait markdown_parser::adapt::AdapterObject, previously in file /work/markdown-parser-0.1.1/src/adapt/mod.rs:24
+  trait markdown_parser::AdapterObject, previously in file /work/markdown-parser-0.1.1/src/adapt/mod.rs:24
+
+    Building markdown-parser v0.1.2 (current)
+       Built [   3.575s] (current)
+     Parsing markdown-parser v0.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building markdown-parser v0.1.1 (baseline)
+       Built [   3.211s] (baseline)
+     Parsing markdown-parser v0.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking markdown-parser v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.011s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   6.974s] markdown-parser

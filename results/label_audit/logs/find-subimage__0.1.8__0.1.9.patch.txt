@@ -1,0 +1,13 @@
+
+    Building find-subimage v0.1.9 (current)
+       Built [   9.927s] (current)
+     Parsing find-subimage v0.1.9 (current)
+      Parsed [   0.001s] (current)
+    Building find-subimage v0.1.8 (baseline)
+       Built [  10.069s] (baseline)
+     Parsing find-subimage v0.1.8 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking find-subimage v0.1.8 -> v0.1.9 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  20.197s] find-subimage

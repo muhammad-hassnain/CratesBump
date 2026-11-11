@@ -1,0 +1,55 @@
+
+--- failure auto_trait_impl_removed: auto trait no longer implemented ---
+
+Description:
+A public type has stopped implementing one or more auto traits. This can break downstream code that depends on the traits being implemented.
+        ref: https://doc.rust-lang.org/reference/special-types-and-traits.html#auto-traits
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/auto_trait_impl_removed.ron
+
+Failed in:
+  type RssProvider is no longer UnwindSafe, in /work/qsspodcasts_rss_management-0.2.0/src/local_storage/rss_provider.rs:10
+  type RssProvider is no longer RefUnwindSafe, in /work/qsspodcasts_rss_management-0.2.0/src/local_storage/rss_provider.rs:10
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  RssProvider::get_feed, previously in file /work/qsspodcasts_rss_management-0.1.1/src/local_storage/rss_provider.rs:40
+
+--- failure module_missing: pub module removed or renamed ---
+
+Description:
+A publicly-visible module cannot be imported by its prior path. A `pub use` may have been removed, or the module may have been renamed, removed, or made non-public.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/module_missing.ron
+
+Failed in:
+  mod qsspodcasts_rss_management::rss_feed_reading::feed_downloader, previously in file /work/qsspodcasts_rss_management-0.1.1/src/rss_feed_reading/feed_downloader.rs:1
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct qsspodcasts_rss_management::rss_feed_reading::feed_downloader::FeedDownloader, previously in file /work/qsspodcasts_rss_management-0.1.1/src/rss_feed_reading/feed_downloader.rs:7
+
+    Building qsspodcasts_rss_management v0.2.0 (current)
+       Built [  16.317s] (current)
+     Parsing qsspodcasts_rss_management v0.2.0 (current)
+      Parsed [   0.002s] (current)
+    Building qsspodcasts_rss_management v0.1.1 (baseline)
+       Built [  12.506s] (baseline)
+     Parsing qsspodcasts_rss_management v0.1.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking qsspodcasts_rss_management v0.1.1 -> v0.2.0 (assume patch change)
+     Checked [   0.013s] 229 checks: 225 pass, 4 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 4 major and 0 minor checks failed
+    Finished [  29.609s] qsspodcasts_rss_management

@@ -1,0 +1,13 @@
+
+    Building memtui v0.3.1 (current)
+       Built [  21.146s] (current)
+     Parsing memtui v0.3.1 (current)
+      Parsed [   0.024s] (current)
+    Building memtui v0.3.0 (baseline)
+       Built [  18.796s] (baseline)
+     Parsing memtui v0.3.0 (baseline)
+      Parsed [   0.028s] (baseline)
+    Checking memtui v0.3.0 -> v0.3.1 (assume patch change)
+     Checked [   0.057s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  40.623s] memtui

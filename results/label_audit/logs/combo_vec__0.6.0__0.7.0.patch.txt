@@ -1,0 +1,13 @@
+
+    Building combo_vec v0.7.0 (current)
+       Built [   0.101s] (current)
+     Parsing combo_vec v0.7.0 (current)
+      Parsed [   0.001s] (current)
+    Building combo_vec v0.6.0 (baseline)
+       Built [   0.102s] (baseline)
+     Parsing combo_vec v0.6.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking combo_vec v0.6.0 -> v0.7.0 (assume patch change)
+     Checked [   0.017s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.347s] combo_vec

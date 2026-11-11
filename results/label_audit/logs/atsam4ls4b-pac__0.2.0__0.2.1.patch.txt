@@ -1,0 +1,13 @@
+
+    Building atsam4ls4b-pac v0.2.1 (current)
+       Built [   7.359s] (current)
+     Parsing atsam4ls4b-pac v0.2.1 (current)
+      Parsed [   0.652s] (current)
+    Building atsam4ls4b-pac v0.2.0 (baseline)
+       Built [   7.712s] (baseline)
+     Parsing atsam4ls4b-pac v0.2.0 (baseline)
+      Parsed [   0.648s] (baseline)
+    Checking atsam4ls4b-pac v0.2.0 -> v0.2.1 (assume patch change)
+     Checked [   2.399s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  19.770s] atsam4ls4b-pac

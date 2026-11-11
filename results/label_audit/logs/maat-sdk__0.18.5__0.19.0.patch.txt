@@ -1,0 +1,13 @@
+
+    Building maat-sdk v0.19.0 (current)
+       Built [  10.974s] (current)
+     Parsing maat-sdk v0.19.0 (current)
+      Parsed [   0.007s] (current)
+    Building maat-sdk v0.18.5 (baseline)
+       Built [  10.700s] (baseline)
+     Parsing maat-sdk v0.18.5 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking maat-sdk v0.18.5 -> v0.19.0 (assume patch change)
+     Checked [   0.037s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  21.982s] maat-sdk

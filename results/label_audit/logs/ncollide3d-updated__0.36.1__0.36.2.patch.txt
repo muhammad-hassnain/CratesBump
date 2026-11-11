@@ -1,0 +1,294 @@
+
+    Building ncollide3d-updated v0.36.2 (current)
+error: running cargo-doc on crate 'ncollide3d-updated' failed with output:
+-----
+   Compiling autocfg v1.5.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling serde_core v1.0.229
+   Compiling num-traits v0.2.19
+   Compiling serde v1.0.229
+    Checking bytemuck v1.25.2
+   Compiling syn v3.0.9
+   Compiling paste v1.0.15
+    Checking safe_arch v0.7.4
+   Compiling matrixmultiply v0.3.11
+   Compiling version_check v0.9.5
+   Compiling slotmap v1.1.1
+    Checking wide v0.7.33
+   Compiling syn v2.0.119
+    Checking approx v0.5.1
+    Checking num-integer v0.1.47
+    Checking rawpointer v0.2.1
+    Checking hashbrown v0.17.1
+   Compiling serde_derive v1.0.229
+    Checking equivalent v1.0.3
+    Checking indexmap v2.14.2
+    Checking num-rational v0.4.2
+    Checking typenum v1.20.1
+    Checking fixedbitset v0.4.2
+    Checking petgraph v0.6.5
+   Compiling nalgebra-macros v0.2.2
+    Checking num-complex v0.4.6
+    Checking downcast-rs v1.2.1
+    Checking bitflags v1.3.2
+    Checking slab v0.4.12
+    Checking smallvec v1.16.4
+    Checking either v1.19.0
+    Checking simba v0.9.1
+    Checking nalgebra v0.33.3
+ Documenting ncollide3d-updated v0.36.2 (/work/ncollide3d-updated-0.36.2)
+error[E0428]: the name `ConvexPolyhedronConvexPolyhedronManifoldGenerator` is defined multiple times
+  --> /work/ncollide3d-updated-0.36.2/src/pipeline/narrow_phase/contact_generator/convex_polyhedron_convex_polyhedron_manifold_generator.rs:24:1
+   |
+13 | pub struct ConvexPolyhedronConvexPolyhedronManifoldGenerator<N: RealField + Copy> {
+   | --------------------------------------------------------------------------------- previous definition of the type `ConvexPolyhedronConvexPolyhedronManifoldGenerator` here
+...
+24 | pub struct ConvexPolyhedronConvexPolyhedronManifoldGenerator<N: RealField + Copy> {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `ConvexPolyhedronConvexPolyhedronManifoldGenerator` redefined here
+   |
+   = note: `ConvexPolyhedronConvexPolyhedronManifoldGenerator` must be defined only once in the type namespace of this module
+
+error[E0428]: the name `xy_point` is defined multiple times
+   --> /work/ncollide3d-updated-0.36.2/src/shape/polyline.rs:785:1
+    |
+780 | fn xy_point<N: RealField + Copy>(x: N, y: N) -> Point<N> {
+    | -------------------------------------------------------- previous definition of the value `xy_point` here
+...
+785 | fn xy_point<N: RealField + Copy>(x: N, y: N) -> Point<N> {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `xy_point` redefined here
+    |
+    = note: `xy_point` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `ccw_face_normal` is defined multiple times
+  --> /work/ncollide3d-updated-0.36.2/src/utils/ccw_face_normal.rs:21:1
+   |
+ 9 | pub fn ccw_face_normal<N: RealField + Copy>(pts: [&Point<N>; 2]) -> Option<Unit<Vector<N>>> {
+   | ------------------------------------------------------------------------------------------- previous definition of the value `ccw_face_normal` here
+...
+21 | pub fn ccw_face_normal<N: RealField + Copy>(pts: [&Point<N>; 3]) -> Option<Unit<Vector<N>>> {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `ccw_face_normal` redefined here
+   |
+   = note: `ccw_face_normal` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `math` is defined multiple times
+   --> /work/ncollide3d-updated-0.36.2/src/lib.rs:140:1
+    |
+ 95 | pub mod math {
+    | ------------ previous definition of the module `math` here
+...
+140 | pub mod math {
+    | ^^^^^^^^^^^^ `math` redefined here
+    |
+    = note: `math` must be defined only once in the type namespace of this module
+
+error[E0252]: the name `EPA` is defined multiple times
+ --> /work/ncollide3d-updated-0.36.2/src/query/algorithms/mod.rs:7:9
+  |
+5 | pub use self::epa2::EPA;
+  |         --------------- previous import of the type `EPA` here
+6 | #[cfg(feature = "dim3")]
+7 | pub use self::epa3::EPA;
+  |         ^^^^^^^^^^^^^^^ `EPA` reimported here
+  |
+  = note: `EPA` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+  |
+7 | pub use self::epa3::EPA as OtherEPA;
+  |                         +++++++++++
+
+error[E0252]: the name `convex_hull` is defined multiple times
+ --> /work/ncollide3d-updated-0.36.2/src/transformation/mod.rs:8:9
+  |
+6 | pub use self::convex_hull2::{convex_hull2 as convex_hull, convex_hull2_idx as convex_hull_idx};
+  |                              --------------------------- previous import of the value `convex_hull` here
+7 | #[cfg(feature = "dim3")]
+8 | pub use self::convex_hull3::convex_hull3 as convex_hull;
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `convex_hull` reimported here
+  |
+  = note: `convex_hull` must be defined only once in the value namespace of this module
+help: you can use `as` to change the binding name of the import
+  |
+8 | pub use self::convex_hull3::convex_hull3 as other_convex_hull;
+  |                                             ++++++
+
+error[E0252]: the name `VoronoiSimplex` is defined multiple times
+  --> /work/ncollide3d-updated-0.36.2/src/query/algorithms/mod.rs:11:9
+   |
+ 9 | pub use self::voronoi_simplex2::VoronoiSimplex;
+   |         -------------------------------------- previous import of the type `VoronoiSimplex` here
+10 | #[cfg(feature = "dim3")]
+11 | pub use self::voronoi_simplex3::VoronoiSimplex;
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `VoronoiSimplex` reimported here
+   |
+   = note: `VoronoiSimplex` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+   |
+11 | pub use self::voronoi_simplex3::VoronoiSimplex as OtherVoronoiSimplex;
+   |                                                ++++++++++++++++++++++
+
+error[E0252]: the name `ConvexPolygonalFeature` is defined multiple times
+  --> /work/ncollide3d-updated-0.36.2/src/shape/mod.rs:17:58
+   |
+15 | pub use self::convex_polygonal_feature2::ConvexPolygonalFeature;
+   |         ------------------------------------------------------- previous import of the type `ConvexPolygonalFeature` here
+16 | #[cfg(feature = "dim3")]
+17 | pub use self::convex_polygonal_feature3::{ClippingCache, ConvexPolygonalFeature};
+   |                                                          ^^^^^^^^^^^^^^^^^^^^^^ `ConvexPolygonalFeature` reimported here
+   |
+   = note: `ConvexPolygonalFeature` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+   |
+17 | pub use self::convex_polygonal_feature3::{ClippingCache, ConvexPolygonalFeature as OtherConvexPolygonalFeature};
+   |                                                                                 ++++++++++++++++++++++++++++++
+
+error[E0252]: the name `HeightField` is defined multiple times
+  --> /work/ncollide3d-updated-0.36.2/src/shape/mod.rs:28:30
+   |
+26 | pub use self::heightfield2::HeightField;
+   |         ------------------------------- previous import of the type `HeightField` here
+27 | #[cfg(feature = "dim3")]
+28 | pub use self::heightfield3::{HeightField, HeightFieldCellStatus};
+   |                              ^^^^^^^^^^^ `HeightField` reimported here
+   |
+   = note: `HeightField` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+   |
+28 | pub use self::heightfield3::{HeightField as OtherHeightField, HeightFieldCellStatus};
+   |                                          +++++++++++++++++++
+
+error[E0201]: duplicate definitions with name `feature_normal`:
+   --> /work/ncollide3d-updated-0.36.2/src/shape/cuboid.rs:512:5
+    |
+470 | /     fn feature_normal(&self, feature: FeatureId) -> Unit<Vector<N>> {
+471 | |         match feature {
+472 | |             FeatureId::Face(id) => {
+473 | |                 let mut dir: Vector<N> = na::zero();
+...   |
+509 | |     }
+    | |_____- previous definition here
+...
+512 | /     fn feature_normal(&self, feature: FeatureId) -> Unit<Vector<N>> {
+513 | |         match feature {
+514 | |             FeatureId::Face(id) => {
+515 | |                 let mut dir: Vector<N> = na::zero();
+...   |
+563 | |     }
+    | |_____^ duplicate definition
+    |
+   ::: /work/ncollide3d-updated-0.36.2/src/shape/convex_polyhedron.rs:63:5
+    |
+ 63 |       fn feature_normal(&self, feature: FeatureId) -> Unit<Vector<N>>;
+    |       ---------------------------------------------------------------- item in trait
+
+error[E0201]: duplicate definitions with name `face`:
+   --> /work/ncollide3d-updated-0.36.2/src/shape/segment.rs:213:5
+    |
+208 | /     fn face(&self, _: FeatureId, _: &mut ConvexPolygonalFeature<N>) {
+209 | |         panic!("A segment does not have any face in dimensions higher than 2.")
+210 | |     }
+    | |_____- previous definition here
+...
+213 | /     fn face(&self, id: FeatureId, face: &mut ConvexPolygonalFeature<N>) {
+214 | |         face.clear();
+215 | |
+216 | |         if let Some(normal) = utils::ccw_face_normal([&self.a, &self.b]) {
+...   |
+236 | |     }
+    | |_____^ duplicate definition
+    |
+   ::: /work/ncollide3d-updated-0.36.2/src/shape/convex_polyhedron.rs:57:5
+    |
+ 57 |       fn face(&self, id: FeatureId, face: &mut ConvexPolygonalFeature<N>);
+    |       -------------------------------------------------------------------- item in trait
+
+error[E0201]: duplicate definitions with name `support_face_toward`:
+   --> /work/ncollide3d-updated-0.36.2/src/shape/segment.rs:292:5
+    |
+275 | /     fn support_face_toward(
+276 | |         &self,
+277 | |         m: &Isometry<N>,
+278 | |         dir: &Unit<Vector<N>>,
+...   |
+288 | |         face.transform_by(m)
+289 | |     }
+    | |_____- previous definition here
+...
+292 | /     fn support_face_toward(
+293 | |         &self,
+294 | |         m: &Isometry<N>,
+295 | |         _: &Unit<Vector<N>>,
+...   |
+303 | |         face.transform_by(m)
+304 | |     }
+    | |_____^ duplicate definition
+    |
+   ::: /work/ncollide3d-updated-0.36.2/src/shape/convex_polyhedron.rs:66:5
+    |
+ 66 | /     fn support_face_toward(
+ 67 | |         &self,
+ 68 | |         transform: &Isometry<N>,
+ 69 | |         dir: &Unit<Vector<N>>,
+ 70 | |         out: &mut ConvexPolygonalFeature<N>,
+ 71 | |     );
+    | |______- item in trait
+
+error[E0124]: field `angvel` is already declared
+  --> /work/ncollide3d-updated-0.36.2/src/interpolation/rigid_motion.rs:91:5
+   |
+88 |     pub angvel: N,
+   |     ------------- `angvel` first declared here
+...
+91 |     pub angvel: Vector<N>,
+   |     ^^^^^^^^^^^^^^^^^^^^^ field already declared
+
+error[E0119]: conflicting implementations of trait `query::ray::ray::RayCast<_>` for type `shape::heightfield2::HeightField<_>`
+   --> /work/ncollide3d-updated-0.36.2/src/query/ray/ray_heightfield.rs:123:1
+    |
+ 11 | impl<N: RealField + Copy> RayCast<N> for HeightField<N> {
+    | ------------------------------------------------------- first implementation here
+...
+123 | impl<N: RealField + Copy> RayCast<N> for HeightField<N> {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ conflicting implementation for `shape::heightfield2::HeightField<_>`
+
+error[E0119]: conflicting implementations of trait `query::ray::ray::RayCast<_>` for type `shape::triangle::Triangle<_>`
+   --> /work/ncollide3d-updated-0.36.2/src/query/ray/ray_triangle.rs:7:1
+    |
+  7 | impl<N: RealField + Copy> RayCast<N> for Triangle<N> {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ conflicting implementation for `shape::triangle::Triangle<_>`
+    |
+   ::: /work/ncollide3d-updated-0.36.2/src/query/ray/ray_support_map.rs:193:1
+    |
+193 | impl<N: RealField + Copy> RayCast<N> for crate::shape::Triangle<N> {
+    | ------------------------------------------------------------------ first implementation here
+
+error[E0046]: not all trait items implemented, missing: `edge`
+   --> /work/ncollide3d-updated-0.36.2/src/shape/convex_polygon.rs:118:1
+    |
+118 | impl<N: RealField + Copy> ConvexPolyhedron<N> for ConvexPolygon<N> {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ missing `edge` in implementation
+    |
+   ::: /work/ncollide3d-updated-0.36.2/src/shape/convex_polyhedron.rs:60:5
+    |
+ 60 |     fn edge(&self, id: FeatureId) -> (Point<N>, Point<N>, FeatureId, FeatureId);
+    |     ---------------------------------------------------------------------------- `edge` from trait
+
+Some errors have detailed explanations: E0046, E0119, E0124, E0201, E0252, E0428.
+For more information about an error, try `rustc --explain E0046`.
+error: could not document `ncollide3d-updated`
+
+-----
+
+error: failed to build rustdoc for crate ncollide3d-updated v0.36.2
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/ncollide3d-updated-0.36.2 --features default,dim2,dim3,improved_fixed_point_support,serde,serde-serialize &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate ncollide3d-updated v0.36.2

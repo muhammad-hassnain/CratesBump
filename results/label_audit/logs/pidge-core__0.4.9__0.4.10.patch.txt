@@ -1,0 +1,13 @@
+
+    Building pidge-core v0.4.10 (current)
+       Built [   5.295s] (current)
+     Parsing pidge-core v0.4.10 (current)
+      Parsed [   0.006s] (current)
+    Building pidge-core v0.4.9 (baseline)
+       Built [   5.203s] (baseline)
+     Parsing pidge-core v0.4.9 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking pidge-core v0.4.9 -> v0.4.10 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  10.771s] pidge-core

@@ -1,0 +1,74 @@
+{
+  "input_rows": 2421308,
+  "input_rows_added_from_extra": 0,
+  "input_crates": 221027,
+  "checks": {
+    "predecessor_reproduces_naive_label": true,
+    "rdtd_matches_predecessor_gap": true,
+    "rdtd_tolerance_days": 0.001,
+    "note": "added after the run: it ran with --check-rdtd (Makefile reproduce-section-5); every input row was kept, so each check dropped 0 rows"
+  },
+  "status": {
+    "kept": 2421308,
+    "cargo_unlabelable": 0,
+    "created_at_filled_from_dump": 2421306,
+    "created_at_existing_agree_with_dump": "0/0",
+    "created_at_still_missing": 2,
+    "dropped_after_max_date": 2,
+    "dropped_by_cap": 341516,
+    "rows_with_repository": 1971057,
+    "distinct_repositories": 112921,
+    "no_predecessor_in_dump": 0,
+    "predecessor_disagrees_with_extractor": 0,
+    "rdtd_disagrees_with_predecessor": 0
+  },
+  "output_rows": 2079790,
+  "output_crates": 219955,
+  "cargo_label_pct": {
+    "major": 35.45,
+    "minor": 55.23,
+    "patch": 9.32
+  },
+  "naive_label_pct": {
+    "major": 2.79,
+    "minor": 32.95,
+    "patch": 64.26
+  },
+  "flips": 1712585,
+  "flips_pct": 82.34,
+  "flip_cases": {
+    "0.y.z_patch_becomes_minor": {
+      "n": 1033349,
+      "pct_of_flips": 60.3
+    },
+    "0.y.z_minor_becomes_major": {
+      "n": 555772,
+      "pct_of_flips": 32.5
+    },
+    "0.0.z_every_change_major": {
+      "n": 109239,
+      "pct_of_flips": 6.4
+    },
+    "0.0.z_to_0.y.z": {
+      "n": 14225,
+      "pct_of_flips": 0.8
+    }
+  },
+  "crosstab_naive_rows_cargo_cols": {
+    "major": {
+      "major": 58026,
+      "minor": 569997,
+      "patch": 109239
+    },
+    "minor": {
+      "major": 0,
+      "minor": 115283,
+      "patch": 1033349
+    },
+    "patch": {
+      "major": 0,
+      "minor": 0,
+      "patch": 193896
+    }
+  }
+}

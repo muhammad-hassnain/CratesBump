@@ -1,0 +1,13 @@
+
+    Building mangadex-api v2.3.1 (current)
+       Built [  14.507s] (current)
+     Parsing mangadex-api v2.3.1 (current)
+      Parsed [   0.038s] (current)
+    Building mangadex-api v2.3.0 (baseline)
+       Built [  16.101s] (baseline)
+     Parsing mangadex-api v2.3.0 (baseline)
+      Parsed [   0.051s] (baseline)
+    Checking mangadex-api v2.3.0 -> v2.3.1 (assume patch change)
+     Checked [   0.099s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  31.427s] mangadex-api

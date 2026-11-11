@@ -1,0 +1,27 @@
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  gear_wasm_instrument::syscalls::SyscallName::instrumentable takes 0 parameters in /work/gear-wasm-instrument-1.10.0/src/syscalls.rs:181, but now takes 1 parameters in /work/gear-wasm-instrument-2.0.0-pre.1/src/syscalls.rs:187
+  gear_wasm_instrument::syscalls::SyscallName::instrumentable_map takes 0 parameters in /work/gear-wasm-instrument-1.10.0/src/syscalls.rs:186, but now takes 1 parameters in /work/gear-wasm-instrument-2.0.0-pre.1/src/syscalls.rs:200
+  gear_wasm_instrument::SyscallName::instrumentable takes 0 parameters in /work/gear-wasm-instrument-1.10.0/src/syscalls.rs:181, but now takes 1 parameters in /work/gear-wasm-instrument-2.0.0-pre.1/src/syscalls.rs:187
+  gear_wasm_instrument::SyscallName::instrumentable_map takes 0 parameters in /work/gear-wasm-instrument-1.10.0/src/syscalls.rs:186, but now takes 1 parameters in /work/gear-wasm-instrument-2.0.0-pre.1/src/syscalls.rs:200
+
+    Building gear-wasm-instrument v2.0.0-pre.1 (current)
+       Built [   3.597s] (current)
+     Parsing gear-wasm-instrument v2.0.0-pre.1 (current)
+      Parsed [   0.004s] (current)
+    Building gear-wasm-instrument v1.10.0 (baseline)
+       Built [   3.762s] (baseline)
+     Parsing gear-wasm-instrument v1.10.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking gear-wasm-instrument v1.10.0 -> v2.0.0-pre.1 (assume patch change)
+     Checked [   0.021s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   7.553s] gear-wasm-instrument

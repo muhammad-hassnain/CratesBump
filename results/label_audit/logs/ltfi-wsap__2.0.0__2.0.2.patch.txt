@@ -1,0 +1,13 @@
+
+    Building ltfi-wsap v2.0.2 (current)
+       Built [  11.837s] (current)
+     Parsing ltfi-wsap v2.0.2 (current)
+      Parsed [   0.003s] (current)
+    Building ltfi-wsap v2.0.0 (baseline)
+       Built [  11.296s] (baseline)
+     Parsing ltfi-wsap v2.0.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking ltfi-wsap v2.0.0 -> v2.0.2 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  23.926s] ltfi-wsap

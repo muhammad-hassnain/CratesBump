@@ -1,0 +1,13 @@
+
+    Building acton-core v3.3.1 (current)
+       Built [  13.350s] (current)
+     Parsing acton-core v3.3.1 (current)
+      Parsed [   0.007s] (current)
+    Building acton-core v3.3.0 (baseline)
+       Built [   8.693s] (baseline)
+     Parsing acton-core v3.3.0 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking acton-core v3.3.0 -> v3.3.1 (assume patch change)
+     Checked [   0.021s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  22.651s] acton-core

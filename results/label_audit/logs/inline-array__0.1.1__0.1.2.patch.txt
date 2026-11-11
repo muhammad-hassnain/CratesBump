@@ -1,0 +1,13 @@
+
+    Building inline-array v0.1.2 (current)
+       Built [   0.119s] (current)
+     Parsing inline-array v0.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building inline-array v0.1.1 (baseline)
+       Built [   0.109s] (baseline)
+     Parsing inline-array v0.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking inline-array v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.390s] inline-array

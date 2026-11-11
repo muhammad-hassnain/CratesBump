@@ -1,0 +1,13 @@
+
+    Building sg-name-common v1.2.5 (current)
+       Built [  11.109s] (current)
+     Parsing sg-name-common v1.2.5 (current)
+      Parsed [   0.001s] (current)
+    Building sg-name-common v1.2.4 (baseline)
+       Built [  10.831s] (baseline)
+     Parsing sg-name-common v1.2.4 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking sg-name-common v1.2.4 -> v1.2.5 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  22.265s] sg-name-common

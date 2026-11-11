@@ -1,0 +1,163 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field GrantRequest.subject in /work/open-payments-0.2.0/src/types/auth.rs:126
+  field GrantRequest.subject in /work/open-payments-0.2.0/src/types/auth.rs:126
+  field ClientConfig.wallet_address_url in /work/open-payments-0.2.0/src/client/config.rs:51
+  field ClientConfig.wallet_address_url in /work/open-payments-0.2.0/src/client/config.rs:51
+  field ClientConfig.wallet_address_url in /work/open-payments-0.2.0/src/client/config.rs:51
+  field ClientConfig.wallet_address_url in /work/open-payments-0.2.0/src/client/config.rs:51
+  field IncomingPayment.methods in /work/open-payments-0.2.0/src/types/resource.rs:23
+  field IncomingPayment.methods in /work/open-payments-0.2.0/src/types/resource.rs:23
+  field OutgoingPayment.grant_spent_debit_amount in /work/open-payments-0.2.0/src/types/resource.rs:78
+  field OutgoingPayment.grant_spent_receive_amount in /work/open-payments-0.2.0/src/types/resource.rs:80
+  field OutgoingPayment.grant_spent_debit_amount in /work/open-payments-0.2.0/src/types/resource.rs:78
+  field OutgoingPayment.grant_spent_receive_amount in /work/open-payments-0.2.0/src/types/resource.rs:80
+
+--- failure enum_changed_kind: pub enum changed kind ---
+
+Description:
+A public enum has been replaced by a different kind of item at the same path, which breaks code that relied on the enum's variants and representation.
+        ref: https://github.com/obi1kenobi/cargo-semver-checks/issues/302
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_changed_kind.ron
+
+Failed in:
+  enum open_payments::client::error::OpClientError became struct in /work/open-payments-0.2.0/src/client/error.rs:54
+  enum open_payments::error::OpClientError became struct in /work/open-payments-0.2.0/src/client/error.rs:54
+  enum open_payments::client::OpClientError became struct in /work/open-payments-0.2.0/src/client/error.rs:54
+  enum open_payments::OpClientError became struct in /work/open-payments-0.2.0/src/client/error.rs:54
+
+--- failure enum_no_repr_variant_discriminant_changed: enum variant had its discriminant change value ---
+
+Description:
+The enum's variant had its discriminant value change. This breaks downstream code that used its value via a numeric cast like `as isize`.
+        ref: https://doc.rust-lang.org/reference/items/enumerations.html#assigning-discriminant-values
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_no_repr_variant_discriminant_changed.ron
+
+Failed in:
+  variant CreateQuoteRequest::NoAmountQuote 0 -> 2 in /work/open-payments-0.2.0/src/types/resource.rs:107
+  variant CreateQuoteRequest::FixedReceiveAmountQuote 1 -> 0 in /work/open-payments-0.2.0/src/types/resource.rs:91
+  variant CreateQuoteRequest::FixedSendAmountQuote 2 -> 1 in /work/open-payments-0.2.0/src/types/resource.rs:99
+  variant CreateQuoteRequest::NoAmountQuote 0 -> 2 in /work/open-payments-0.2.0/src/types/resource.rs:107
+  variant CreateQuoteRequest::FixedReceiveAmountQuote 1 -> 0 in /work/open-payments-0.2.0/src/types/resource.rs:91
+  variant CreateQuoteRequest::FixedSendAmountQuote 2 -> 1 in /work/open-payments-0.2.0/src/types/resource.rs:99
+  variant CreateQuoteRequest::NoAmountQuote 0 -> 2 in /work/open-payments-0.2.0/src/types/resource.rs:107
+  variant CreateQuoteRequest::FixedReceiveAmountQuote 1 -> 0 in /work/open-payments-0.2.0/src/types/resource.rs:91
+  variant CreateQuoteRequest::FixedSendAmountQuote 2 -> 1 in /work/open-payments-0.2.0/src/types/resource.rs:99
+  variant ContinueResponse::Pending 1 -> 2 in /work/open-payments-0.2.0/src/types/auth.rs:233
+  variant ContinueResponse::Pending 1 -> 2 in /work/open-payments-0.2.0/src/types/auth.rs:233
+
+--- failure enum_struct_variant_field_added: pub enum struct variant field added ---
+
+Description:
+An enum's exhaustive struct variant has a new field, which has to be included when constructing or matching on this variant.
+        ref: https://doc.rust-lang.org/reference/attributes/type_system.html#the-non_exhaustive-attribute
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_struct_variant_field_added.ron
+
+Failed in:
+  field subject of variant ContinueResponse::WithToken in /work/open-payments-0.2.0/src/types/auth.rs:226
+  field subject of variant ContinueResponse::WithToken in /work/open-payments-0.2.0/src/types/auth.rs:226
+  field subject of variant GrantResponse::WithToken in /work/open-payments-0.2.0/src/types/auth.rs:209
+  field subject of variant GrantResponse::WithToken in /work/open-payments-0.2.0/src/types/auth.rs:209
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant ContinueResponse:WithSubject in /work/open-payments-0.2.0/src/types/auth.rs:228
+  variant ContinueResponse:WithSubject in /work/open-payments-0.2.0/src/types/auth.rs:228
+
+--- failure feature_missing: package feature removed or renamed ---
+
+Description:
+A feature has been removed from this package's Cargo.toml. This will break downstream crates which enable that feature.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#cargo-feature-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/feature_missing.ron
+
+Failed in:
+  feature uuid in the package's Cargo.toml
+  feature tokio in the package's Cargo.toml
+  feature snippets in the package's Cargo.toml
+  feature tempfile in the package's Cargo.toml
+  feature dotenv in the package's Cargo.toml
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function open_payments::snippets::utils::load_env, previously in file /work/open-payments-0.1.2/src/snippets/utils/mod.rs:8
+  function open_payments::snippets::utils::create_unauthenticated_client, previously in file /work/open-payments-0.1.2/src/snippets/utils/mod.rs:36
+  function open_payments::snippets::utils::create_authenticated_client, previously in file /work/open-payments-0.1.2/src/snippets/utils/mod.rs:17
+  function open_payments::snippets::utils::get_env_var, previously in file /work/open-payments-0.1.2/src/snippets/utils/mod.rs:13
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  open_payments::client::api::authenticated::Grant::request takes 2 parameters in /work/open-payments-0.1.2/src/client/api.rs:158, but now takes 3 parameters in /work/open-payments-0.2.0/src/client/api.rs:174
+  open_payments::api::authenticated::Grant::request takes 2 parameters in /work/open-payments-0.1.2/src/client/api.rs:158, but now takes 3 parameters in /work/open-payments-0.2.0/src/client/api.rs:174
+
+--- failure module_missing: pub module removed or renamed ---
+
+Description:
+A publicly-visible module cannot be imported by its prior path. A `pub use` may have been removed, or the module may have been renamed, removed, or made non-public.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/module_missing.ron
+
+Failed in:
+  mod open_payments::snippets, previously in file /work/open-payments-0.1.2/src/snippets/mod.rs:1
+  mod open_payments::snippets::utils, previously in file /work/open-payments-0.1.2/src/snippets/utils/mod.rs:1
+
+--- failure struct_pub_field_missing: pub struct's pub field removed or renamed ---
+
+Description:
+A publicly-visible struct has at least one public field that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_pub_field_missing.ron
+
+Failed in:
+  field client of struct GrantRequest, previously in file /work/open-payments-0.1.2/src/types/auth.rs:84
+  field client of struct GrantRequest, previously in file /work/open-payments-0.1.2/src/types/auth.rs:84
+
+--- failure struct_pub_field_now_doc_hidden: pub struct field is now #[doc(hidden)] ---
+
+Description:
+A pub field of a pub struct is now marked #[doc(hidden)] and is no longer part of the public API.
+        ref: https://doc.rust-lang.org/rustdoc/write-documentation/the-doc-attribute.html#hidden
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_pub_field_now_doc_hidden.ron
+
+Failed in:
+  field GrantRequest.client in file /work/open-payments-0.2.0/src/types/auth.rs:119
+  field GrantRequest.client in file /work/open-payments-0.2.0/src/types/auth.rs:119
+
+    Building open-payments v0.2.0 (current)
+       Built [  11.859s] (current)
+     Parsing open-payments v0.2.0 (current)
+      Parsed [   0.017s] (current)
+    Building open-payments v0.1.2 (baseline)
+       Built [  13.670s] (baseline)
+     Parsing open-payments v0.1.2 (baseline)
+      Parsed [   0.016s] (baseline)
+    Checking open-payments v0.1.2 -> v0.2.0 (assume patch change)
+     Checked [   0.042s] 229 checks: 218 pass, 11 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 11 major and 0 minor checks failed
+    Finished [  26.313s] open-payments

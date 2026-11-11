@@ -1,0 +1,27 @@
+
+--- failure inherent_method_const_removed: pub method is no longer const ---
+
+Description:
+A publicly-visible method or associated fn is no longer `const` and can no longer be used in a `const` context.
+        ref: https://doc.rust-lang.org/reference/const_eval.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_const_removed.ron
+
+Failed in:
+  Builder::min_buffer_size in /work/zeropool-0.2.0/src/lib.rs:189
+  Builder::tls_cache_size in /work/zeropool-0.2.0/src/lib.rs:208
+  Builder::max_buffers_per_shard in /work/zeropool-0.2.0/src/lib.rs:217
+  Builder::pinned_memory in /work/zeropool-0.2.0/src/lib.rs:230
+
+    Building zeropool v0.2.0 (current)
+       Built [   0.681s] (current)
+     Parsing zeropool v0.2.0 (current)
+      Parsed [   0.001s] (current)
+    Building zeropool v0.1.5 (baseline)
+       Built [   0.658s] (baseline)
+     Parsing zeropool v0.1.5 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking zeropool v0.1.5 -> v0.2.0 (assume patch change)
+     Checked [   0.015s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   1.504s] zeropool

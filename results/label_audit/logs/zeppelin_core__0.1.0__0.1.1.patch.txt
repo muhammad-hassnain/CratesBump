@@ -1,0 +1,13 @@
+
+    Building zeppelin_core v0.1.1 (current)
+       Built [   3.078s] (current)
+     Parsing zeppelin_core v0.1.1 (current)
+      Parsed [   0.002s] (current)
+    Building zeppelin_core v0.1.0 (baseline)
+       Built [   6.125s] (baseline)
+     Parsing zeppelin_core v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking zeppelin_core v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   9.455s] zeppelin_core

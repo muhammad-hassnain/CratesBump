@@ -1,0 +1,13 @@
+
+    Building kagi-mcp v1.0.2 (current)
+       Built [  14.873s] (current)
+     Parsing kagi-mcp v1.0.2 (current)
+      Parsed [   0.003s] (current)
+    Building kagi-mcp v1.0.1 (baseline)
+       Built [  24.918s] (baseline)
+     Parsing kagi-mcp v1.0.1 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking kagi-mcp v1.0.1 -> v1.0.2 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  40.463s] kagi-mcp

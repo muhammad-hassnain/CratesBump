@@ -1,0 +1,13 @@
+
+    Building proxit v1.0.1 (current)
+       Built [   0.094s] (current)
+     Parsing proxit v1.0.1 (current)
+      Parsed [   0.000s] (current)
+    Building proxit v1.0.0 (baseline)
+       Built [   0.096s] (baseline)
+     Parsing proxit v1.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking proxit v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.323s] proxit

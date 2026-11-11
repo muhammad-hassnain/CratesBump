@@ -1,0 +1,13 @@
+
+    Building lol-async v0.1.3 (current)
+       Built [   6.166s] (current)
+     Parsing lol-async v0.1.3 (current)
+      Parsed [   0.001s] (current)
+    Building lol-async v0.1.2 (baseline)
+       Built [   5.933s] (baseline)
+     Parsing lol-async v0.1.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking lol-async v0.1.2 -> v0.1.3 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  12.356s] lol-async

@@ -1,0 +1,13 @@
+
+    Building rialo-s-log-collector v0.11.0-alpha.0 (current)
+       Built [   0.140s] (current)
+     Parsing rialo-s-log-collector v0.11.0-alpha.0 (current)
+      Parsed [   0.000s] (current)
+    Building rialo-s-log-collector v0.10.2 (baseline)
+       Built [   0.134s] (baseline)
+     Parsing rialo-s-log-collector v0.10.2 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking rialo-s-log-collector v0.10.2 -> v0.11.0-alpha.0 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.403s] rialo-s-log-collector

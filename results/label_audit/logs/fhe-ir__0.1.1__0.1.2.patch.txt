@@ -1,0 +1,13 @@
+
+    Building fhe-ir v0.1.2 (current)
+       Built [   0.171s] (current)
+     Parsing fhe-ir v0.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building fhe-ir v0.1.1 (baseline)
+       Built [   0.182s] (baseline)
+     Parsing fhe-ir v0.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking fhe-ir v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.500s] fhe-ir

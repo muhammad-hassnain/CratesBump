@@ -1,0 +1,13 @@
+
+    Building bugzilla_query v1.2.1 (current)
+       Built [   9.401s] (current)
+     Parsing bugzilla_query v1.2.1 (current)
+      Parsed [   0.002s] (current)
+    Building bugzilla_query v1.2.0 (baseline)
+       Built [   8.174s] (baseline)
+     Parsing bugzilla_query v1.2.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking bugzilla_query v1.2.0 -> v1.2.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  18.237s] bugzilla_query

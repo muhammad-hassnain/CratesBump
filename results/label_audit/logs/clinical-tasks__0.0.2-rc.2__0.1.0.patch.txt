@@ -1,0 +1,13 @@
+
+    Building clinical-tasks v0.1.0 (current)
+       Built [   8.823s] (current)
+     Parsing clinical-tasks v0.1.0 (current)
+      Parsed [   0.002s] (current)
+    Building clinical-tasks v0.0.2-rc.2 (baseline)
+       Built [   8.234s] (baseline)
+     Parsing clinical-tasks v0.0.2-rc.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking clinical-tasks v0.0.2-rc.2 -> v0.1.0 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  17.372s] clinical-tasks

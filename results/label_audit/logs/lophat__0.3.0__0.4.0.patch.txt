@@ -1,0 +1,34 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field LoPhatOptions.column_height in /work/lophat-0.4.0/src/options.rs:22
+
+--- failure function_parameter_count_changed: pub fn parameter count changed ---
+
+Description:
+A publicly-visible function now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_parameter_count_changed.ron
+
+Failed in:
+  lophat::rv_decompose_lock_free now takes 2 parameters instead of 3, in /work/lophat-0.4.0/src/lock_free.rs:85
+
+    Building lophat v0.4.0 (current)
+       Built [   5.243s] (current)
+     Parsing lophat v0.4.0 (current)
+      Parsed [   0.004s] (current)
+    Building lophat v0.3.0 (baseline)
+       Built [   5.441s] (baseline)
+     Parsing lophat v0.3.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking lophat v0.3.0 -> v0.4.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [  10.956s] lophat

@@ -1,0 +1,60 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field CommitIndexRequest.with_hotcache in /work/summa-proto-0.32.1/target/semver-checks/local-summa_proto-0_32_1-x86_64_unknown_linux_gnu-88f8f293fecd5c3b/target/debug/build/summa-proto-1b75e1d35e543d21/out/summa.proto.rs:1323
+
+--- failure enum_missing: pub enum removed or renamed ---
+
+Description:
+A publicly-visible enum cannot be imported by its prior path. A `pub use` may have been removed, or the enum itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_missing.ron
+
+Failed in:
+  enum summa_proto::proto::primary_key::Value, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:1298
+  enum summa_proto::proto::key::Key, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:988
+  enum summa_proto::proto::custom_order::OrderTarget, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:965
+
+--- failure module_missing: pub module removed or renamed ---
+
+Description:
+A publicly-visible module cannot be imported by its prior path. A `pub use` may have been removed, or the module may have been renamed, removed, or made non-public.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/module_missing.ron
+
+Failed in:
+  mod summa_proto::proto::custom_order, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:960
+  mod summa_proto::proto::primary_key, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:1293
+  mod summa_proto::proto::key, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:983
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct summa_proto::proto::CustomOrder, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:953
+  struct summa_proto::proto::Key, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:978
+  struct summa_proto::proto::PrimaryKey, previously in file /work/summa-proto-0.32.0/target/semver-checks/local-summa_proto-0_32_0-x86_64_unknown_linux_gnu-46ac0aa432b8fe02/target/debug/build/summa-proto-36590dc1a45c7636/out/summa.proto.rs:1288
+
+    Building summa-proto v0.32.1 (current)
+       Built [  16.000s] (current)
+     Parsing summa-proto v0.32.1 (current)
+      Parsed [   0.033s] (current)
+    Building summa-proto v0.32.0 (baseline)
+       Built [  15.435s] (baseline)
+     Parsing summa-proto v0.32.0 (baseline)
+      Parsed [   0.033s] (baseline)
+    Checking summa-proto v0.32.0 -> v0.32.1 (assume patch change)
+     Checked [   0.047s] 229 checks: 225 pass, 4 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 4 major and 0 minor checks failed
+    Finished [  31.967s] summa-proto

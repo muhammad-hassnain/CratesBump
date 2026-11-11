@@ -1,0 +1,13 @@
+
+    Building oxibrain v0.10.1 (current)
+       Built [  18.678s] (current)
+     Parsing oxibrain v0.10.1 (current)
+      Parsed [   0.005s] (current)
+    Building oxibrain v0.10.0 (baseline)
+       Built [  19.696s] (baseline)
+     Parsing oxibrain v0.10.0 (baseline)
+      Parsed [   0.008s] (baseline)
+    Checking oxibrain v0.10.0 -> v0.10.1 (assume patch change)
+     Checked [   0.017s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  39.270s] oxibrain

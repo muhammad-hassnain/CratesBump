@@ -1,0 +1,13 @@
+
+    Building command-parser v1.0.1 (current)
+       Built [   1.577s] (current)
+     Parsing command-parser v1.0.1 (current)
+      Parsed [   0.001s] (current)
+    Building command-parser v1.0.0 (baseline)
+       Built [   1.638s] (baseline)
+     Parsing command-parser v1.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking command-parser v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.372s] command-parser

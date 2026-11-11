@@ -1,0 +1,13 @@
+
+    Building cronrunner v2.2.1 (current)
+       Built [   0.110s] (current)
+     Parsing cronrunner v2.2.1 (current)
+      Parsed [   0.002s] (current)
+    Building cronrunner v2.2.0 (baseline)
+       Built [   0.108s] (baseline)
+     Parsing cronrunner v2.2.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking cronrunner v2.2.0 -> v2.2.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.365s] cronrunner

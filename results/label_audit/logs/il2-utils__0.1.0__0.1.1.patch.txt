@@ -1,0 +1,25 @@
+
+--- failure trait_added_supertrait: non-sealed trait added new supertraits ---
+
+Description:
+A non-sealed trait added one or more supertraits, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#generic-bounds-tighten
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_added_supertrait.ron
+
+Failed in:
+  trait il2_utils::mem::ProtectedValue gained Send in file /work/il2-utils-0.1.1/src/mem/mod.rs:287
+  trait il2_utils::mem::ProtectedValue gained Sync in file /work/il2-utils-0.1.1/src/mem/mod.rs:287
+
+    Building il2-utils v0.1.1 (current)
+       Built [   2.089s] (current)
+     Parsing il2-utils v0.1.1 (current)
+      Parsed [   0.005s] (current)
+    Building il2-utils v0.1.0 (baseline)
+       Built [   2.384s] (baseline)
+     Parsing il2-utils v0.1.0 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking il2-utils v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.020s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   4.810s] il2-utils

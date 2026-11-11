@@ -1,0 +1,13 @@
+
+    Building shadow-diff v3.2.0 (current)
+       Built [  10.536s] (current)
+     Parsing shadow-diff v3.2.0 (current)
+      Parsed [   0.011s] (current)
+    Building shadow-diff v3.1.3 (baseline)
+       Built [  11.176s] (baseline)
+     Parsing shadow-diff v3.1.3 (baseline)
+      Parsed [   0.018s] (baseline)
+    Checking shadow-diff v3.1.3 -> v3.2.0 (assume patch change)
+     Checked [   0.033s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  22.074s] shadow-diff

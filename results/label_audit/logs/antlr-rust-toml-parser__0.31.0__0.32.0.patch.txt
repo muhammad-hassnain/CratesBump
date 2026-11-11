@@ -1,0 +1,13 @@
+
+    Building antlr-rust-toml-parser v0.32.0 (current)
+       Built [   3.627s] (current)
+     Parsing antlr-rust-toml-parser v0.32.0 (current)
+      Parsed [   0.010s] (current)
+    Building antlr-rust-toml-parser v0.31.0 (baseline)
+       Built [   3.973s] (baseline)
+     Parsing antlr-rust-toml-parser v0.31.0 (baseline)
+      Parsed [   0.008s] (baseline)
+    Checking antlr-rust-toml-parser v0.31.0 -> v0.32.0 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   7.819s] antlr-rust-toml-parser

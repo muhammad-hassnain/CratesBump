@@ -1,0 +1,13 @@
+
+    Building http-test-server v2.0.1 (current)
+       Built [   2.044s] (current)
+     Parsing http-test-server v2.0.1 (current)
+      Parsed [   0.002s] (current)
+    Building http-test-server v2.0.0 (baseline)
+       Built [   1.712s] (baseline)
+     Parsing http-test-server v2.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking http-test-server v2.0.0 -> v2.0.1 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.906s] http-test-server

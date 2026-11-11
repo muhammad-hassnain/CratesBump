@@ -1,0 +1,25 @@
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant Color:Rgb in /work/diogen-0.5.2/src/color.rs:27
+  variant Color:Rgba in /work/diogen-0.5.2/src/color.rs:28
+
+    Building diogen v0.5.2 (current)
+       Built [  12.796s] (current)
+     Parsing diogen v0.5.2 (current)
+      Parsed [   0.027s] (current)
+    Building diogen v0.5.1 (baseline)
+       Built [  12.066s] (baseline)
+     Parsing diogen v0.5.1 (baseline)
+      Parsed [   0.014s] (baseline)
+    Checking diogen v0.5.1 -> v0.5.2 (assume patch change)
+     Checked [   0.026s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  25.594s] diogen

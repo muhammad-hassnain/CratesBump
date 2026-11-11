@@ -1,0 +1,13 @@
+
+    Building imperial v0.0.1 (current)
+       Built [   0.099s] (current)
+     Parsing imperial v0.0.1 (current)
+      Parsed [   0.001s] (current)
+    Building imperial v0.0.0 (baseline)
+       Built [   0.093s] (baseline)
+     Parsing imperial v0.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking imperial v0.0.0 -> v0.0.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.325s] imperial

@@ -1,0 +1,50 @@
+
+--- failure enum_missing: pub enum removed or renamed ---
+
+Description:
+A publicly-visible enum cannot be imported by its prior path. A `pub use` may have been removed, or the enum itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_missing.ron
+
+Failed in:
+  enum mqtt_packet::packet_type::PacketType, previously in file /work/mqtt-packet-0.2.0/src/packet_type.rs:5
+  enum mqtt_packet::property::Identifier, previously in file /work/mqtt-packet-0.2.0/src/property.rs:7
+  enum mqtt_packet::data_type::DataType, previously in file /work/mqtt-packet-0.2.0/src/data_type.rs:15
+  enum mqtt_packet::data_type::VariableByte, previously in file /work/mqtt-packet-0.2.0/src/data_type.rs:7
+
+--- failure module_missing: pub module removed or renamed ---
+
+Description:
+A publicly-visible module cannot be imported by its prior path. A `pub use` may have been removed, or the module may have been renamed, removed, or made non-public.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/module_missing.ron
+
+Failed in:
+  mod mqtt_packet::data_type, previously in file /work/mqtt-packet-0.2.0/src/data_type.rs:1
+  mod mqtt_packet::packet_type, previously in file /work/mqtt-packet-0.2.0/src/packet_type.rs:1
+  mod mqtt_packet::macros, previously in file /work/mqtt-packet-0.2.0/src/macros.rs:1
+  mod mqtt_packet::property, previously in file /work/mqtt-packet-0.2.0/src/property.rs:1
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct mqtt_packet::property::Property, previously in file /work/mqtt-packet-0.2.0/src/property.rs:48
+
+    Building mqtt-packet v0.3.0 (current)
+       Built [   0.113s] (current)
+     Parsing mqtt-packet v0.3.0 (current)
+      Parsed [   0.002s] (current)
+    Building mqtt-packet v0.2.0 (baseline)
+       Built [   0.116s] (baseline)
+     Parsing mqtt-packet v0.2.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking mqtt-packet v0.2.0 -> v0.3.0 (assume patch change)
+     Checked [   0.014s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [   0.370s] mqtt-packet

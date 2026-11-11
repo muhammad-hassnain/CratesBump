@@ -1,0 +1,13 @@
+
+    Building tokmd-model v1.13.1 (current)
+       Built [  17.891s] (current)
+     Parsing tokmd-model v1.13.1 (current)
+      Parsed [   0.002s] (current)
+    Building tokmd-model v1.13.0 (baseline)
+       Built [  24.924s] (baseline)
+     Parsing tokmd-model v1.13.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking tokmd-model v1.13.0 -> v1.13.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  43.276s] tokmd-model

@@ -1,0 +1,196 @@
+{
+  "github_zeros": {
+    "rows": 2079790,
+    "all_github_features_zero": {
+      "rows": 333309,
+      "pct": 16.0,
+      "nonzero_pct": 83.97
+    },
+    "no_repository": {
+      "rows": 108733,
+      "pct": 5.2
+    },
+    "other_host": {
+      "rows": 80313,
+      "pct": 3.9
+    },
+    "github_url_without_owner_repo": {
+      "rows": 515,
+      "note": "repository looks like GitHub but owner_repo() finds no owner/repo (e.g. github.com/<user>); includes known bug 1"
+    },
+    "github_repo_all_zero": {
+      "rows": 143748,
+      "pct": 6.9
+    },
+    "repo_not_cloned": {
+      "rows": 83034,
+      "pct": 4.0,
+      "source": "github_fill_report.json rows_in_repos_without_commits (7,226 repositories; includes the few rows of these repositories with issue/PR activity)"
+    },
+    "no_activity_in_window": {
+      "rows": 60714,
+      "pct": 2.9,
+      "source": "github_repo_all_zero minus repo_not_cloned"
+    },
+    "no_activity_split_approx": {
+      "note": "CSV-only approximation; the paper's split (1.4% / 1.5%) uses the commit dates in enrich_cache/, which is not in the repository",
+      "inside_commit_span_rows": 25021,
+      "inside_commit_span_pct": 1.2,
+      "inside_median_gap_hours": 1.4,
+      "outside_commit_span_rows": 24188,
+      "outside_commit_span_pct": 1.2
+    },
+    "known_bug_unusual_github_url": {
+      "rows": 14,
+      "crates": 2,
+      "packages": [
+        "desktop",
+        "koifish"
+      ],
+      "rows_all_zero": 14
+    },
+    "known_bug_unchecked_git_log": {
+      "repos": null,
+      "note": "49 in the paper and docs: repositories with an empty cached history and no logged clone error; needs enrich_cache/ and the crawl logs, which are not in the repository"
+    }
+  },
+  "audit": {
+    "sampled": 450,
+    "checked": 305,
+    "unchecked": 145,
+    "no_library_target": 71,
+    "no_longer_build_resolve_or_download": 74,
+    "no_library_split": {
+      "command_line_only": 46,
+      "macro_crates": 25,
+      "source": "crates.io dump versions.has_lib of both versions"
+    },
+    "feature_conflict_build_failures": {
+      "count": 8,
+      "pairs": [
+        "polars-core 0.50.0",
+        "iqa 0.2.0",
+        "json-mel 0.10.0",
+        "tui-textarea-2 0.10.1",
+        "kas-resvg 0.14.2",
+        "ncollide3d-updated 0.36.2",
+        "sochdb-vector 2.0.12",
+        "librqbit 5.5.3"
+      ],
+      "note": "log heuristic: compile_error! guards on features, items defined twice (E0428/E0252) or nightly-only std::simd behind a feature; the paper says 'about nine'"
+    },
+    "checkable_library_releases_by_year": {
+      "before_2020": {
+        "checked": 17,
+        "n": 29,
+        "pct": 58.6
+      },
+      "from_2020": {
+        "checked": 288,
+        "n": 350,
+        "pct": 82.3
+      },
+      "by_year": {
+        "2015": {
+          "checked": 0,
+          "n": 2,
+          "pct": 0.0
+        },
+        "2016": {
+          "checked": 1,
+          "n": 4,
+          "pct": 25.0
+        },
+        "2017": {
+          "checked": 4,
+          "n": 8,
+          "pct": 50.0
+        },
+        "2018": {
+          "checked": 3,
+          "n": 4,
+          "pct": 75.0
+        },
+        "2019": {
+          "checked": 9,
+          "n": 11,
+          "pct": 81.8
+        },
+        "2020": {
+          "checked": 10,
+          "n": 14,
+          "pct": 71.4
+        },
+        "2021": {
+          "checked": 11,
+          "n": 12,
+          "pct": 91.7
+        },
+        "2022": {
+          "checked": 22,
+          "n": 25,
+          "pct": 88.0
+        },
+        "2023": {
+          "checked": 29,
+          "n": 35,
+          "pct": 82.9
+        },
+        "2024": {
+          "checked": 26,
+          "n": 42,
+          "pct": 61.9
+        },
+        "2025": {
+          "checked": 50,
+          "n": 61,
+          "pct": 82.0
+        },
+        "2026": {
+          "checked": 140,
+          "n": 161,
+          "pct": 87.0
+        }
+      }
+    },
+    "checked_minor_0yz": {
+      "n_minor": 101,
+      "zero_major": 92,
+      "breaks": 15,
+      "breaks_zero_major": 13
+    },
+    "confirmed_without_prereleases": {
+      "minor": {
+        "k": 14,
+        "n": 98,
+        "pct": 14.3,
+        "prerelease_breaks": [
+          "tokmd-settings 1.7.3 -> 1.8.0-rc.1"
+        ]
+      },
+      "patch": {
+        "k": 9,
+        "n": 100,
+        "pct": 9.0,
+        "prerelease_breaks": []
+      }
+    },
+    "confirmed_minor_plus_patch": {
+      "k": 24,
+      "n": 204,
+      "pct": 11.8
+    },
+    "confirmed_with_0_22_lints": {
+      "minor": {
+        "k": 13,
+        "n": 101,
+        "pct": 12.9
+      },
+      "patch": {
+        "k": 7,
+        "n": 103,
+        "pct": 6.8
+      }
+    }
+  }
+}

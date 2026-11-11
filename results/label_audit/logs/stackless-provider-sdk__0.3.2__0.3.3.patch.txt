@@ -1,0 +1,13 @@
+
+    Building stackless-provider-sdk v0.3.3 (current)
+       Built [  20.069s] (current)
+     Parsing stackless-provider-sdk v0.3.3 (current)
+      Parsed [   0.003s] (current)
+    Building stackless-provider-sdk v0.3.2 (baseline)
+       Built [  20.175s] (baseline)
+     Parsing stackless-provider-sdk v0.3.2 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking stackless-provider-sdk v0.3.2 -> v0.3.3 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  40.893s] stackless-provider-sdk

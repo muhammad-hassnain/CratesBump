@@ -1,0 +1,13 @@
+
+    Building quantified v0.1.1 (current)
+       Built [   0.108s] (current)
+     Parsing quantified v0.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building quantified v0.1.0 (baseline)
+       Built [   0.102s] (baseline)
+     Parsing quantified v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking quantified v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.009s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.354s] quantified

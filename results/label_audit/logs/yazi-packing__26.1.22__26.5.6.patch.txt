@@ -1,0 +1,13 @@
+
+    Building yazi-packing v26.5.6 (current)
+       Built [   0.103s] (current)
+     Parsing yazi-packing v26.5.6 (current)
+      Parsed [   0.000s] (current)
+    Building yazi-packing v26.1.22 (baseline)
+       Built [   0.110s] (baseline)
+     Parsing yazi-packing v26.1.22 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking yazi-packing v26.1.22 -> v26.5.6 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.348s] yazi-packing

@@ -1,0 +1,35 @@
+
+--- failure copy_impl_added: type now implements Copy ---
+
+Description:
+A public type now implements Copy, causing non-move closures to capture it by reference instead of moving it.
+        ref: https://github.com/rust-lang/rust/issues/100905
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/copy_impl_added.ron
+
+Failed in:
+  hlist2::ops::There in /work/hlist2-0.0.14/src/ops/index/types.rs:22
+  hlist2::ops::Here in /work/hlist2-0.0.14/src/ops/index/types.rs:13
+
+--- failure trait_removed_associated_constant: trait's associated constant was removed ---
+
+Description:
+A public trait's associated constant was removed or renamed.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_removed_associated_constant.ron
+
+Failed in:
+  associated constant HList::LEN, previously at /work/hlist2-0.0.13/src/lib.rs:99
+
+    Building hlist2 v0.0.14 (current)
+       Built [   0.118s] (current)
+     Parsing hlist2 v0.0.14 (current)
+      Parsed [   0.002s] (current)
+    Building hlist2 v0.0.13 (baseline)
+       Built [   0.135s] (baseline)
+     Parsing hlist2 v0.0.13 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking hlist2 v0.0.13 -> v0.0.14 (assume patch change)
+     Checked [   0.016s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   0.401s] hlist2

@@ -1,0 +1,13 @@
+
+    Building lightvgl-sys v9.5.5-beta.0 (current)
+       Built [  66.074s] (current)
+     Parsing lightvgl-sys v9.5.5-beta.0 (current)
+      Parsed [   0.025s] (current)
+    Building lightvgl-sys v9.5.4 (baseline)
+       Built [  64.457s] (baseline)
+     Parsing lightvgl-sys v9.5.4 (baseline)
+      Parsed [   0.022s] (baseline)
+    Checking lightvgl-sys v9.5.4 -> v9.5.5-beta.0 (assume patch change)
+     Checked [   0.142s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [ 130.958s] lightvgl-sys

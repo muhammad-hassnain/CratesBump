@@ -1,0 +1,13 @@
+
+    Building que v0.4.4 (current)
+       Built [   1.661s] (current)
+     Parsing que v0.4.4 (current)
+      Parsed [   0.001s] (current)
+    Building que v0.4.3 (baseline)
+       Built [   1.735s] (baseline)
+     Parsing que v0.4.3 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking que v0.4.3 -> v0.4.4 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.573s] que

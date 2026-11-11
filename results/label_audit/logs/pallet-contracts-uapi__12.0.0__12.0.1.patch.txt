@@ -1,0 +1,13 @@
+
+    Building pallet-contracts-uapi v12.0.1 (current)
+       Built [   7.284s] (current)
+     Parsing pallet-contracts-uapi v12.0.1 (current)
+      Parsed [   0.002s] (current)
+    Building pallet-contracts-uapi v12.0.0 (baseline)
+       Built [   5.925s] (baseline)
+     Parsing pallet-contracts-uapi v12.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking pallet-contracts-uapi v12.0.0 -> v12.0.1 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  13.514s] pallet-contracts-uapi

@@ -1,0 +1,13 @@
+
+    Building merman-ascii v0.8.0-alpha.1 (current)
+       Built [  15.982s] (current)
+     Parsing merman-ascii v0.8.0-alpha.1 (current)
+      Parsed [   0.009s] (current)
+    Building merman-ascii v0.7.0 (baseline)
+       Built [  16.624s] (baseline)
+     Parsing merman-ascii v0.7.0 (baseline)
+      Parsed [   0.009s] (baseline)
+    Checking merman-ascii v0.7.0 -> v0.8.0-alpha.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  33.012s] merman-ascii

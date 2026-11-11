@@ -1,0 +1,30 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field ModuleStats.avg_braintax in /work/cargo-braintax4rust-0.3.0/src/module_stats.rs:14
+  field ModuleStats.max_braintax in /work/cargo-braintax4rust-0.3.0/src/module_stats.rs:15
+  field OverallStats.avg_braintax in /work/cargo-braintax4rust-0.3.0/src/overall_stats.rs:13
+  field OverallStats.max_braintax in /work/cargo-braintax4rust-0.3.0/src/overall_stats.rs:14
+  field FunctionComplexity.cfg_gates in /work/cargo-braintax4rust-0.3.0/src/function_complexity.rs:13
+  field FunctionComplexity.hidden_deps in /work/cargo-braintax4rust-0.3.0/src/function_complexity.rs:14
+  field FunctionComplexity.braintax in /work/cargo-braintax4rust-0.3.0/src/function_complexity.rs:15
+
+    Building cargo-braintax4rust v0.3.0 (current)
+       Built [   3.584s] (current)
+     Parsing cargo-braintax4rust v0.3.0 (current)
+      Parsed [   0.002s] (current)
+    Building cargo-braintax4rust v0.2.0 (baseline)
+       Built [   3.614s] (baseline)
+     Parsing cargo-braintax4rust v0.2.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking cargo-braintax4rust v0.2.0 -> v0.3.0 (assume patch change)
+     Checked [   0.017s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   7.448s] cargo-braintax4rust

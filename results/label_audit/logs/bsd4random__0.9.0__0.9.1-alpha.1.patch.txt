@@ -1,0 +1,13 @@
+
+    Building bsd4random v0.9.1-alpha.1 (current)
+       Built [   0.115s] (current)
+     Parsing bsd4random v0.9.1-alpha.1 (current)
+      Parsed [   0.001s] (current)
+    Building bsd4random v0.9.0 (baseline)
+       Built [   0.097s] (baseline)
+     Parsing bsd4random v0.9.0 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking bsd4random v0.9.0 -> v0.9.1-alpha.1 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.347s] bsd4random

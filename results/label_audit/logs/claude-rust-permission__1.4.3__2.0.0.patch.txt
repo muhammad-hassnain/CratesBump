@@ -1,0 +1,35 @@
+
+--- failure auto_trait_impl_removed: auto trait no longer implemented ---
+
+Description:
+A public type has stopped implementing one or more auto traits. This can break downstream code that depends on the traits being implemented.
+        ref: https://doc.rust-lang.org/reference/special-types-and-traits.html#auto-traits
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/auto_trait_impl_removed.ron
+
+Failed in:
+  type InteractivePermissionChecker is no longer UnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/terminal_checker.rs:12
+  type InteractivePermissionChecker is no longer RefUnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/terminal_checker.rs:12
+  type InteractivePermissionChecker is no longer UnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/terminal_checker.rs:12
+  type InteractivePermissionChecker is no longer RefUnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/terminal_checker.rs:12
+  type InteractivePermissionChecker is no longer UnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/terminal_checker.rs:12
+  type InteractivePermissionChecker is no longer RefUnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/terminal_checker.rs:12
+  type ConfigAwarePermissionChecker is no longer UnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/config_aware_checker.rs:11
+  type ConfigAwarePermissionChecker is no longer RefUnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/config_aware_checker.rs:11
+  type ConfigAwarePermissionChecker is no longer UnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/config_aware_checker.rs:11
+  type ConfigAwarePermissionChecker is no longer RefUnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/config_aware_checker.rs:11
+  type ConfigAwarePermissionChecker is no longer UnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/config_aware_checker.rs:11
+  type ConfigAwarePermissionChecker is no longer RefUnwindSafe, in /work/claude-rust-permission-2.0.0/src/infrastructure/config_aware_checker.rs:11
+
+    Building claude-rust-permission v2.0.0 (current)
+       Built [   7.469s] (current)
+     Parsing claude-rust-permission v2.0.0 (current)
+      Parsed [   0.001s] (current)
+    Building claude-rust-permission v1.4.3 (baseline)
+       Built [   6.649s] (baseline)
+     Parsing claude-rust-permission v1.4.3 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking claude-rust-permission v1.4.3 -> v2.0.0 (assume patch change)
+     Checked [   0.010s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [  14.507s] claude-rust-permission

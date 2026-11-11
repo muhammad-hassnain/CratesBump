@@ -1,0 +1,25 @@
+
+    Building zetch v0.1.0 (current)
+       Built [   7.967s] (current)
+     Parsing zetch v0.1.0 (current)
+      Parsed [   0.005s] (current)
+    Building zetch v0.0.17 (baseline)
+error: running cargo-doc on crate 'zetch' failed with output:
+-----
+warning: placeholder v0.0.0 (/work/zetch-0.0.17/target/semver-checks/local-zetch-0_0_17-x86_64_unknown_linux_gnu-cfe99e50cf31129d) ignoring invalid dependency `zetch` which is missing a lib target
+error: no library targets found in package `zetch`
+
+-----
+
+error: failed to build rustdoc for crate zetch v0.0.17
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/zetch-0.0.17 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate zetch v0.0.17

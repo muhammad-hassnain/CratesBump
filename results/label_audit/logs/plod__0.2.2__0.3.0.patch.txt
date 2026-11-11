@@ -1,0 +1,35 @@
+
+--- failure trait_method_missing: pub trait method removed or renamed ---
+
+Description:
+A trait method is no longer callable, and may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-item-signature
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_missing.ron
+
+Failed in:
+  method size of trait Plod, previously in file /work/plod-0.2.2/src/lib.rs:97
+
+--- failure trait_method_parameter_count_changed: pub trait method parameter count changed ---
+
+Description:
+A trait method now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-item-signature
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_parameter_count_changed.ron
+
+Failed in:
+  Plod::read_from now takes 2 instead of 1 parameters, in file /work/plod-0.3.0/src/lib.rs:102
+  Plod::write_to now takes 2 instead of 1 parameters, in file /work/plod-0.3.0/src/lib.rs:106
+
+    Building plod v0.3.0 (current)
+       Built [   1.902s] (current)
+     Parsing plod v0.3.0 (current)
+      Parsed [   0.001s] (current)
+    Building plod v0.2.2 (baseline)
+       Built [   1.864s] (baseline)
+     Parsing plod v0.2.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking plod v0.2.2 -> v0.3.0 (assume patch change)
+     Checked [   0.014s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   3.941s] plod

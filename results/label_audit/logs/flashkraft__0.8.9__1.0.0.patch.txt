@@ -1,0 +1,13 @@
+
+    Building flashkraft v1.0.0 (current)
+       Built [  43.817s] (current)
+     Parsing flashkraft v1.0.0 (current)
+      Parsed [   0.005s] (current)
+    Building flashkraft v0.8.9 (baseline)
+       Built [  42.312s] (baseline)
+     Parsing flashkraft v0.8.9 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking flashkraft v0.8.9 -> v1.0.0 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  87.250s] flashkraft

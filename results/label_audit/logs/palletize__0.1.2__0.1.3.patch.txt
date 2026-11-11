@@ -1,0 +1,13 @@
+
+    Building palletize v0.1.3 (current)
+       Built [   7.378s] (current)
+     Parsing palletize v0.1.3 (current)
+      Parsed [   0.002s] (current)
+    Building palletize v0.1.2 (baseline)
+       Built [   6.881s] (baseline)
+     Parsing palletize v0.1.2 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking palletize v0.1.2 -> v0.1.3 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  14.448s] palletize

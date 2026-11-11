@@ -1,0 +1,45 @@
+{
+  "note": "Filled in two runs of scripts/fill_github_features.py over disjoint crate sets (crates whose repositories were already cached, then the rest); every row with a GitHub repository was filled once, from the same caches and windows as a single --crates ALL run.",
+  "rows_total": 2079790,
+  "rows_with_github_repo": 1890229,
+  "rows_without_github_repo": 189561,
+  "crates_with_github_repo": 192750,
+  "github_repos": 106419,
+  "repos_without_commits": 7226,
+  "rows_in_repos_without_commits": 83034,
+  "repos_without_issues": 39378,
+  "rows_missing_prev_timestamp": 0,
+  "pct_rows_with_github_repo_nonzero": 92.4,
+  "pct_all_rows_nonzero_after": 83.97,
+  "window": "(publish time of prev_version, publish time of version]",
+  "runs": {
+    "cached_first": {
+      "rows_targeted": 1651208,
+      "crates": 177008,
+      "github_repos": 101071,
+      "rows_without_github_repo": 0,
+      "rows_computed": 1651208,
+      "rows_in_repos_without_commits": 59147,
+      "repos_without_commits": 4858,
+      "repos_without_issues": 37009,
+      "rows_missing_prev_timestamp": 0,
+      "pct_targeted_rows_nonzero_after": 92.92,
+      "pct_all_rows_nonzero_after": 73.77,
+      "window": "(publish time of prev_version, publish time of version]"
+    },
+    "remaining": {
+      "rows_targeted": 239021,
+      "crates": 15742,
+      "github_repos": 5348,
+      "rows_without_github_repo": 0,
+      "rows_computed": 239021,
+      "rows_in_repos_without_commits": 23887,
+      "repos_without_commits": 2368,
+      "repos_without_issues": 2369,
+      "rows_missing_prev_timestamp": 0,
+      "pct_targeted_rows_nonzero_after": 88.74,
+      "pct_all_rows_nonzero_after": 83.97,
+      "window": "(publish time of prev_version, publish time of version]"
+    }
+  }
+}

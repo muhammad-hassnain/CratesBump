@@ -1,0 +1,13 @@
+
+    Building ss58-registry v1.29.1 (current)
+       Built [   6.493s] (current)
+     Parsing ss58-registry v1.29.1 (current)
+      Parsed [   0.003s] (current)
+    Building ss58-registry v1.29.0 (baseline)
+       Built [   5.034s] (baseline)
+     Parsing ss58-registry v1.29.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking ss58-registry v1.29.0 -> v1.29.1 (assume patch change)
+     Checked [   0.022s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  11.920s] ss58-registry

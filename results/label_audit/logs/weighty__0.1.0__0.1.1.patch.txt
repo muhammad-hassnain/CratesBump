@@ -1,0 +1,62 @@
+
+    Building weighty v0.1.1 (current)
+error: running cargo-doc on crate 'weighty' failed with output:
+-----
+   Compiling autocfg v1.5.1
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+   Compiling libc v0.2.191
+   Compiling cc v1.11.1
+   Compiling num-traits v0.2.19
+   Compiling pkg-config v0.3.34
+    Checking typenum v1.20.1
+    Checking uom v0.38.0
+   Compiling hidapi v1.5.0
+error: failed to run custom build command for `hidapi v1.5.0`
+
+Caused by:
+  process didn't exit successfully: `/work/weighty-0.1.1/target/semver-checks/local-weighty-0_1_1-x86_64_unknown_linux_gnu-13f58a45af62a685/target/debug/build/hidapi-5e8873bd9db14e51/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=LIBUSB_1.0_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=LIBUSB_1.0_STATIC
+  cargo:rerun-if-env-changed=LIBUSB_1.0_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+
+  --- stderr
+
+  thread 'main' (239) panicked at /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hidapi-1.5.0/build.rs:69:60:
+  Unable to find libusb-1.0: "\npkg-config exited with status code 1\n> PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 pkg-config --libs --cflags libusb-1.0\n\npkg-config output:\n  Package libusb-1.0 was not found in the pkg-config search path.\n  Perhaps you should add the directory containing `libusb-1.0.pc'\n  to the PKG_CONFIG_PATH environment variable\n  Package 'libusb-1.0', required by 'virtual:world', not found\n\nThe system library `libusb-1.0` required by crate `hidapi` was not found.\nThe file `libusb-1.0.pc` needs to be installed and the PKG_CONFIG_PATH environment variable must contain its parent directory.\nThe PKG_CONFIG_PATH environment variable is not set.\n\nHINT: if you have installed the library, try setting PKG_CONFIG_PATH to the directory containing `libusb-1.0.pc`.\n"
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
+
+-----
+
+error: failed to build rustdoc for crate weighty v0.1.1
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/weighty-0.1.1 --features default,units,uom &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate weighty v0.1.1

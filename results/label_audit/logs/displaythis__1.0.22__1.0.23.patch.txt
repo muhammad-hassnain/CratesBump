@@ -1,0 +1,13 @@
+
+    Building displaythis v1.0.23 (current)
+       Built [   1.313s] (current)
+     Parsing displaythis v1.0.23 (current)
+      Parsed [   0.000s] (current)
+    Building displaythis v1.0.22 (baseline)
+       Built [   1.249s] (baseline)
+     Parsing displaythis v1.0.22 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking displaythis v1.0.22 -> v1.0.23 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   2.717s] displaythis

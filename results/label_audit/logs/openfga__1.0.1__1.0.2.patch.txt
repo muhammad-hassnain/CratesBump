@@ -1,0 +1,13 @@
+
+    Building openfga v1.0.2 (current)
+       Built [  25.131s] (current)
+     Parsing openfga v1.0.2 (current)
+      Parsed [   0.013s] (current)
+    Building openfga v1.0.1 (baseline)
+       Built [  24.999s] (baseline)
+     Parsing openfga v1.0.1 (baseline)
+      Parsed [   0.012s] (baseline)
+    Checking openfga v1.0.1 -> v1.0.2 (assume patch change)
+     Checked [   0.055s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  50.909s] openfga

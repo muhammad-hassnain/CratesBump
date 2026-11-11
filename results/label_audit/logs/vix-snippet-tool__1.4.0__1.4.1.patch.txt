@@ -1,0 +1,13 @@
+
+    Building vix-snippet-tool v1.4.1 (current)
+       Built [   0.098s] (current)
+     Parsing vix-snippet-tool v1.4.1 (current)
+      Parsed [   0.001s] (current)
+    Building vix-snippet-tool v1.4.0 (baseline)
+       Built [   0.105s] (baseline)
+     Parsing vix-snippet-tool v1.4.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking vix-snippet-tool v1.4.0 -> v1.4.1 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.336s] vix-snippet-tool

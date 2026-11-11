@@ -1,0 +1,13 @@
+
+    Building pib-client v0.8.0 (current)
+       Built [  24.893s] (current)
+     Parsing pib-client v0.8.0 (current)
+      Parsed [   0.002s] (current)
+    Building pib-client v0.7.0 (baseline)
+       Built [  23.324s] (baseline)
+     Parsing pib-client v0.7.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking pib-client v0.7.0 -> v0.8.0 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  48.934s] pib-client

@@ -1,0 +1,34 @@
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function codebase::project::configure, previously in file /work/codebase-0.9.0/src/project.rs:104
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  Codebase::new, previously in file /work/codebase-0.9.0/src/codebase.rs:39
+
+    Building codebase v0.10.0 (current)
+       Built [  13.583s] (current)
+     Parsing codebase v0.10.0 (current)
+      Parsed [   0.001s] (current)
+    Building codebase v0.9.0 (baseline)
+       Built [  11.612s] (baseline)
+     Parsing codebase v0.9.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking codebase v0.9.0 -> v0.10.0 (assume patch change)
+     Checked [   0.012s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [  25.561s] codebase

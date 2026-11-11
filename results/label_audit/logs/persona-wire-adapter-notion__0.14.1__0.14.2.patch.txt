@@ -1,0 +1,13 @@
+
+    Building persona-wire-adapter-notion v0.14.2 (current)
+       Built [  19.009s] (current)
+     Parsing persona-wire-adapter-notion v0.14.2 (current)
+      Parsed [   0.003s] (current)
+    Building persona-wire-adapter-notion v0.14.1 (baseline)
+       Built [  18.553s] (baseline)
+     Parsing persona-wire-adapter-notion v0.14.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking persona-wire-adapter-notion v0.14.1 -> v0.14.2 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  38.288s] persona-wire-adapter-notion

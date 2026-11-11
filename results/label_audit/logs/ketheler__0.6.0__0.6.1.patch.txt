@@ -1,0 +1,66 @@
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function ketheler::server::debug_state_with, previously in file /work/ketheler-0.6.0/src/server.rs:499
+  function ketheler::server::debug_state, previously in file /work/ketheler-0.6.0/src/server.rs:490
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  ServerHandle::status, previously in file /work/ketheler-0.6.0/src/server.rs:252
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  ketheler::server::ServerHandle::info takes 1 parameters in /work/ketheler-0.6.0/src/server.rs:238, but now takes 0 parameters in /work/ketheler-0.6.1/src/server.rs:252
+
+--- failure trait_method_missing: pub trait method removed or renamed ---
+
+Description:
+A trait method is no longer callable, and may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-item-signature
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_missing.ron
+
+Failed in:
+  method terminate of trait Server, previously in file /work/ketheler-0.6.0/src/server.rs:163
+  method handle_status of trait Server, previously in file /work/ketheler-0.6.0/src/server.rs:168
+
+--- failure trait_method_parameter_count_changed: pub trait method parameter count changed ---
+
+Description:
+A trait method now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-item-signature
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_parameter_count_changed.ron
+
+Failed in:
+  Server::handle_info now takes 1 instead of 2 parameters, in file /work/ketheler-0.6.1/src/server.rs:168
+
+    Building ketheler v0.6.1 (current)
+       Built [   2.937s] (current)
+     Parsing ketheler v0.6.1 (current)
+      Parsed [   0.002s] (current)
+    Building ketheler v0.6.0 (baseline)
+       Built [   2.895s] (baseline)
+     Parsing ketheler v0.6.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking ketheler v0.6.0 -> v0.6.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 224 pass, 5 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 5 major and 0 minor checks failed
+    Finished [   6.161s] ketheler

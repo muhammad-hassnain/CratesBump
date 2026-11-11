@@ -1,0 +1,13 @@
+
+    Building elb-dl v0.3.2 (current)
+       Built [   1.868s] (current)
+     Parsing elb-dl v0.3.2 (current)
+      Parsed [   0.001s] (current)
+    Building elb-dl v0.3.1 (baseline)
+       Built [   1.820s] (baseline)
+     Parsing elb-dl v0.3.1 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking elb-dl v0.3.1 -> v0.3.2 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   3.850s] elb-dl

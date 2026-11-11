@@ -1,0 +1,71 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field Event.narrative_after in /work/nightrunner_lib-0.3.0/src/config/mod.rs:296
+  field Event.add_subject in /work/nightrunner_lib-0.3.0/src/config/mod.rs:306
+  field Event.remove_subject in /work/nightrunner_lib-0.3.0/src/config/mod.rs:310
+  field Event.move_subject_to_location in /work/nightrunner_lib-0.3.0/src/config/mod.rs:314
+
+--- failure constructible_struct_adds_private_field: struct no longer constructible due to new private field ---
+
+Description:
+A struct has a new non-public field that causes downstream code to be unable to construct it with a struct expression, including functional-update syntax.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_private_field.ron
+
+Failed in:
+  field Config.room_blueprints in /work/nightrunner_lib-0.3.0/src/config/mod.rs:418
+
+--- failure method_receiver_ref_became_mut: method receiver changed from immutable to mutable reference ---
+
+Description:
+A method's receiver changed from an immutable reference to a mutable one.
+        ref: https://doc.rust-lang.org/reference/items/associated-items.html#methods
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_receiver_ref_became_mut.ron
+
+Failed in:
+  nightrunner_lib::NightRunner::parse_input now takes &mut Self, not &Self, in /work/nightrunner_lib-0.3.0/src/lib.rs:210
+  nightrunner_lib::NightRunner::json_parse_input now takes &mut Self, not &Self, in /work/nightrunner_lib-0.3.0/src/lib.rs:223
+  nightrunner_lib::NightRunner::parse now takes &mut Self, not &Self, in /work/nightrunner_lib-0.3.0/src/lib.rs:363
+
+--- failure struct_pub_field_missing: pub struct's pub field removed or renamed ---
+
+Description:
+A publicly-visible struct has at least one public field that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_pub_field_missing.ron
+
+Failed in:
+  field rooms of struct Config, previously in file /work/nightrunner_lib-0.2.1/src/config/mod.rs:356
+
+--- warning partial_ord_struct_fields_reordered: struct fields reordered in #[derive(PartialOrd)] struct ---
+
+Description:
+A public struct that derives PartialOrd had its fields reordered. #[derive(PartialOrd)] uses the field order to set the struct's ordering behavior, so this change may break downstream code that relies on the previous order.
+        ref: https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html#derivable
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/partial_ord_struct_fields_reordered.ron
+
+Failed in:
+  Event.remove_item moved from position 13 to 14, in /work/nightrunner_lib-0.3.0/src/config/mod.rs:299
+  Event.required_events moved from position 14 to 15, in /work/nightrunner_lib-0.3.0/src/config/mod.rs:303
+
+    Building nightrunner_lib v0.3.0 (current)
+       Built [   5.064s] (current)
+     Parsing nightrunner_lib v0.3.0 (current)
+      Parsed [   0.005s] (current)
+    Building nightrunner_lib v0.2.1 (baseline)
+       Built [   4.403s] (baseline)
+     Parsing nightrunner_lib v0.2.1 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking nightrunner_lib v0.2.1 -> v0.3.0 (assume patch change)
+     Checked [   0.015s] 229 checks: 224 pass, 4 fail, 1 warn, 31 skip
+
+     Summary semver requires new major version: 4 major and 0 minor checks failed
+     Warning produced 1 major and 0 minor level warnings
+    Finished [   9.694s] nightrunner_lib

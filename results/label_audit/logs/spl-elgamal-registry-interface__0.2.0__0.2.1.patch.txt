@@ -1,0 +1,13 @@
+
+    Building spl-elgamal-registry-interface v0.2.1 (current)
+       Built [   4.131s] (current)
+     Parsing spl-elgamal-registry-interface v0.2.1 (current)
+      Parsed [   0.001s] (current)
+    Building spl-elgamal-registry-interface v0.2.0 (baseline)
+       Built [   4.479s] (baseline)
+     Parsing spl-elgamal-registry-interface v0.2.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking spl-elgamal-registry-interface v0.2.0 -> v0.2.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   8.858s] spl-elgamal-registry-interface

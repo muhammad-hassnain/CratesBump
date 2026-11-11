@@ -1,0 +1,26 @@
+
+--- failure function_parameter_count_changed: pub fn parameter count changed ---
+
+Description:
+A publicly-visible function now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_parameter_count_changed.ron
+
+Failed in:
+  logzip_core::legend::select_legend_with_positions now takes 5 parameters instead of 4, in /work/logzip-core-2.1.2/src/legend.rs:93
+  logzip_core::compress::compress now takes 8 parameters instead of 7, in /work/logzip-core-2.1.2/src/compress.rs:55
+  logzip_core::compress now takes 8 parameters instead of 7, in /work/logzip-core-2.1.2/src/compress.rs:55
+
+    Building logzip-core v2.1.2 (current)
+       Built [   0.148s] (current)
+     Parsing logzip-core v2.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building logzip-core v2.1.1 (baseline)
+       Built [   0.117s] (baseline)
+     Parsing logzip-core v2.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking logzip-core v2.1.1 -> v2.1.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.408s] logzip-core

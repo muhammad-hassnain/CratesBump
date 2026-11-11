@@ -1,0 +1,13 @@
+
+    Building b961fce v0.1.4 (current)
+       Built [   7.959s] (current)
+     Parsing b961fce v0.1.4 (current)
+      Parsed [   0.001s] (current)
+    Building b961fce v0.1.3 (baseline)
+       Built [   8.746s] (baseline)
+     Parsing b961fce v0.1.3 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking b961fce v0.1.3 -> v0.1.4 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  16.932s] b961fce

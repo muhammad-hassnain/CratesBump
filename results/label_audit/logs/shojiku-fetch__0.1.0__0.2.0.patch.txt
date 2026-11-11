@@ -1,0 +1,13 @@
+
+    Building shojiku-fetch v0.2.0 (current)
+       Built [   6.258s] (current)
+     Parsing shojiku-fetch v0.2.0 (current)
+      Parsed [   0.002s] (current)
+    Building shojiku-fetch v0.1.0 (baseline)
+       Built [   6.259s] (baseline)
+     Parsing shojiku-fetch v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking shojiku-fetch v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  12.799s] shojiku-fetch

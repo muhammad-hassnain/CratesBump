@@ -1,0 +1,13 @@
+
+    Building icu4x v1.0.1 (current)
+       Built [   0.107s] (current)
+     Parsing icu4x v1.0.1 (current)
+      Parsed [   0.001s] (current)
+    Building icu4x v1.0.0 (baseline)
+       Built [   0.103s] (baseline)
+     Parsing icu4x v1.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking icu4x v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.349s] icu4x

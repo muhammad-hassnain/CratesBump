@@ -1,0 +1,32 @@
+package,prev,curr,shipped,verdict,compile_break,reason_kind,reason
+lightwalk,0.1.0,0.1.1,minor,genuine,yes,,trait SdfState (implemented by users for custom states) gained a required associated type and method
+cargo_auto_lib,1.1.35,1.2.3,minor,genuine,yes,,public function api_call_repository_new removed
+iridium_core,0.1.11,0.1.12,minor,genuine,yes,,public method RedbStorage::index_for_table removed; ExecutionContext::new lost parameters
+seqnmf-linalg,0.1.0,0.1.1,minor,harmless,,extension_trait,required methods added to an extension trait the crate implements for ndarray's Array3; only third-party implementors break; no dependents
+atsame70n20b,0.30.0,0.30.3,minor,harmless,,generated,svd2rust peripheral-access crate generated at build time; regenerated reader/writer types
+diogen,0.5.1,0.5.2,minor,genuine,yes,,exhaustive enum Color gained variants Rgb and Rgba
+pcbrepair,0.3.2,0.3.3,minor,harmless,,theoretical_only,Copy derived on a fieldless enum; breaks only through a closure-capture edge case
+markdown-parser,0.1.1,0.1.2,minor,genuine,yes,,public structs SafeObject and CommonObject and trait AdapterObject removed
+il2-utils,0.1.0,0.1.1,minor,genuine,no,,trait ProtectedValue gained Send + Sync supertraits; only implementors with non-thread-safe types break
+iris-grpc-proto,0.1.0,0.1.3,minor,harmless,,generic_params_inferred,serde helper functions became generic; ordinary callers infer the new parameters (not verified by a build)
+latticework,0.1.3,0.1.4,minor,harmless,,cli_incidental_lib,CLI argument enum exposed by a CLI crate's library; no dependents
+xio_common,0.10.0,0.10.1,minor,genuine,no,,error variant Broadcast lost its backtrace field; only code naming the field breaks
+clone,0.1.1,0.1.2,minor,not_a_break,no,cross_crate_reexport,TryClone is now re-exported from the fallible crate with an identical definition; the tool cannot see cross-crate re-exports
+oxiphysics-rigid,0.1.0,0.1.1,minor,genuine,yes,,public function breguet_range gained a parameter
+tokmd-settings,1.7.3,1.8.0-rc.1,minor,genuine,no,,Default config struct gained public fields; only exhaustive struct literals break
+ghaladb,0.1.0,0.1.1,minor,genuine,no,,builder-constructed options struct gained a public field; only struct literals break
+parze,0.5.0,0.5.1,minor,genuine,yes,,public struct chain::Single made crate-private
+mate-rs,0.2.0,0.2.1,minor,genuine,yes,,exhaustive enum TokenType gained a variant (its discriminant changes alone are harmless)
+ketheler,0.6.0,0.6.1,minor,genuine,yes,,public functions and methods removed; Server trait lost methods; signatures changed
+pwrzv,0.3.0,0.3.1,minor,genuine,yes,,public enum Provider and function get_provider removed
+rustdb,7.0.34,7.0.35,patch,genuine,yes,,public functions removed from pub mod alloc
+summa-proto,0.32.0,0.32.1,minor,genuine,yes,,protobuf messages and enums removed from the generated bindings
+oas-sdk,1.1.0,1.1.1,patch,genuine,yes,,verify_with_anchor_policy parameters replaced by a request struct
+cf-rustracing,1.0.0,1.0.1,patch,genuine,yes,,trait Sampler gained a Debug supertrait; custom samplers without Debug stop compiling
+pcap-rs,1.0.2,1.0.3,patch,genuine,yes,,public enum iter::NextBlock removed
+cita_cloud_proto,6.6.3,6.6.4,patch,genuine,yes,,protobuf struct NodeHeight removed and NodeStatus fields renamed
+untools,1.0.7,1.0.8,patch,genuine,yes,,public function batch_convert gained a parameter
+jet-proto-math,1.0.2,1.0.4,patch,genuine,yes,,uint dependency downgraded so U192 lost public methods
+unit-sphere,2.0.0,2.0.1,patch,genuine,yes,,public error enums gained a required type parameter
+logzip-core,2.1.1,2.1.2,patch,genuine,yes,,public compress functions gained a parameter
+proton-call,3.1.1,3.1.2,patch,harmless,,cli_incidental_lib,enum of a CLI tool's library gained a variant; no dependents

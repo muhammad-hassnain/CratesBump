@@ -1,0 +1,13 @@
+
+    Building baijimu-cmodel-actix v5.1.1 (current)
+       Built [   9.573s] (current)
+     Parsing baijimu-cmodel-actix v5.1.1 (current)
+      Parsed [   0.002s] (current)
+    Building baijimu-cmodel-actix v5.1.0 (baseline)
+       Built [   9.714s] (baseline)
+     Parsing baijimu-cmodel-actix v5.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking baijimu-cmodel-actix v5.1.0 -> v5.1.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  19.706s] baijimu-cmodel-actix

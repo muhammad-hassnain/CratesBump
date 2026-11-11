@@ -1,0 +1,35 @@
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  RedbStorage::index_for_table, previously in file /work/iridium_core-0.1.11/src/storage/redb_storage.rs:147
+  RedbStorage::index_for_table, previously in file /work/iridium_core-0.1.11/src/storage/redb_storage.rs:147
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  iridium_core::executor::context::ExecutionContext::new takes 27 parameters in /work/iridium_core-0.1.11/src/executor/context_impl.rs:53, but now takes 24 parameters in /work/iridium_core-0.1.12/src/executor/context_impl.rs:53
+
+    Building iridium_core v0.1.12 (current)
+       Built [   1.589s] (current)
+     Parsing iridium_core v0.1.12 (current)
+      Parsed [   0.040s] (current)
+    Building iridium_core v0.1.11 (baseline)
+       Built [   1.824s] (baseline)
+     Parsing iridium_core v0.1.11 (baseline)
+      Parsed [   0.038s] (baseline)
+    Checking iridium_core v0.1.11 -> v0.1.12 (assume patch change)
+     Checked [   0.160s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   3.938s] iridium_core

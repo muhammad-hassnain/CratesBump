@@ -1,0 +1,36 @@
+
+--- failure trait_requires_more_generic_type_params: trait now requires more generic type parameters ---
+
+Description:
+A trait now requires more generic type parameters than it used to. Uses of this trait that supplied the previously-required number of generic types will be broken. To fix this, consider supplying default values for newly-added generic types.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-parameter-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_requires_more_generic_type_params.ron
+
+Failed in:
+  trait LatLongError (0 -> 1 required generic types) in /work/unit-sphere-2.0.1/src/lib.rs:204
+  trait ArcError (0 -> 1 required generic types) in /work/unit-sphere-2.0.1/src/lib.rs:544
+
+--- failure type_requires_more_generic_type_params: type now requires more generic type parameters ---
+
+Description:
+A type now requires more generic type parameters than it used to. Uses of this type that supplied the previously-required number of generic types will be broken. To fix this, consider supplying default values for newly-added generic types.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-parameter-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/type_requires_more_generic_type_params.ron
+
+Failed in:
+  Enum LatLongError (0 -> 1 required generic types) in /work/unit-sphere-2.0.1/src/lib.rs:204
+  Enum ArcError (0 -> 1 required generic types) in /work/unit-sphere-2.0.1/src/lib.rs:544
+
+    Building unit-sphere v2.0.1 (current)
+       Built [   0.131s] (current)
+     Parsing unit-sphere v2.0.1 (current)
+      Parsed [   0.002s] (current)
+    Building unit-sphere v2.0.0 (baseline)
+       Built [   0.130s] (baseline)
+     Parsing unit-sphere v2.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking unit-sphere v2.0.0 -> v2.0.1 (assume patch change)
+     Checked [   0.013s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   0.442s] unit-sphere

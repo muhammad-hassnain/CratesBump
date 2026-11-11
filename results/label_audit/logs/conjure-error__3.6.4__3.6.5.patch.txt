@@ -1,0 +1,13 @@
+
+    Building conjure-error v3.6.5 (current)
+       Built [   4.474s] (current)
+     Parsing conjure-error v3.6.5 (current)
+      Parsed [   0.005s] (current)
+    Building conjure-error v3.6.4 (baseline)
+       Built [   4.123s] (baseline)
+     Parsing conjure-error v3.6.4 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking conjure-error v3.6.4 -> v3.6.5 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   9.224s] conjure-error

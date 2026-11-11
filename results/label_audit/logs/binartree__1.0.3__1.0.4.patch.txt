@@ -1,0 +1,13 @@
+
+    Building binartree v1.0.4 (current)
+       Built [   0.161s] (current)
+     Parsing binartree v1.0.4 (current)
+      Parsed [   0.002s] (current)
+    Building binartree v1.0.3 (baseline)
+       Built [   0.144s] (baseline)
+     Parsing binartree v1.0.3 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking binartree v1.0.3 -> v1.0.4 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.531s] binartree

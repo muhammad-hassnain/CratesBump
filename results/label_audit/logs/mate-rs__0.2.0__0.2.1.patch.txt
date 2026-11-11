@@ -1,0 +1,43 @@
+
+--- failure enum_no_repr_variant_discriminant_changed: enum variant had its discriminant change value ---
+
+Description:
+The enum's variant had its discriminant value change. This breaks downstream code that used its value via a numeric cast like `as isize`.
+        ref: https://doc.rust-lang.org/reference/items/enumerations.html#assigning-discriminant-values
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_no_repr_variant_discriminant_changed.ron
+
+Failed in:
+  variant TokenType::SQRT 14 -> 15 in /work/mate-rs-0.2.1/src/lib/token.rs:73
+  variant TokenType::SIN 15 -> 16 in /work/mate-rs-0.2.1/src/lib/token.rs:74
+  variant TokenType::COS 16 -> 17 in /work/mate-rs-0.2.1/src/lib/token.rs:75
+  variant TokenType::TAN 17 -> 18 in /work/mate-rs-0.2.1/src/lib/token.rs:76
+  variant TokenType::LOG 18 -> 19 in /work/mate-rs-0.2.1/src/lib/token.rs:77
+  variant TokenType::LN 19 -> 20 in /work/mate-rs-0.2.1/src/lib/token.rs:78
+  variant TokenType::EXP 20 -> 21 in /work/mate-rs-0.2.1/src/lib/token.rs:79
+  variant TokenType::FLOOR 21 -> 22 in /work/mate-rs-0.2.1/src/lib/token.rs:80
+  variant TokenType::CEIL 22 -> 23 in /work/mate-rs-0.2.1/src/lib/token.rs:81
+  variant TokenType::ROUND 23 -> 24 in /work/mate-rs-0.2.1/src/lib/token.rs:82
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant TokenType:FACTORIAL in /work/mate-rs-0.2.1/src/lib/token.rs:70
+
+    Building mate-rs v0.2.1 (current)
+       Built [   0.189s] (current)
+     Parsing mate-rs v0.2.1 (current)
+      Parsed [   0.002s] (current)
+    Building mate-rs v0.2.0 (baseline)
+       Built [   0.196s] (baseline)
+     Parsing mate-rs v0.2.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking mate-rs v0.2.0 -> v0.2.1 (assume patch change)
+     Checked [   0.016s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   0.561s] mate-rs

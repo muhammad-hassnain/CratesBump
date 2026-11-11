@@ -1,0 +1,13 @@
+
+    Building pdk-proxy-wasm-stub v1.9.1-alpha.2 (current)
+       Built [   0.151s] (current)
+     Parsing pdk-proxy-wasm-stub v1.9.1-alpha.2 (current)
+      Parsed [   0.004s] (current)
+    Building pdk-proxy-wasm-stub v1.9.0-alpha.1 (baseline)
+       Built [   0.181s] (baseline)
+     Parsing pdk-proxy-wasm-stub v1.9.0-alpha.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking pdk-proxy-wasm-stub v1.9.0-alpha.1 -> v1.9.1-alpha.2 (assume patch change)
+     Checked [   0.039s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.517s] pdk-proxy-wasm-stub

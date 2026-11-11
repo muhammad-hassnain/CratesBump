@@ -1,0 +1,13 @@
+
+    Building rho-hashline v0.3.1 (current)
+       Built [   3.001s] (current)
+     Parsing rho-hashline v0.3.1 (current)
+      Parsed [   0.001s] (current)
+    Building rho-hashline v0.3.0 (baseline)
+       Built [   3.207s] (baseline)
+     Parsing rho-hashline v0.3.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking rho-hashline v0.3.0 -> v0.3.1 (assume patch change)
+     Checked [   0.014s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   6.400s] rho-hashline

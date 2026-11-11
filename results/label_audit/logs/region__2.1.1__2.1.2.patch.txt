@@ -1,0 +1,13 @@
+
+    Building region v2.1.2 (current)
+       Built [   0.642s] (current)
+     Parsing region v2.1.2 (current)
+      Parsed [   0.001s] (current)
+    Building region v2.1.1 (baseline)
+       Built [   0.668s] (baseline)
+     Parsing region v2.1.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking region v2.1.1 -> v2.1.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   1.464s] region

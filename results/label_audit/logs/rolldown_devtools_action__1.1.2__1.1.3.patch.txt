@@ -1,0 +1,13 @@
+
+    Building rolldown_devtools_action v1.1.3 (current)
+       Built [   5.207s] (current)
+     Parsing rolldown_devtools_action v1.1.3 (current)
+      Parsed [   0.004s] (current)
+    Building rolldown_devtools_action v1.1.2 (baseline)
+       Built [   3.800s] (baseline)
+     Parsing rolldown_devtools_action v1.1.2 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking rolldown_devtools_action v1.1.2 -> v1.1.3 (assume patch change)
+     Checked [   0.017s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   9.246s] rolldown_devtools_action

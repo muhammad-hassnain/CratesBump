@@ -1,0 +1,12 @@
+{
+  "n_crates_total": 349979,
+  "n_crates_in_scope": 225799,
+  "pct_crates_in_scope": 64.52,
+  "downloads_total": 483562098167,
+  "downloads_in_scope": 480648289418,
+  "pct_downloads_in_scope": 99.4,
+  "n_in_scope_never_stable_1_0": 189516,
+  "pct_in_scope_never_stable_1_0": 83.93,
+  "downloads_in_scope_never_stable_1_0": 299676804353,
+  "pct_downloads_in_scope_never_stable_1_0": 61.97
+}

@@ -1,0 +1,13 @@
+
+    Building site v2.0.1 (current)
+       Built [   7.608s] (current)
+     Parsing site v2.0.1 (current)
+      Parsed [   0.001s] (current)
+    Building site v2.0.0 (baseline)
+       Built [   7.151s] (baseline)
+     Parsing site v2.0.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking site v2.0.0 -> v2.0.1 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  15.190s] site

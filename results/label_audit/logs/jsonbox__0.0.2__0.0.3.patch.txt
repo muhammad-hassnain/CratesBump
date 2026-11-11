@@ -1,0 +1,47 @@
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  Client::read_all, previously in file /work/jsonbox-0.0.2/src/client.rs:81
+  Client::read_all, previously in file /work/jsonbox-0.0.2/src/client.rs:81
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  jsonbox::client::Client::read takes 1 parameters in /work/jsonbox-0.0.2/src/client.rs:101, but now takes 0 parameters in /work/jsonbox-0.0.3/src/client.rs:82
+  jsonbox::Client::read takes 1 parameters in /work/jsonbox-0.0.2/src/client.rs:101, but now takes 0 parameters in /work/jsonbox-0.0.3/src/client.rs:82
+
+--- failure method_requires_different_generic_type_params: method now requires a different number of generic type parameters ---
+
+Description:
+A method now requires a different number of generic type parameters than it used to. Uses of this method that supplied the previous number of generic types will be broken.
+        ref: https://doc.rust-lang.org/reference/items/generics.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_requires_different_generic_type_params.ron
+
+Failed in:
+  jsonbox::client::Client::read takes 0 generic types instead of 1, in /work/jsonbox-0.0.3/src/client.rs:82
+  jsonbox::Client::read takes 0 generic types instead of 1, in /work/jsonbox-0.0.3/src/client.rs:82
+
+    Building jsonbox v0.0.3 (current)
+       Built [  12.723s] (current)
+     Parsing jsonbox v0.0.3 (current)
+      Parsed [   0.003s] (current)
+    Building jsonbox v0.0.2 (baseline)
+       Built [  13.794s] (baseline)
+     Parsing jsonbox v0.0.2 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking jsonbox v0.0.2 -> v0.0.3 (assume patch change)
+     Checked [   0.012s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [  27.046s] jsonbox

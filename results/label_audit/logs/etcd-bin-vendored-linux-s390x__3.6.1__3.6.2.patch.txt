@@ -1,0 +1,13 @@
+
+    Building etcd-bin-vendored-linux-s390x v3.6.2 (current)
+       Built [   0.106s] (current)
+     Parsing etcd-bin-vendored-linux-s390x v3.6.2 (current)
+      Parsed [   0.001s] (current)
+    Building etcd-bin-vendored-linux-s390x v3.6.1 (baseline)
+       Built [   0.101s] (baseline)
+     Parsing etcd-bin-vendored-linux-s390x v3.6.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking etcd-bin-vendored-linux-s390x v3.6.1 -> v3.6.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.359s] etcd-bin-vendored-linux-s390x

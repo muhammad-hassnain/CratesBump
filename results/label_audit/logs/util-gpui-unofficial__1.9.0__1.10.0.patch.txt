@@ -1,0 +1,13 @@
+
+    Building util-gpui-unofficial v1.10.0 (current)
+       Built [  15.213s] (current)
+     Parsing util-gpui-unofficial v1.10.0 (current)
+      Parsed [   0.011s] (current)
+    Building util-gpui-unofficial v1.9.0 (baseline)
+       Built [  14.498s] (baseline)
+     Parsing util-gpui-unofficial v1.9.0 (baseline)
+      Parsed [   0.009s] (baseline)
+    Checking util-gpui-unofficial v1.9.0 -> v1.10.0 (assume patch change)
+     Checked [   0.022s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  30.239s] util-gpui-unofficial

@@ -1,0 +1,13 @@
+
+    Building yara-x-proto-json v1.8.1 (current)
+       Built [   6.246s] (current)
+     Parsing yara-x-proto-json v1.8.1 (current)
+      Parsed [   0.004s] (current)
+    Building yara-x-proto-json v1.8.0 (baseline)
+       Built [   6.185s] (baseline)
+     Parsing yara-x-proto-json v1.8.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking yara-x-proto-json v1.8.0 -> v1.8.1 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  12.711s] yara-x-proto-json

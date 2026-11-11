@@ -1,0 +1,13 @@
+
+    Building xxtea v0.2.0 (current)
+       Built [   0.098s] (current)
+     Parsing xxtea v0.2.0 (current)
+      Parsed [   0.000s] (current)
+    Building xxtea v0.1.1 (baseline)
+       Built [   0.106s] (baseline)
+     Parsing xxtea v0.1.1 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking xxtea v0.1.1 -> v0.2.0 (assume patch change)
+     Checked [   0.010s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.351s] xxtea

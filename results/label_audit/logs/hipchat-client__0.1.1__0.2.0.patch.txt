@@ -1,0 +1,185 @@
+
+    Building hipchat-client v0.2.0 (current)
+error: running cargo-doc on crate 'hipchat-client' failed with output:
+-----
+warning: /work/hipchat-client-0.2.0/Cargo.toml: `package.edition` is unspecified, defaulting to `2015` while the latest is `2024`
+warning: `hipchat-client` (manifest) generated 1 warning
+   Compiling libc v0.2.191
+   Compiling pkg-config v0.3.34
+   Compiling autocfg v1.5.1
+   Compiling num-traits v0.2.19
+   Compiling gcc v0.3.55
+   Compiling openssl-sys v0.7.17
+    Checking tinyvec v1.13.3
+    Checking matches v0.1.10
+    Checking unicode-normalization v0.1.26
+   Compiling openssl-sys-extras v0.7.14
+    Checking num-integer v0.1.47
+    Checking log v0.4.35
+    Checking num-iter v0.1.46
+    Checking log v0.3.9
+    Checking rand v0.4.6
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c: In function 'HMAC_Init_ex_shim':
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:42:5: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+warning: openssl-sys-extras@0.7.14:    42 |     return HMAC_Init_ex(ctx, key, key_len, md, impl);
+warning: openssl-sys-extras@0.7.14:       |     ^~~~~~
+warning: openssl-sys-extras@0.7.14: In file included from src/openssl_shim.c:1:
+warning: openssl-sys-extras@0.7.14: /usr/include/openssl/hmac.h:43:27: note: declared here
+warning: openssl-sys-extras@0.7.14:    43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+warning: openssl-sys-extras@0.7.14:       |                           ^~~~~~~~~~~~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c: In function 'HMAC_Update_shim':
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:46:5: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+warning: openssl-sys-extras@0.7.14:    46 |     return HMAC_Update(ctx, data, len);
+warning: openssl-sys-extras@0.7.14:       |     ^~~~~~
+warning: openssl-sys-extras@0.7.14: /usr/include/openssl/hmac.h:45:27: note: declared here
+warning: openssl-sys-extras@0.7.14:    45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+warning: openssl-sys-extras@0.7.14:       |                           ^~~~~~~~~~~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c: In function 'HMAC_Final_shim':
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:50:5: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+warning: openssl-sys-extras@0.7.14:    50 |     return HMAC_Final(ctx, md, len);
+warning: openssl-sys-extras@0.7.14:       |     ^~~~~~
+warning: openssl-sys-extras@0.7.14: /usr/include/openssl/hmac.h:47:27: note: declared here
+warning: openssl-sys-extras@0.7.14:    47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+warning: openssl-sys-extras@0.7.14:       |                           ^~~~~~~~~~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c: In function 'SSL_CTX_set_ecdh_auto_shim':
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:121:41: warning: unused parameter 'ctx' [-Wunused-parameter]
+warning: openssl-sys-extras@0.7.14:   121 | int SSL_CTX_set_ecdh_auto_shim(SSL_CTX *ctx, int onoff) {
+warning: openssl-sys-extras@0.7.14:       |                                ~~~~~~~~~^~~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c: In function 'DH_new_from_params':
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:129:5: warning: 'DH_new' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+warning: openssl-sys-extras@0.7.14:   129 |     if ((dh = DH_new()) == NULL) {
+warning: openssl-sys-extras@0.7.14:       |     ^~
+warning: openssl-sys-extras@0.7.14: In file included from /usr/include/openssl/dsa.h:51,
+warning: openssl-sys-extras@0.7.14:                  from /usr/include/openssl/x509.h:39,
+warning: openssl-sys-extras@0.7.14:                  from /usr/include/openssl/ssl.h:33,
+warning: openssl-sys-extras@0.7.14:                  from src/openssl_shim.c:2:
+warning: openssl-sys-extras@0.7.14: /usr/include/openssl/dh.h:203:27: note: declared here
+warning: openssl-sys-extras@0.7.14:   203 | OSSL_DEPRECATEDIN_3_0 DH *DH_new(void);
+warning: openssl-sys-extras@0.7.14:       |                           ^~~~~~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:132:7: error: invalid use of incomplete typedef 'DH' {aka 'struct dh_st'}
+warning: openssl-sys-extras@0.7.14:   132 |     dh->p = p;
+warning: openssl-sys-extras@0.7.14:       |       ^~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:133:7: error: invalid use of incomplete typedef 'DH' {aka 'struct dh_st'}
+warning: openssl-sys-extras@0.7.14:   133 |     dh->g = g;
+warning: openssl-sys-extras@0.7.14:       |       ^~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:134:7: error: invalid use of incomplete typedef 'DH' {aka 'struct dh_st'}
+warning: openssl-sys-extras@0.7.14:   134 |     dh->q = q;
+warning: openssl-sys-extras@0.7.14:       |       ^~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c: In function 'X509_get_extensions_shim':
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:143:13: error: invalid use of incomplete typedef 'X509' {aka 'struct x509_st'}
+warning: openssl-sys-extras@0.7.14:   143 |     return x->cert_info ? x->cert_info->extensions : NULL;
+warning: openssl-sys-extras@0.7.14:       |             ^~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:143:28: error: invalid use of incomplete typedef 'X509' {aka 'struct x509_st'}
+warning: openssl-sys-extras@0.7.14:   143 |     return x->cert_info ? x->cert_info->extensions : NULL;
+warning: openssl-sys-extras@0.7.14:       |                            ^~
+warning: openssl-sys-extras@0.7.14: src/openssl_shim.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+warning: openssl-sys-extras@0.7.14:   144 | }
+warning: openssl-sys-extras@0.7.14:       | ^
+error: failed to run custom build command for `openssl-sys-extras v0.7.14`
+
+Caused by:
+  process didn't exit successfully: `/work/hipchat-client-0.2.0/target/semver-checks/local-hipchat_client-0_2_0-x86_64_unknown_linux_gnu-d3fe5756b8dfe961/target/debug/build/openssl-sys-extras-c16e38aad36fff50/build-script-build` (exit status: 101)
+  --- stdout
+  TARGET = Some("x86_64-unknown-linux-gnu")
+  OPT_LEVEL = Some("0")
+  TARGET = Some("x86_64-unknown-linux-gnu")
+  HOST = Some("x86_64-unknown-linux-gnu")
+  TARGET = Some("x86_64-unknown-linux-gnu")
+  TARGET = Some("x86_64-unknown-linux-gnu")
+  HOST = Some("x86_64-unknown-linux-gnu")
+  CC_x86_64-unknown-linux-gnu = None
+  CC_x86_64_unknown_linux_gnu = None
+  HOST_CC = None
+  CC = None
+  HOST = Some("x86_64-unknown-linux-gnu")
+  TARGET = Some("x86_64-unknown-linux-gnu")
+  HOST = Some("x86_64-unknown-linux-gnu")
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  HOST_CFLAGS = None
+  CFLAGS = None
+  DEBUG = Some("true")
+  running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-m64" "-I" "/usr/include" "-Wall" "-Wextra" "-o" "/work/hipchat-client-0.2.0/target/semver-checks/local-hipchat_client-0_2_0-x86_64_unknown_linux_gnu-d3fe5756b8dfe961/target/debug/build/openssl-sys-extras-2f87ee69f1f81a34/out/src/openssl_shim.o" "-c" "src/openssl_shim.c"
+  cargo:warning=src/openssl_shim.c: In function 'HMAC_Init_ex_shim':
+  cargo:warning=src/openssl_shim.c:42:5: warning: 'HMAC_Init_ex' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  cargo:warning=   42 |     return HMAC_Init_ex(ctx, key, key_len, md, impl);
+  cargo:warning=      |     ^~~~~~
+  cargo:warning=In file included from src/openssl_shim.c:1:
+  cargo:warning=/usr/include/openssl/hmac.h:43:27: note: declared here
+  cargo:warning=   43 | OSSL_DEPRECATEDIN_3_0 int HMAC_Init_ex(HMAC_CTX *ctx, const void *key, int len,
+  cargo:warning=      |                           ^~~~~~~~~~~~
+  cargo:warning=src/openssl_shim.c: In function 'HMAC_Update_shim':
+  cargo:warning=src/openssl_shim.c:46:5: warning: 'HMAC_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  cargo:warning=   46 |     return HMAC_Update(ctx, data, len);
+  cargo:warning=      |     ^~~~~~
+  cargo:warning=/usr/include/openssl/hmac.h:45:27: note: declared here
+  cargo:warning=   45 | OSSL_DEPRECATEDIN_3_0 int HMAC_Update(HMAC_CTX *ctx, const unsigned char *data,
+  cargo:warning=      |                           ^~~~~~~~~~~
+  cargo:warning=src/openssl_shim.c: In function 'HMAC_Final_shim':
+  cargo:warning=src/openssl_shim.c:50:5: warning: 'HMAC_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  cargo:warning=   50 |     return HMAC_Final(ctx, md, len);
+  cargo:warning=      |     ^~~~~~
+  cargo:warning=/usr/include/openssl/hmac.h:47:27: note: declared here
+  cargo:warning=   47 | OSSL_DEPRECATEDIN_3_0 int HMAC_Final(HMAC_CTX *ctx, unsigned char *md,
+  cargo:warning=      |                           ^~~~~~~~~~
+  cargo:warning=src/openssl_shim.c: In function 'SSL_CTX_set_ecdh_auto_shim':
+  cargo:warning=src/openssl_shim.c:121:41: warning: unused parameter 'ctx' [-Wunused-parameter]
+  cargo:warning=  121 | int SSL_CTX_set_ecdh_auto_shim(SSL_CTX *ctx, int onoff) {
+  cargo:warning=      |                                ~~~~~~~~~^~~
+  cargo:warning=src/openssl_shim.c: In function 'DH_new_from_params':
+  cargo:warning=src/openssl_shim.c:129:5: warning: 'DH_new' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  cargo:warning=  129 |     if ((dh = DH_new()) == NULL) {
+  cargo:warning=      |     ^~
+  cargo:warning=In file included from /usr/include/openssl/dsa.h:51,
+  cargo:warning=                 from /usr/include/openssl/x509.h:39,
+  cargo:warning=                 from /usr/include/openssl/ssl.h:33,
+  cargo:warning=                 from src/openssl_shim.c:2:
+  cargo:warning=/usr/include/openssl/dh.h:203:27: note: declared here
+  cargo:warning=  203 | OSSL_DEPRECATEDIN_3_0 DH *DH_new(void);
+  cargo:warning=      |                           ^~~~~~
+  cargo:warning=src/openssl_shim.c:132:7: error: invalid use of incomplete typedef 'DH' {aka 'struct dh_st'}
+  cargo:warning=  132 |     dh->p = p;
+  cargo:warning=      |       ^~
+  cargo:warning=src/openssl_shim.c:133:7: error: invalid use of incomplete typedef 'DH' {aka 'struct dh_st'}
+  cargo:warning=  133 |     dh->g = g;
+  cargo:warning=      |       ^~
+  cargo:warning=src/openssl_shim.c:134:7: error: invalid use of incomplete typedef 'DH' {aka 'struct dh_st'}
+  cargo:warning=  134 |     dh->q = q;
+  cargo:warning=      |       ^~
+  cargo:warning=src/openssl_shim.c: In function 'X509_get_extensions_shim':
+  cargo:warning=src/openssl_shim.c:143:13: error: invalid use of incomplete typedef 'X509' {aka 'struct x509_st'}
+  cargo:warning=  143 |     return x->cert_info ? x->cert_info->extensions : NULL;
+  cargo:warning=      |             ^~
+  cargo:warning=src/openssl_shim.c:143:28: error: invalid use of incomplete typedef 'X509' {aka 'struct x509_st'}
+  cargo:warning=  143 |     return x->cert_info ? x->cert_info->extensions : NULL;
+  cargo:warning=      |                            ^~
+  cargo:warning=src/openssl_shim.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+  cargo:warning=  144 | }
+  cargo:warning=      | ^
+  exit status: 1
+
+  --- stderr
+
+  thread 'main' (263) panicked at /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/gcc-0.3.55/src/lib.rs:1672:5:
+
+
+  Internal error occurred: Command "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-m64" "-I" "/usr/include" "-Wall" "-Wextra" "-o" "/work/hipchat-client-0.2.0/target/semver-checks/local-hipchat_client-0_2_0-x86_64_unknown_linux_gnu-d3fe5756b8dfe961/target/debug/build/openssl-sys-extras-2f87ee69f1f81a34/out/src/openssl_shim.o" "-c" "src/openssl_shim.c" with args "cc" did not execute successfully (status code exit status: 1).
+
+
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
+
+-----
+
+error: failed to build rustdoc for crate hipchat-client v0.2.0
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/hipchat-client-0.2.0 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate hipchat-client v0.2.0

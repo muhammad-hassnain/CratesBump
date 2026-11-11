@@ -1,0 +1,70 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field Cli.combined_filename in /work/yf-options-0.2.1/src/cli.rs:57
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant YfOptionsError:Common in /work/yf-options-0.2.1/src/error.rs:13
+  variant YfOptionsError:GreeksError in /work/yf-options-0.2.1/src/error.rs:30
+
+--- failure enum_variant_missing: pub enum variant removed or renamed ---
+
+Description:
+A publicly-visible enum has at least one variant that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_missing.ron
+
+Failed in:
+  variant YfOptionsError::RequestError, previously in file /work/yf-options-0.1.0/src/error.rs:7
+  variant YfOptionsError::JsonError, previously in file /work/yf-options-0.1.0/src/error.rs:10
+  variant YfOptionsError::DateParseError, previously in file /work/yf-options-0.1.0/src/error.rs:14
+  variant YfOptionsError::IoError, previously in file /work/yf-options-0.1.0/src/error.rs:26
+  variant YfOptionsError::RateLimitError, previously in file /work/yf-options-0.1.0/src/error.rs:30
+  variant YfOptionsError::AuthError, previously in file /work/yf-options-0.1.0/src/error.rs:33
+
+--- failure function_parameter_count_changed: pub fn parameter count changed ---
+
+Description:
+A publicly-visible function now takes a different number of parameters.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_parameter_count_changed.ron
+
+Failed in:
+  yf_options::output::write_combined_to_file now takes 5 parameters instead of 4, in /work/yf-options-0.2.1/src/output.rs:38
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct yf_options::client::YahooFinanceClient, previously in file /work/yf-options-0.1.0/src/client.rs:15
+
+    Building yf-options v0.2.1 (current)
+       Built [  17.136s] (current)
+     Parsing yf-options v0.2.1 (current)
+      Parsed [   0.004s] (current)
+    Building yf-options v0.1.0 (baseline)
+       Built [  16.967s] (baseline)
+     Parsing yf-options v0.1.0 (baseline)
+      Parsed [   0.006s] (baseline)
+    Checking yf-options v0.1.0 -> v0.2.1 (assume patch change)
+     Checked [   0.018s] 229 checks: 224 pass, 5 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 5 major and 0 minor checks failed
+    Finished [  34.862s] yf-options

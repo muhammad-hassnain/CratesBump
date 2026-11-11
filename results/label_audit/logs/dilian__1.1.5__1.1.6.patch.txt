@@ -1,0 +1,13 @@
+
+    Building dilian v1.1.6 (current)
+       Built [   2.911s] (current)
+     Parsing dilian v1.1.6 (current)
+      Parsed [   0.001s] (current)
+    Building dilian v1.1.5 (baseline)
+       Built [   2.163s] (baseline)
+     Parsing dilian v1.1.5 (baseline)
+      Parsed [   0.000s] (baseline)
+    Checking dilian v1.1.5 -> v1.1.6 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   5.292s] dilian

@@ -1,0 +1,13 @@
+
+    Building b-k-tree v0.5.0 (current)
+       Built [   0.210s] (current)
+     Parsing b-k-tree v0.5.0 (current)
+      Parsed [   0.006s] (current)
+    Building b-k-tree v0.4.0 (baseline)
+       Built [   0.143s] (baseline)
+     Parsing b-k-tree v0.4.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking b-k-tree v0.4.0 -> v0.5.0 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.511s] b-k-tree

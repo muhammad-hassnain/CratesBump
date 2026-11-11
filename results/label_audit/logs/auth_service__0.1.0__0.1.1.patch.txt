@@ -1,0 +1,13 @@
+
+    Building auth_service v0.1.1 (current)
+       Built [   0.678s] (current)
+     Parsing auth_service v0.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building auth_service v0.1.0 (baseline)
+       Built [   0.655s] (baseline)
+     Parsing auth_service v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking auth_service v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.011s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   1.487s] auth_service

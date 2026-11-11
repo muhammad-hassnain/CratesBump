@@ -1,0 +1,25 @@
+
+--- failure trait_method_added: pub trait method added ---
+
+Description:
+A non-sealed public trait added a new method without a default implementation, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-item-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_added.ron
+
+Failed in:
+  trait method seqnmf_linalg::linalg::Tensor3D::transpose_convolution_tail in file /work/seqnmf-linalg-0.1.1/src/linalg.rs:83
+  trait method seqnmf_linalg::linalg::Tensor3D::transpose_convolution_headtail in file /work/seqnmf-linalg-0.1.1/src/linalg.rs:84
+
+    Building seqnmf-linalg v0.1.1 (current)
+       Built [   0.110s] (current)
+     Parsing seqnmf-linalg v0.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building seqnmf-linalg v0.1.0 (baseline)
+       Built [   0.112s] (baseline)
+     Parsing seqnmf-linalg v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking seqnmf-linalg v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.014s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   0.390s] seqnmf-linalg

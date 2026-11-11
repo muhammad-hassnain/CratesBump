@@ -1,0 +1,13 @@
+
+    Building aleo-std-timer v1.0.0 (current)
+       Built [   0.190s] (current)
+     Parsing aleo-std-timer v1.0.0 (current)
+      Parsed [   0.001s] (current)
+    Building aleo-std-timer v0.1.2 (baseline)
+       Built [   0.189s] (baseline)
+     Parsing aleo-std-timer v0.1.2 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking aleo-std-timer v0.1.2 -> v1.0.0 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   0.553s] aleo-std-timer

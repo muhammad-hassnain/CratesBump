@@ -1,0 +1,34 @@
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant Error:BodyAlreadyExtracted in /work/axum-service-extract-0.2.0/src/error.rs:6
+
+--- failure enum_variant_missing: pub enum variant removed or renamed ---
+
+Description:
+A publicly-visible enum has at least one variant that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_missing.ron
+
+Failed in:
+  variant Error::AxumError, previously in file /work/axum-service-extract-0.1.0/src/error.rs:8
+
+    Building axum-service-extract v0.2.0 (current)
+       Built [   4.858s] (current)
+     Parsing axum-service-extract v0.2.0 (current)
+      Parsed [   0.001s] (current)
+    Building axum-service-extract v0.1.0 (baseline)
+       Built [   4.991s] (baseline)
+     Parsing axum-service-extract v0.1.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking axum-service-extract v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.010s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [  10.129s] axum-service-extract

@@ -1,0 +1,13 @@
+
+    Building z-stackr-align v1.0.1 (current)
+       Built [ 178.919s] (current)
+     Parsing z-stackr-align v1.0.1 (current)
+      Parsed [   0.006s] (current)
+    Building z-stackr-align v1.0.0 (baseline)
+       Built [ 171.045s] (baseline)
+     Parsing z-stackr-align v1.0.0 (baseline)
+      Parsed [   0.010s] (baseline)
+    Checking z-stackr-align v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [ 351.245s] z-stackr-align

@@ -1,0 +1,13 @@
+
+    Building oxygen_core v0.0.2 (current)
+       Built [   1.042s] (current)
+     Parsing oxygen_core v0.0.2 (current)
+      Parsed [   0.001s] (current)
+    Building oxygen_core v0.0.1 (baseline)
+       Built [   1.048s] (baseline)
+     Parsing oxygen_core v0.0.1 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking oxygen_core v0.0.1 -> v0.0.2 (assume patch change)
+     Checked [   0.012s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   2.338s] oxygen_core

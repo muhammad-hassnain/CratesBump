@@ -1,0 +1,45 @@
+
+--- failure feature_missing: package feature removed or renamed ---
+
+Description:
+A feature has been removed from this package's Cargo.toml. This will break downstream crates which enable that feature.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#cargo-feature-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/feature_missing.ron
+
+Failed in:
+  feature dioxus in the package's Cargo.toml
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct cc_utils::prelude::CliError, previously in file /work/cc-utils-0.1.1/src/errors.rs:28
+
+--- failure trait_missing: pub trait removed or renamed ---
+
+Description:
+A publicly-visible trait cannot be imported by its prior path. A `pub use` may have been removed, or the trait itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_missing.ron
+
+Failed in:
+  trait cc_utils::prelude::MsgPackResponse, previously in file /work/cc-utils-0.1.1/src/responses.rs:218
+  trait cc_utils::prelude::ConsiderCli, previously in file /work/cc-utils-0.1.1/src/errors.rs:203
+
+    Building cc-utils v0.2.0 (current)
+       Built [  34.560s] (current)
+     Parsing cc-utils v0.2.0 (current)
+      Parsed [   0.005s] (current)
+    Building cc-utils v0.1.1 (baseline)
+       Built [  45.258s] (baseline)
+     Parsing cc-utils v0.1.1 (baseline)
+      Parsed [   0.007s] (baseline)
+    Checking cc-utils v0.1.1 -> v0.2.0 (assume patch change)
+     Checked [   0.015s] 229 checks: 226 pass, 3 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 3 major and 0 minor checks failed
+    Finished [  80.967s] cc-utils

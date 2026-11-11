@@ -1,0 +1,13 @@
+
+    Building zerotier-client v1.0.1 (current)
+       Built [  29.843s] (current)
+     Parsing zerotier-client v1.0.1 (current)
+      Parsed [   0.005s] (current)
+    Building zerotier-client v1.0.0 (baseline)
+       Built [  36.833s] (baseline)
+     Parsing zerotier-client v1.0.0 (baseline)
+      Parsed [   0.004s] (baseline)
+    Checking zerotier-client v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.019s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  67.493s] zerotier-client

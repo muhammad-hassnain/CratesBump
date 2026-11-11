@@ -1,0 +1,34 @@
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function rustdb::alloc::lvec_with_capacity, previously in file /work/rustdb-7.0.34/src/alloc.rs:69
+  function rustdb::alloc::tboxstr, previously in file /work/rustdb-7.0.34/src/alloc.rs:131
+  function rustdb::alloc::dbox, previously in file /work/rustdb-7.0.34/src/alloc.rs:107
+  function rustdb::alloc::lrc, previously in file /work/rustdb-7.0.34/src/alloc.rs:51
+  function rustdb::alloc::lstring, previously in file /work/rustdb-7.0.34/src/alloc.rs:121
+  function rustdb::alloc::lvec, previously in file /work/rustdb-7.0.34/src/alloc.rs:64
+  function rustdb::alloc::lbox, previously in file /work/rustdb-7.0.34/src/alloc.rs:40
+  function rustdb::alloc::tbox, previously in file /work/rustdb-7.0.34/src/alloc.rs:24
+  function rustdb::alloc::lrcstr, previously in file /work/rustdb-7.0.34/src/alloc.rs:56
+  function rustdb::alloc::lboxstr, previously in file /work/rustdb-7.0.34/src/alloc.rs:126
+  function rustdb::alloc::tvec, previously in file /work/rustdb-7.0.34/src/alloc.rs:32
+
+    Building rustdb v7.0.35 (current)
+       Built [   3.368s] (current)
+     Parsing rustdb v7.0.35 (current)
+      Parsed [   0.008s] (current)
+    Building rustdb v7.0.34 (baseline)
+       Built [   3.161s] (baseline)
+     Parsing rustdb v7.0.34 (baseline)
+      Parsed [   0.009s] (baseline)
+    Checking rustdb v7.0.34 -> v7.0.35 (assume patch change)
+     Checked [   0.030s] 229 checks: 228 pass, 1 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 1 major and 0 minor checks failed
+    Finished [   6.740s] rustdb

@@ -1,0 +1,13 @@
+
+    Building libhardcopy v1.0.1 (current)
+       Built [   6.707s] (current)
+     Parsing libhardcopy v1.0.1 (current)
+      Parsed [   0.002s] (current)
+    Building libhardcopy v1.0.0 (baseline)
+       Built [   7.511s] (baseline)
+     Parsing libhardcopy v1.0.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking libhardcopy v1.0.0 -> v1.0.1 (assume patch change)
+     Checked [   0.020s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  14.581s] libhardcopy

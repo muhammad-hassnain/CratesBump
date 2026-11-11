@@ -1,0 +1,13 @@
+
+    Building slog-extlog v5.2.1 (current)
+       Built [   5.693s] (current)
+     Parsing slog-extlog v5.2.1 (current)
+      Parsed [   0.002s] (current)
+    Building slog-extlog v5.2.0 (baseline)
+       Built [   5.413s] (baseline)
+     Parsing slog-extlog v5.2.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking slog-extlog v5.2.0 -> v5.2.1 (assume patch change)
+     Checked [   0.020s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  11.387s] slog-extlog

@@ -1,0 +1,478 @@
+
+    Building opentalk-roomserver-types-raise-hands v0.0.38 (current)
+error: running cargo-doc on crate 'opentalk-roomserver-types-raise-hands' failed with output:
+-----
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling libc v0.2.191
+   Compiling serde_core v1.0.229
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling serde v1.0.229
+    Checking itoa v1.0.18
+    Checking stable_deref_trait v1.2.1
+   Compiling icu_properties_data v2.4.0
+   Compiling icu_normalizer_data v2.4.0
+    Checking pin-project-lite v0.2.17
+    Checking bytes v1.12.1
+    Checking memchr v2.8.3
+    Checking futures-core v0.3.34
+    Checking cfg-if v1.0.5
+    Checking once_cell v1.21.4
+    Checking futures-sink v0.3.34
+    Checking log v0.4.35
+   Compiling litemap v0.8.3
+   Compiling writeable v0.6.4
+    Checking equivalent v1.0.3
+    Checking smallvec v1.16.4
+    Checking hashbrown v0.17.1
+   Compiling utf_types v1.0.0
+   Compiling utf8_iter v1.1.0
+    Checking indexmap v2.14.2
+   Compiling synstructure v0.14.0
+    Checking http v1.5.0
+    Checking mio v1.2.4
+    Checking socket2 v0.6.5
+   Compiling zerofrom-derive v0.1.8
+   Compiling yoke-derive v0.8.4
+   Compiling displaydoc v0.2.7
+   Compiling zerovec-derive v0.11.7
+   Compiling serde_derive v1.0.229
+   Compiling zerofrom v0.1.8
+   Compiling yoke v0.8.4
+   Compiling zerotrie v0.2.5
+   Compiling zerovec v0.11.9
+   Compiling tinystr v0.8.5
+   Compiling icu_locale_core v2.4.0
+   Compiling potential_utf v0.1.6
+   Compiling tokio-macros v2.7.2
+    Checking slab v0.4.12
+   Compiling autocfg v1.5.1
+   Compiling num-traits v0.2.19
+   Compiling jobserver v0.1.35
+   Compiling icu_provider v2.4.0
+    Checking tokio v1.54.1
+   Compiling icu_collections v2.4.0
+    Checking futures-channel v0.3.34
+   Compiling shlex v2.0.1
+    Checking percent-encoding v2.3.2
+   Compiling zmij v1.0.23
+   Compiling find-msvc-tools v0.1.15
+   Compiling heck v0.5.0
+   Compiling cc v1.11.1
+   Compiling tracing-attributes v0.1.31
+   Compiling zeroize_derive v1.5.0
+   Compiling futures-macro v0.3.34
+    Checking tracing-core v0.1.36
+   Compiling unicode-segmentation v1.13.3
+    Checking futures-io v0.3.34
+    Checking futures-task v0.3.34
+   Compiling serde_json v1.0.154
+   Compiling icu_normalizer v2.4.0
+   Compiling convert_case v0.10.0
+    Checking futures-util v0.3.34
+   Compiling icu_properties v2.4.0
+    Checking tracing v0.1.44
+    Checking zeroize v1.9.1
+   Compiling cmake v0.1.58
+   Compiling dunce v1.0.5
+   Compiling httparse v1.10.1
+   Compiling fs_extra v1.3.0
+   Compiling pkg-config v0.3.34
+   Compiling strsim v0.11.1
+   Compiling unicode-xid v0.2.6
+   Compiling ident_case v1.0.1
+   Compiling darling_core v0.24.1
+   Compiling derive_more-impl v2.1.1
+   Compiling aws-lc-sys v0.47.0
+   Compiling idna_adapter v1.2.2
+   Compiling snafu-derive v0.9.2
+    Checking form_urlencoded v1.2.2
+    Checking http-body v1.1.0
+    Checking ryu v1.0.23
+   Compiling thiserror v2.0.21
+   Compiling idna v1.1.0
+   Compiling darling_macro v0.24.1
+   Compiling thiserror-impl v2.0.21
+    Checking rand_core v0.10.1
+    Checking tower-service v0.3.3
+   Compiling getrandom v0.4.3
+   Compiling winnow v1.0.5
+   Compiling uuid v1.29.0
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling darling v0.24.1
+   Compiling url v2.5.8
+    Checking tokio-util v0.7.20
+    Checking unsafe-libyaml-norway v0.2.15
+    Checking fnv v1.0.7
+    Checking try-lock v0.2.5
+    Checking scopeguard v1.2.0
+   Compiling aws-lc-rs v1.19.0
+    Checking siphasher v1.0.4
+   Compiling toml_datetime v1.1.3+spec-1.1.0
+    Checking atomic-waker v1.1.2
+    Checking h2 v0.4.20
+   Compiling toml_edit v0.25.19+spec-1.1.0
+    Checking phf_shared v0.12.1
+    Checking serde_norway v0.9.42
+    Checking want v0.3.2
+   Compiling utoipa-gen v5.5.0
+   Compiling serde_with_macros v3.24.0
+   Compiling snafu v0.9.2
+   Compiling derive_more v2.1.1
+    Checking tinystr v0.7.6
+    Checking sync_wrapper v1.0.2
+    Checking httpdate v1.0.3
+   Compiling semver v1.0.28
+   Compiling chrono-tz v0.10.4
+    Checking iana-time-zone v0.1.65
+   Compiling version_check v0.9.5
+    Checking either v1.19.0
+    Checking writeable v0.5.5
+    Checking tower-layer v0.3.3
+    Checking litemap v0.7.5
+    Checking icu_locid v1.5.0
+   Compiling generic-array v0.14.7
+    Checking chrono v0.4.45
+    Checking utoipa v5.5.0
+   Compiling rustc_version v0.4.1
+    Checking hyper v1.12.0
+   Compiling opentalk-types-common-identifiers v0.34.1
+    Checking serde_with v3.24.0
+    Checking phf v0.12.1
+   Compiling proc-macro-crate v3.5.0
+    Checking rustls-pki-types v1.15.1
+   Compiling strum_macros v0.28.0
+    Checking base64 v0.23.1
+    Checking ipnet v2.12.2
+    Checking hyper-util v0.1.21
+   Compiling opentalk-types-common-macros v0.33.0
+    Checking strum v0.28.0
+   Compiling heapless v0.7.17
+    Checking tower v0.5.3
+    Checking lock_api v0.4.14
+    Checking http-body-util v0.1.5
+    Checking email_address v0.2.9
+    Checking untrusted v0.9.0
+    Checking typenum v1.20.1
+    Checking mime v0.3.18
+   Compiling zerocopy v0.8.63
+   Compiling rustls v0.23.46
+    Checking byteorder v1.5.0
+   Compiling getrandom v0.3.4
+    Checking hash32 v0.2.1
+    Checking spin v0.9.9
+    Checking cpufeatures v0.3.1
+    Checking base64 v0.22.1
+    Checking subtle v2.6.1
+    Checking chacha20 v0.10.2
+    Checking axum-core v0.5.6
+    Checking itertools v0.15.0
+    Checking cobs v0.3.0
+    Checking serde_urlencoded v0.7.1
+    Checking serde_path_to_error v0.1.20
+    Checking matchit v0.8.4
+   Compiling num-conv v0.2.2
+   Compiling time-core v0.1.9
+    Checking ppv-lite86 v0.2.21
+   Compiling time-macros v0.2.32
+    Checking axum v0.8.9
+    Checking postcard v1.1.3
+    Checking opentalk-types-common v0.46.0
+    Checking rand_core v0.9.5
+    Checking rand v0.10.3
+    Checking block-buffer v0.10.4
+    Checking crypto-common v0.1.7
+    Checking num-integer v0.1.47
+    Checking deranged v0.5.9
+    Checking powerfmt v0.2.1
+    Checking num-bigint v0.4.8
+    Checking opentalk-types-api-common v0.9.0
+    Checking digest v0.10.7
+    Checking rand_chacha v0.9.0
+    Checking time v0.3.55
+    Checking itertools v0.14.0
+    Checking futures-executor v0.3.34
+    Checking cpufeatures v0.2.17
+   Compiling rustversion v1.0.23
+    Checking sha1 v0.10.7
+    Checking futures v0.3.34
+    Checking simple_asn1 v0.6.4
+    Checking opentalk-types-common v0.44.1
+    Checking rand v0.9.5
+    Checking pem v3.0.6
+   Compiling anyhow v1.0.104
+    Checking data-encoding v2.11.1
+    Checking signature v2.2.0
+    Checking jsonwebtoken v10.4.0
+    Checking tungstenite v0.29.0
+   Compiling encoding_rs v0.8.44
+    Checking opentalk-service-auth v0.2.5
+    Checking serde_spanned v1.1.3
+    Checking utf8parse v0.2.2
+    Checking option-ext v0.2.0
+    Checking openssl-probe v0.2.2
+    Checking rustls-native-certs v0.8.5
+    Checking toml v1.2.1+spec-1.1.0
+    Checking dirs-sys v0.5.0
+    Checking anstyle-parse v1.0.0
+    Checking opentalk-orchestrator-shared v0.7.0
+    Checking opentalk-types-signaling v0.45.2
+    Checking opentalk-types-api-internal v0.2.4
+   Compiling async-trait v0.1.92
+    Checking is_terminal_polyfill v1.70.2
+    Checking colorchoice v1.0.5
+   Compiling multiversion_no_op v1.0.0
+    Checking anstyle v1.0.14
+    Checking simdutf8 v0.1.5
+    Checking bitflags v2.13.2
+    Checking anstyle-query v1.1.5
+    Checking pathdiff v0.2.3
+    Checking core_detect v1.0.0
+    Checking tower-http v0.6.11
+    Checking config v0.15.27
+    Checking anstream v1.0.0
+    Checking dirs v6.0.0
+    Checking cidr v0.3.2
+    Checking serde_ignored v0.1.14
+    Checking owo-colors v4.4.0
+    Checking fluent-langneg v0.14.2
+    Checking rustls-webpki v0.103.16
+    Checking tokio-tungstenite v0.29.0
+    Checking tokio-rustls v0.26.6
+    Checking rustls-platform-verifier v0.7.1
+    Checking hyper-rustls v0.27.10
+    Checking opentalk-orchestrator-client v0.7.0
+    Checking opentalk-roomserver-types v0.0.38
+    Checking reqwest v0.13.5
+    Checking opentalk-roomserver-common v0.0.38
+    Checking opentalk-roomserver-signaling v0.0.38
+error[E0308]: mismatched types
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:61:22
+   |
+61 |             room_id: self.ctx.room_id,
+   |                      ^^^^^^^^^^^^^^^^ expected `RoomId`, found a different `RoomId`
+   |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/rooms/room_id.rs:33:1
+   |
+33 | pub struct RoomId(Uuid);
+   | ^^^^^^^^^^^^^^^^^ this is the expected type
+   |
+  ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/rooms/room_id.rs:33:1
+   |
+33 | pub struct RoomId(Uuid);
+   | ----------------- this is the found type
+   = help: you can use `cargo tree` to explore your dependency tree
+
+error[E0308]: mismatched types
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:62:13
+   |
+62 |             created_by,
+   |             ^^^^^^^^^^ expected `UserId`, found a different `UserId`
+   |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/users/user_id.rs:37:1
+   |
+37 | pub struct UserId(Uuid);
+   | ^^^^^^^^^^^^^^^^^ this is the expected type
+   |
+  ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/users/user_id.rs:37:1
+   |
+37 | pub struct UserId(Uuid);
+   | ----------------- this is the found type
+   = help: you can use `cargo tree` to explore your dependency tree
+
+error[E0308]: mismatched types
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:75:48
+   |
+75 |         let filter = ModuleResourceFilter::new(self.ctx.room_id, self.ctx.namespace.clone()).id(id);
+   |                      ------------------------- ^^^^^^^^^^^^^^^^ expected `RoomId`, found a different `RoomId`
+   |                      |
+   |                      arguments to this function are incorrect
+   |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/rooms/room_id.rs:33:1
+   |
+33 | pub struct RoomId(Uuid);
+   | ^^^^^^^^^^^^^^^^^ this is the expected type
+   |
+  ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/rooms/room_id.rs:33:1
+   |
+33 | pub struct RoomId(Uuid);
+   | ----------------- this is the found type
+   = help: you can use `cargo tree` to explore your dependency tree
+note: associated function defined here
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-api-internal-0.2.4/src/module_resources/filter.rs:32:12
+   |
+32 |     pub fn new(room_id: RoomId, namespace: ModuleId) -> Self {
+   |            ^^^
+
+error[E0308]: mismatched types
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:75:97
+   |
+75 |         let filter = ModuleResourceFilter::new(self.ctx.room_id, self.ctx.namespace.clone()).id(id);
+   |                                                                                              -- ^^ expected `ModuleResourceId`, found a different `ModuleResourceId`
+   |                                                                                              |
+   |                                                                                              arguments to this method are incorrect
+   |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/module_resources/module_resource_id.rs:24:1
+   |
+24 | pub struct ModuleResourceId(Uuid);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ this is the expected type
+   |
+  ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/module_resources/module_resource_id.rs:24:1
+   |
+24 | pub struct ModuleResourceId(Uuid);
+   | --------------------------- this is the found type
+   = help: you can use `cargo tree` to explore your dependency tree
+note: method defined here
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-api-internal-0.2.4/src/module_resources/filter.rs:43:12
+   |
+43 |     pub fn id(mut self, id: ModuleResourceId) -> Self {
+   |            ^^
+
+error[E0308]: mismatched types
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:88:22
+   |
+88 |             .room_id(self.ctx.room_id)
+   |              ------- ^^^^^^^^^^^^^^^^ expected `RoomId`, found a different `RoomId`
+   |              |
+   |              arguments to this method are incorrect
+   |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/rooms/room_id.rs:33:1
+   |
+33 | pub struct RoomId(Uuid);
+   | ^^^^^^^^^^^^^^^^^ this is the expected type
+   |
+  ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/rooms/room_id.rs:33:1
+   |
+33 | pub struct RoomId(Uuid);
+   | ----------------- this is the found type
+   = help: you can use `cargo tree` to explore your dependency tree
+note: method defined here
+  --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-api-internal-0.2.4/src/module_resources/filter.rs:49:12
+   |
+49 |     pub fn room_id(mut self, room_id: RoomId) -> Self {
+   |            ^^^^^^^
+
+error[E0308]: mismatched types
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:102:48
+    |
+102 |         let filter = ModuleResourceFilter::new(self.ctx.room_id, self.ctx.namespace.clone()).id(id);
+    |                      ------------------------- ^^^^^^^^^^^^^^^^ expected `RoomId`, found a different `RoomId`
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/rooms/room_id.rs:33:1
+    |
+ 33 | pub struct RoomId(Uuid);
+    | ^^^^^^^^^^^^^^^^^ this is the expected type
+    |
+   ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/rooms/room_id.rs:33:1
+    |
+ 33 | pub struct RoomId(Uuid);
+    | ----------------- this is the found type
+    = help: you can use `cargo tree` to explore your dependency tree
+note: associated function defined here
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-api-internal-0.2.4/src/module_resources/filter.rs:32:12
+    |
+ 32 |     pub fn new(room_id: RoomId, namespace: ModuleId) -> Self {
+    |            ^^^
+
+error[E0308]: mismatched types
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:102:97
+    |
+102 |         let filter = ModuleResourceFilter::new(self.ctx.room_id, self.ctx.namespace.clone()).id(id);
+    |                                                                                              -- ^^ expected `ModuleResourceId`, found a different `ModuleResourceId`
+    |                                                                                              |
+    |                                                                                              arguments to this method are incorrect
+    |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/module_resources/module_resource_id.rs:24:1
+    |
+ 24 | pub struct ModuleResourceId(Uuid);
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ this is the expected type
+    |
+   ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/module_resources/module_resource_id.rs:24:1
+    |
+ 24 | pub struct ModuleResourceId(Uuid);
+    | --------------------------- this is the found type
+    = help: you can use `cargo tree` to explore your dependency tree
+note: method defined here
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-api-internal-0.2.4/src/module_resources/filter.rs:43:12
+    |
+ 43 |     pub fn id(mut self, id: ModuleResourceId) -> Self {
+    |            ^^
+
+error[E0308]: mismatched types
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:115:48
+    |
+115 |         let filter = ModuleResourceFilter::new(self.ctx.room_id, self.ctx.namespace.clone()).id(id);
+    |                      ------------------------- ^^^^^^^^^^^^^^^^ expected `RoomId`, found a different `RoomId`
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/rooms/room_id.rs:33:1
+    |
+ 33 | pub struct RoomId(Uuid);
+    | ^^^^^^^^^^^^^^^^^ this is the expected type
+    |
+   ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/rooms/room_id.rs:33:1
+    |
+ 33 | pub struct RoomId(Uuid);
+    | ----------------- this is the found type
+    = help: you can use `cargo tree` to explore your dependency tree
+note: associated function defined here
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-api-internal-0.2.4/src/module_resources/filter.rs:32:12
+    |
+ 32 |     pub fn new(room_id: RoomId, namespace: ModuleId) -> Self {
+    |            ^^^
+
+error[E0308]: mismatched types
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-roomserver-signaling-0.0.38/src/storage/module_resources/mod.rs:115:97
+    |
+115 |         let filter = ModuleResourceFilter::new(self.ctx.room_id, self.ctx.namespace.clone()).id(id);
+    |                                                                                              -- ^^ expected `ModuleResourceId`, found a different `ModuleResourceId`
+    |                                                                                              |
+    |                                                                                              arguments to this method are incorrect
+    |
+note: there are multiple different versions of crate `opentalk_types_common` in the dependency graph
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.46.0/src/module_resources/module_resource_id.rs:24:1
+    |
+ 24 | pub struct ModuleResourceId(Uuid);
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ this is the expected type
+    |
+   ::: /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-common-0.44.1/src/module_resources/module_resource_id.rs:24:1
+    |
+ 24 | pub struct ModuleResourceId(Uuid);
+    | --------------------------- this is the found type
+    = help: you can use `cargo tree` to explore your dependency tree
+note: method defined here
+   --> /cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/opentalk-types-api-internal-0.2.4/src/module_resources/filter.rs:43:12
+    |
+ 43 |     pub fn id(mut self, id: ModuleResourceId) -> Self {
+    |            ^^
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `opentalk-roomserver-signaling` (lib) due to 9 previous errors
+
+-----
+
+error: failed to build rustdoc for crate opentalk-roomserver-types-raise-hands v0.0.38
+note: this is usually due to a compilation error in the crate,
+      and is unlikely to be a bug in cargo-semver-checks
+note: the following command can be used to reproduce the error:
+      cargo new --lib example &&
+          cd example &&
+          echo '[workspace]' >> Cargo.toml &&
+          cargo add --path /work/opentalk-roomserver-types-raise-hands-0.0.38 &&
+          cargo check &&
+          cargo doc
+
+error: aborting due to failure to build rustdoc for crate opentalk-roomserver-types-raise-hands v0.0.38

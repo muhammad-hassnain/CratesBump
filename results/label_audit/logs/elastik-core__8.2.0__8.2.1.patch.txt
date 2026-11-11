@@ -1,0 +1,13 @@
+
+    Building elastik-core v8.2.1 (current)
+       Built [   7.389s] (current)
+     Parsing elastik-core v8.2.1 (current)
+      Parsed [   0.014s] (current)
+    Building elastik-core v8.2.0 (baseline)
+       Built [   6.917s] (baseline)
+     Parsing elastik-core v8.2.0 (baseline)
+      Parsed [   0.010s] (baseline)
+    Checking elastik-core v8.2.0 -> v8.2.1 (assume patch change)
+     Checked [   0.018s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  14.607s] elastik-core

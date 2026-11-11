@@ -1,0 +1,13 @@
+
+    Building normality v3.1.1 (current)
+       Built [  17.212s] (current)
+     Parsing normality v3.1.1 (current)
+      Parsed [   0.003s] (current)
+    Building normality v3.1.0 (baseline)
+       Built [  16.474s] (baseline)
+     Parsing normality v3.1.0 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking normality v3.1.0 -> v3.1.1 (assume patch change)
+     Checked [   0.016s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  34.012s] normality

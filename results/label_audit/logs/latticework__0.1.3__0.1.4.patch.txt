@@ -1,0 +1,34 @@
+
+--- failure enum_struct_variant_field_added: pub enum struct variant field added ---
+
+Description:
+An enum's exhaustive struct variant has a new field, which has to be included when constructing or matching on this variant.
+        ref: https://doc.rust-lang.org/reference/attributes/type_system.html#the-non_exhaustive-attribute
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_struct_variant_field_added.ron
+
+Failed in:
+  field no_browser of variant Command::Auth in /work/latticework-0.1.4/src/cli/args.rs:307
+
+--- failure enum_struct_variant_field_missing: pub enum struct variant's field removed or renamed ---
+
+Description:
+A publicly-visible enum has a struct variant whose field is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_struct_variant_field_missing.ron
+
+Failed in:
+  field token of variant Command::Auth, previously in file /work/latticework-0.1.3/src/cli/args.rs:307
+
+    Building latticework v0.1.4 (current)
+       Built [  21.010s] (current)
+     Parsing latticework v0.1.4 (current)
+      Parsed [   0.023s] (current)
+    Building latticework v0.1.3 (baseline)
+       Built [  21.001s] (baseline)
+     Parsing latticework v0.1.3 (baseline)
+      Parsed [   0.019s] (baseline)
+    Checking latticework v0.1.3 -> v0.1.4 (assume patch change)
+     Checked [   0.068s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [  42.828s] latticework

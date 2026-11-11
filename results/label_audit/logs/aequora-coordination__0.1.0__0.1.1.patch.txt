@@ -1,0 +1,13 @@
+
+    Building aequora-coordination v0.1.1 (current)
+       Built [   2.363s] (current)
+     Parsing aequora-coordination v0.1.1 (current)
+      Parsed [   0.001s] (current)
+    Building aequora-coordination v0.1.0 (baseline)
+       Built [   2.464s] (baseline)
+     Parsing aequora-coordination v0.1.0 (baseline)
+      Parsed [   0.002s] (baseline)
+    Checking aequora-coordination v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.015s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [   5.046s] aequora-coordination

@@ -1,0 +1,13 @@
+
+    Building nixstore v0.2.0 (current)
+       Built [  11.170s] (current)
+     Parsing nixstore v0.2.0 (current)
+      Parsed [   0.003s] (current)
+    Building nixstore v0.1.0 (baseline)
+       Built [  12.236s] (baseline)
+     Parsing nixstore v0.1.0 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking nixstore v0.1.0 -> v0.2.0 (assume patch change)
+     Checked [   0.020s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  23.856s] nixstore

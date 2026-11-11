@@ -1,0 +1,65 @@
+
+--- failure enum_variant_added: enum variant added on exhaustive enum ---
+
+Description:
+A publicly-visible enum without #[non_exhaustive] has a new variant.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#enum-variant-new
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_variant_added.ron
+
+Failed in:
+  variant PharmsolError:InputOutOfRange in /work/pharmsol-0.24.0/src/error/mod.rs:33
+  variant PharmsolError:InputOutOfRange in /work/pharmsol-0.24.0/src/error/mod.rs:33
+  variant PharmsolError:InputOutOfRange in /work/pharmsol-0.24.0/src/error/mod.rs:33
+
+--- failure method_parameter_count_changed: pub method parameter count changed ---
+
+Description:
+A publicly-visible method now takes a different number of parameters, not counting the receiver (self) parameter.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#fn-change-arity
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/method_parameter_count_changed.ron
+
+Failed in:
+  pharmsol::simulator::equation::ode::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::prelude::simulator::equation::ode::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::prelude::equation::ode::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::equation::ode::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::ode::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::simulator::equation::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::prelude::simulator::equation::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::prelude::equation::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::equation::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::ODE::new takes 6 parameters in /work/pharmsol-0.23.0/src/simulator/equation/ode/mod.rs:38, but now takes 5 parameters in /work/pharmsol-0.24.0/src/simulator/equation/ode/mod.rs:85
+  pharmsol::simulator::equation::analytical::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::prelude::simulator::equation::analytical::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::prelude::equation::analytical::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::equation::analytical::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::analytical::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::simulator::equation::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::prelude::simulator::equation::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::prelude::equation::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::equation::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::Analytical::new takes 7 parameters in /work/pharmsol-0.23.0/src/simulator/equation/analytical/mod.rs:47, but now takes 6 parameters in /work/pharmsol-0.24.0/src/simulator/equation/analytical/mod.rs:52
+  pharmsol::simulator::equation::sde::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::prelude::simulator::equation::sde::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::prelude::equation::sde::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::equation::sde::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::sde::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::simulator::equation::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::prelude::simulator::equation::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::prelude::equation::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::equation::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+  pharmsol::SDE::new takes 8 parameters in /work/pharmsol-0.23.0/src/simulator/equation/sde/mod.rs:112, but now takes 7 parameters in /work/pharmsol-0.24.0/src/simulator/equation/sde/mod.rs:106
+
+    Building pharmsol v0.24.0 (current)
+       Built [  26.749s] (current)
+     Parsing pharmsol v0.24.0 (current)
+      Parsed [   0.022s] (current)
+    Building pharmsol v0.23.0 (baseline)
+       Built [  29.254s] (baseline)
+     Parsing pharmsol v0.23.0 (baseline)
+      Parsed [   0.020s] (baseline)
+    Checking pharmsol v0.23.0 -> v0.24.0 (assume patch change)
+     Checked [   0.150s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [  56.671s] pharmsol

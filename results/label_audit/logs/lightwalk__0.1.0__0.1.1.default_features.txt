@@ -1,0 +1,34 @@
+
+--- failure trait_associated_type_added: non-sealed public trait added associated type without default value ---
+
+Description:
+A non-sealed trait has gained an associated type without a default value, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-item-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_associated_type_added.ron
+
+Failed in:
+  trait associated type lightwalk::SdfState::Sample in file /work/lightwalk-0.1.1/src/lib.rs:15
+
+--- failure trait_method_added: pub trait method added ---
+
+Description:
+A non-sealed public trait added a new method without a default implementation, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-item-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_added.ron
+
+Failed in:
+  trait method lightwalk::SdfState::sample in file /work/lightwalk-0.1.1/src/lib.rs:18
+
+    Building lightwalk v0.1.1 (current)
+       Built [   0.169s] (current)
+     Parsing lightwalk v0.1.1 (current)
+      Parsed [   0.004s] (current)
+    Building lightwalk v0.1.0 (baseline)
+       Built [   0.175s] (baseline)
+     Parsing lightwalk v0.1.0 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking lightwalk v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.021s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   0.507s] lightwalk

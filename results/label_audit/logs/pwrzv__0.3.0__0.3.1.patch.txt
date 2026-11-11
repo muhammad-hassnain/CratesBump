@@ -1,0 +1,34 @@
+
+--- failure enum_missing: pub enum removed or renamed ---
+
+Description:
+A publicly-visible enum cannot be imported by its prior path. A `pub use` may have been removed, or the enum itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_missing.ron
+
+Failed in:
+  enum pwrzv::Provider, previously in file /work/pwrzv-0.3.0/src/lib.rs:64
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function pwrzv::get_provider, previously in file /work/pwrzv-0.3.0/src/lib.rs:108
+
+    Building pwrzv v0.3.1 (current)
+       Built [   4.248s] (current)
+     Parsing pwrzv v0.3.1 (current)
+      Parsed [   0.002s] (current)
+    Building pwrzv v0.3.0 (baseline)
+       Built [   4.504s] (baseline)
+     Parsing pwrzv v0.3.0 (baseline)
+      Parsed [   0.001s] (baseline)
+    Checking pwrzv v0.3.0 -> v0.3.1 (assume patch change)
+     Checked [   0.017s] 229 checks: 227 pass, 2 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 2 major and 0 minor checks failed
+    Finished [   9.038s] pwrzv

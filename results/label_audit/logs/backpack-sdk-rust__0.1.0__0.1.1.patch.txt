@@ -1,0 +1,13 @@
+
+    Building backpack-sdk-rust v0.1.1 (current)
+       Built [  26.483s] (current)
+     Parsing backpack-sdk-rust v0.1.1 (current)
+      Parsed [   0.008s] (current)
+    Building backpack-sdk-rust v0.1.0 (baseline)
+       Built [  26.051s] (baseline)
+     Parsing backpack-sdk-rust v0.1.0 (baseline)
+      Parsed [   0.009s] (baseline)
+    Checking backpack-sdk-rust v0.1.0 -> v0.1.1 (assume patch change)
+     Checked [   0.021s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  53.231s] backpack-sdk-rust

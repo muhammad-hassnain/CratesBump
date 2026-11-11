@@ -1,0 +1,13 @@
+
+    Building cfgmatic-source v5.0.1 (current)
+       Built [   5.183s] (current)
+     Parsing cfgmatic-source v5.0.1 (current)
+      Parsed [   0.006s] (current)
+    Building cfgmatic-source v5.0.0 (baseline)
+       Built [   5.279s] (baseline)
+     Parsing cfgmatic-source v5.0.0 (baseline)
+      Parsed [   0.005s] (baseline)
+    Checking cfgmatic-source v5.0.0 -> v5.0.1 (assume patch change)
+     Checked [   0.061s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  10.810s] cfgmatic-source

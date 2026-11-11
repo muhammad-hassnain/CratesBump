@@ -1,0 +1,133 @@
+
+--- failure constructible_struct_adds_field: struct exhaustively constructible through public API adds field ---
+
+Description:
+A pub struct that could be exhaustively constructed with a literal using only public API has a new pub field, breaking existing exhaustive literals.
+        ref: https://doc.rust-lang.org/reference/expressions/struct-expr.html
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/constructible_struct_adds_field.ron
+
+Failed in:
+  field MakeMoveVector.type_tag in /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/unresolved.rs:205
+
+--- failure enum_marked_non_exhaustive: enum marked #[non_exhaustive] ---
+
+Description:
+A public enum has been marked #[non_exhaustive]. Pattern-matching on it outside of its crate must now include a wildcard pattern like `_`, or it will fail to compile.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#attr-adding-non-exhaustive
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/enum_marked_non_exhaustive.ron
+
+Failed in:
+  enum Command in /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/unresolved.rs:67
+  enum Argument in /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/unresolved.rs:296
+  enum InputKind in /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/unresolved.rs:40
+
+--- failure function_missing: pub fn removed or renamed ---
+
+Description:
+A publicly-visible function cannot be imported by its prior path. A `pub use` may have been removed, or the function itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/function_missing.ron
+
+Failed in:
+  function iota_sdk_transaction_builder::builder::ptb_arguments::res, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/ptb_arguments.rs:265
+  function iota_sdk_transaction_builder::res, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/ptb_arguments.rs:265
+
+--- failure inherent_method_missing: pub method removed or renamed ---
+
+Description:
+A publicly-visible method or associated fn is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/inherent_method_missing.ron
+
+Failed in:
+  TransactionBuildData::named_command, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:176
+  TransactionBuildData::get_named_result, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:182
+  TransactionBuilder::named_command, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:305
+  TransactionBuilder::get_named_result, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:310
+  TransactionBuilder::publish, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:610
+  TransactionBuilder::name, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:1275
+  TransactionBuilder::arg, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:1281
+  TransactionBuilder::named_command, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:305
+  TransactionBuilder::get_named_result, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:310
+  TransactionBuilder::publish, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:610
+  TransactionBuilder::name, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:1275
+  TransactionBuilder::arg, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/mod.rs:1281
+
+--- failure struct_missing: pub struct removed or renamed ---
+
+Description:
+A publicly-visible struct cannot be imported by its prior path. A `pub use` may have been removed, or the struct itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_missing.ron
+
+Failed in:
+  struct iota_sdk_transaction_builder::builder::ptb_arguments::Res, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/ptb_arguments.rs:262
+
+--- failure struct_pub_field_missing: pub struct's pub field removed or renamed ---
+
+Description:
+A publicly-visible struct has at least one public field that is no longer available under its prior name. It may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/struct_pub_field_missing.ron
+
+Failed in:
+  field type_ of struct MakeMoveVector, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/unresolved.rs:144
+
+--- failure trait_added_supertrait: non-sealed trait added new supertraits ---
+
+Description:
+A non-sealed trait added one or more supertraits, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#generic-bounds-tighten
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_added_supertrait.ron
+
+Failed in:
+  trait iota_sdk_transaction_builder::builder::ptb_arguments::PTBArgument gained Sized in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:15
+  trait iota_sdk_transaction_builder::PTBArgument gained Sized in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:15
+
+--- failure trait_method_added: pub trait method added ---
+
+Description:
+A non-sealed public trait added a new method without a default implementation, which breaks downstream implementations of the trait
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#trait-new-item-no-default
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_method_added.ron
+
+Failed in:
+  trait method iota_sdk_transaction_builder::builder::ptb_arguments::PTBArgument::input in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:22
+  trait method iota_sdk_transaction_builder::PTBArgument::input in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:22
+  trait method iota_sdk_transaction_builder::builder::ptb_arguments::PTBArgumentList::push_inputs in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:113
+  trait method iota_sdk_transaction_builder::PTBArgumentList::push_inputs in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:113
+
+--- failure trait_missing: pub trait removed or renamed ---
+
+Description:
+A publicly-visible trait cannot be imported by its prior path. A `pub use` may have been removed, or the trait itself may have been renamed or removed entirely.
+        ref: https://doc.rust-lang.org/cargo/reference/semver.html#item-remove
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_missing.ron
+
+Failed in:
+  trait iota_sdk_transaction_builder::ClientMethods, previously in file /work/iota-sdk-transaction-builder-0.0.1-alpha.1/src/builder/client_methods.rs:16
+
+--- failure trait_no_longer_dyn_compatible: trait no longer dyn compatible ---
+
+Description:
+Trait is no longer dyn compatible, which breaks `dyn Trait` usage.
+        ref: https://doc.rust-lang.org/stable/reference/items/traits.html#object-safety
+       impl: https://github.com/obi1kenobi/cargo-semver-checks/tree/v0.51.0/src/lints/trait_no_longer_dyn_compatible.ron
+
+Failed in:
+  trait PTBArgument in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:15
+  trait PTBArgument in file /work/iota-sdk-transaction-builder-1.0.0-beta.1/src/builder/ptb_arguments.rs:15
+
+    Building iota-sdk-transaction-builder v1.0.0-beta.1 (current)
+       Built [  24.628s] (current)
+     Parsing iota-sdk-transaction-builder v1.0.0-beta.1 (current)
+      Parsed [   0.016s] (current)
+    Building iota-sdk-transaction-builder v0.0.1-alpha.1 (baseline)
+       Built [  21.750s] (baseline)
+     Parsing iota-sdk-transaction-builder v0.0.1-alpha.1 (baseline)
+      Parsed [   0.008s] (baseline)
+    Checking iota-sdk-transaction-builder v0.0.1-alpha.1 -> v1.0.0-beta.1 (assume patch change)
+     Checked [   0.021s] 229 checks: 219 pass, 10 fail, 0 warn, 31 skip
+
+     Summary semver requires new major version: 10 major and 0 minor checks failed
+    Finished [  47.206s] iota-sdk-transaction-builder

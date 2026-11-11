@@ -1,0 +1,13 @@
+
+    Building liblrge v0.1.2 (current)
+       Built [   9.531s] (current)
+     Parsing liblrge v0.1.2 (current)
+      Parsed [   0.005s] (current)
+    Building liblrge v0.1.1 (baseline)
+       Built [   9.200s] (baseline)
+     Parsing liblrge v0.1.1 (baseline)
+      Parsed [   0.003s] (baseline)
+    Checking liblrge v0.1.1 -> v0.1.2 (assume patch change)
+     Checked [   0.013s] 229 checks: 229 pass, 31 skip
+     Summary no semver update required
+    Finished [  18.994s] liblrge
